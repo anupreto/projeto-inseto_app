@@ -27,7 +27,7 @@ export default function Teste() {
   const flatListRef = useRef<FlatList>(null);
 
   useEffect(() => {
-    api.get<Bicho[]>('buscar_animais.php')
+    api.get<Bicho[]>('banco.php')
       .then((resposta) => {
         if (Array.isArray(resposta.data)) {
           setListaDeBichos(resposta.data);
@@ -44,27 +44,24 @@ export default function Teste() {
       });
   }, []);
 
-  // Toda vez que o usuário digitar na busca, voltamos para a página 1
+ 
   const handleBusca = (texto: string) => {
     setBusca(texto);
     setPaginaAtual(1);
   };
 
-  // 1. Filtragem por nome
+  
   const filtrarAnimal = Array.isArray(listaDeBichos)
     ? listaDeBichos.filter((bicho) =>
         bicho?.nome_insetos?.toLowerCase().includes(busca.toLowerCase())
       )
     : [];
 
-  // 2. Cálculo do total de páginas
   const totalPaginas = Math.ceil(filtrarAnimal.length / ITENS_POR_PAGINA) || 1;
 
-  // 3. Fatia dos 20 itens da página atual (Slice)
   const inicio = (paginaAtual - 1) * ITENS_POR_PAGINA;
   const dadosPaginados = filtrarAnimal.slice(inicio, inicio + ITENS_POR_PAGINA);
 
-  // Trocar de página e subir a tela
   const mudePagina = (novaPagina: number) => {
     if (novaPagina >= 1 && novaPagina <= totalPaginas) {
       setPaginaAtual(novaPagina);
@@ -72,7 +69,6 @@ export default function Teste() {
     }
   };
 
-  // Gerador dos números de página (ex: 1, 2, 3... ou com reticências se houver muitas páginas)
   const renderBotoesPagina = () => {
     const paginas: (number | string)[] = [];
 
@@ -299,7 +295,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 
-  /* --- ESTILOS DA PAGINAÇÃO --- */
   containerPaginacao: {
     flexDirection: 'row',
     alignItems: 'center',
