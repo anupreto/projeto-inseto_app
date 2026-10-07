@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import {View, Text, StyleSheet, TextInput, ActivityIndicator, FlatList, StatusBar, TouchableOpacity} from 'react-native';
+import { View, Text, StyleSheet, TextInput, ActivityIndicator, FlatList, StatusBar, TouchableOpacity } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import api from './api';
@@ -20,47 +20,50 @@ export default function Teste() {
   const [listaDeBichos, setListaDeBichos] = useState<Bicho[]>([]);
   const [carregando, setCarregando] = useState<boolean>(true);
   const [busca, setBusca] = useState<string>('');
+  const [termoBuscaReal, setTermoBuscaReal] = useState<string>('');
   
   const [paginaAtual, setPaginaAtual] = useState<number>(1);
-  const ITENS_POR_PAGINA = 20;
+  const [totalPaginas, setTotalPaginas] = useState<number>(1);
 
   const flatListRef = useRef<FlatList>(null);
-
+  
   useEffect(() => {
-    api.get<Bicho[]>('banco.php')
-      .then((resposta) => {
-        if (Array.isArray(resposta.data)) {
-          setListaDeBichos(resposta.data);
+    const timer = setTimeout(() => {
+      setTermoBuscaReal(busca);
+      setPaginaAtual(1);
+    }, 400);
+
+    return () => clearTimeout(timer);
+  }, [busca]);
+  
+  useEffect(() => {
+    const carregarDados = async () => {
+      try {
+        setCarregando(true);
+        const resposta = await api.get('banco.php', {
+          params: {
+            page: paginaAtual,
+            search: termoBuscaReal,
+          }
+        });
+
+        if (resposta.data && Array.isArray(resposta.data.dados)) {
+          setListaDeBichos(resposta.data.dados);
+          setTotalPaginas(resposta.data.totalPaginas || 1);
         } else {
           setListaDeBichos([]);
+          setTotalPaginas(1);
         }
-      })
-      .catch((erro) => {
+      } catch (erro) {
         console.error('Erro ao buscar dados do banco:', erro);
         setListaDeBichos([]);
-      })
-      .finally(() => {
+      } finally {
         setCarregando(false);
-      });
-  }, []);
+      }
+    };
 
- 
-  const handleBusca = (texto: string) => {
-    setBusca(texto);
-    setPaginaAtual(1);
-  };
-
-  
-  const filtrarAnimal = Array.isArray(listaDeBichos)
-    ? listaDeBichos.filter((bicho) =>
-        bicho?.nome_insetos?.toLowerCase().includes(busca.toLowerCase())
-      )
-    : [];
-
-  const totalPaginas = Math.ceil(filtrarAnimal.length / ITENS_POR_PAGINA) || 1;
-
-  const inicio = (paginaAtual - 1) * ITENS_POR_PAGINA;
-  const dadosPaginados = filtrarAnimal.slice(inicio, inicio + ITENS_POR_PAGINA);
+    carregarDados();
+  }, [paginaAtual, termoBuscaReal]);
 
   const mudePagina = (novaPagina: number) => {
     if (novaPagina >= 1 && novaPagina <= totalPaginas) {
@@ -113,7 +116,7 @@ export default function Teste() {
     });
   };
 
-  if (carregando) {
+  if (carregando && listaDeBichos.length === 0) {
     return (
       <SafeAreaProvider>
         <SafeAreaView style={styles.centerLoading}>
@@ -131,7 +134,7 @@ export default function Teste() {
 
         <FlatList
           ref={flatListRef}
-          data={dadosPaginados}
+          data={listaDeBichos}
           keyExtractor={(item) => item.id_insetos.toString()}
           numColumns={2}
           columnWrapperStyle={styles.linhaGrid}
@@ -143,7 +146,7 @@ export default function Teste() {
               <TextInput 
                 style={styles.pesquisa} 
                 value={busca} 
-                onChangeText={handleBusca}
+                onChangeText={setBusca}
                 placeholder="Pesquisar..."
                 placeholderTextColor="#888"
               />
@@ -165,12 +168,14 @@ export default function Teste() {
             </View>
           )}
           ListEmptyComponent={
-            <Text style={styles.textoVazio}>
-              Nenhum invertebrado encontrado.
-            </Text>
+            carregando ? (
+              <ActivityIndicator size="small" color="#a100cc" style={{ marginTop: 20 }} />
+            ) : (
+              <Text style={styles.textoVazio}>Nenhum invertebrado encontrado.</Text>
+            )
           }
           ListFooterComponent={
-            filtrarAnimal.length > 0 ? (
+            listaDeBichos.length > 0 ? (
               <View style={styles.containerPaginacao}>
                 <TouchableOpacity 
                   style={[styles.btnSeta, paginaAtual === 1 && styles.btnDesabilitado]}
@@ -201,162 +206,28 @@ export default function Teste() {
 }
 
 const styles = StyleSheet.create({
-  containerTela: {
-    flex: 1,
-    backgroundColor: '#111',
-  },
-
-  centerLoading: {
-    flex: 1,
-    backgroundColor: '#111',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-
-  corpoFlatList: {
-    paddingHorizontal: 12,
-    paddingBottom: 40,
-  },
-
-  linhaGrid: {
-    justifyContent: 'space-between',
-    marginBottom: 12,
-  },
-
-  cabecalho: {
-    width: '100%',
-    alignItems: 'center',
-    paddingTop: 8,
-  },
-
-  tituloApp: {
-    color: '#f1f1f1',
-    fontSize: 22,
-    fontWeight: 'bold',
-    marginBottom: 16,
-    textAlign: 'center',
-  },
-
-  pesquisa: {
-    width: '100%',
-    height: 48,
-    color: '#fff',
-    backgroundColor: '#1c1c1c',
-    borderRadius: 25, 
-    borderWidth: 2, 
-    borderColor: '#a100cc', 
-    paddingHorizontal: 20, 
-    marginBottom: 20,
-  },
-
-  cardBesouro: {
-    backgroundColor: '#1c1c1c',
-    borderRadius: 16,
-    padding: 12,
-    width: '48.5%',
-    alignItems: 'center', 
-    gap: 10,
-  },
-
-  imagemBesouro: {
-    height: 90,
-    width: 90,
-    borderRadius: 45,
-  },
-
-  containerInfos: {
-    width: '100%',
-    gap: 4,
-  },
-
-  nome: {
-    color: '#f1f1f1',
-    fontSize: 14,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-
-  nc: {
-    color: '#aaa',
-    fontSize: 11,
-    fontStyle: 'italic',
-    textAlign: 'center',
-  },
-
-  curiosidade: {
-    color: '#ddd',
-    fontSize: 11,
-    textAlign: 'center',
-  },
-
-  textoVazio: {
-    color: '#aaa',
-    marginTop: 20,
-    textAlign: 'center',
-  },
-
-  containerPaginacao: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 25,
-    gap: 6,
-    width: '100%',
-  },
-
-  numerosContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-  },
-
-  btnNumero: {
-    minWidth: 32,
-    height: 32,
-    borderRadius: 16,
-    backgroundColor: '#1c1c1c',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 6,
-  },
-
-  btnNumeroAtivo: {
-    backgroundColor: '#a100cc',
-  },
-
-  textoNumero: {
-    color: '#aaa',
-    fontSize: 13,
-    fontWeight: '600',
-  },
-
-  textoNumeroAtivo: {
-    color: '#fff',
-    fontWeight: 'bold',
-  },
-
-  textoReticencias: {
-    color: '#666',
-    paddingHorizontal: 2,
-    fontSize: 13,
-  },
-
-  btnSeta: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    backgroundColor: '#1c1c1c',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  btnDesabilitado: {
-    opacity: 0.3,
-  },
-
-  textoSeta: {
-    color: '#a100cc',
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
+  containerTela: { flex: 1, backgroundColor: '#111' },
+  centerLoading: { flex: 1, backgroundColor: '#111', justifyContent: 'center', alignItems: 'center' },
+  corpoFlatList: { paddingHorizontal: 12, paddingBottom: 40 },
+  linhaGrid: { justifyContent: 'space-between', marginBottom: 12 },
+  cabecalho: { width: '100%', alignItems: 'center', paddingTop: 8 },
+  tituloApp: { color: '#f1f1f1', fontSize: 22, fontWeight: 'bold', marginBottom: 16, textAlign: 'center' },
+  pesquisa: { width: '100%', height: 48, color: '#fff', backgroundColor: '#1c1c1c', borderRadius: 25, borderWidth: 2, borderColor: '#a100cc', paddingHorizontal: 20, marginBottom: 20 },
+  cardBesouro: { backgroundColor: '#1c1c1c', borderRadius: 16, padding: 12, width: '48.5%', alignItems: 'center', gap: 10 },
+  imagemBesouro: { height: 90, width: 90, borderRadius: 45 },
+  containerInfos: { width: '100%', gap: 4 },
+  nome: { color: '#f1f1f1', fontSize: 14, fontWeight: 'bold', textAlign: 'center' },
+  nc: { color: '#aaa', fontSize: 11, fontStyle: 'italic', textAlign: 'center' },
+  curiosidade: { color: '#ddd', fontSize: 11, textAlign: 'center' },
+  textoVazio: { color: '#aaa', marginTop: 20, textAlign: 'center' },
+  containerPaginacao: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginTop: 25, gap: 6, width: '100%' },
+  numerosContainer: { flexDirection: 'row', alignItems: 'center', gap: 4 },
+  btnNumero: { minWidth: 32, height: 32, borderRadius: 16, backgroundColor: '#1c1c1c', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 6 },
+  btnNumeroAtivo: { backgroundColor: '#a100cc' },
+  textoNumero: { color: '#aaa', fontSize: 13, fontWeight: '600' },
+  textoNumeroAtivo: { color: '#fff', fontWeight: 'bold' },
+  textoReticencias: { color: '#666', paddingHorizontal: 2, fontSize: 13 },
+  btnSeta: { width: 32, height: 32, borderRadius: 16, backgroundColor: '#1c1c1c', alignItems: 'center', justifyContent: 'center' },
+  btnDesabilitado: { opacity: 0.3 },
+  textoSeta: { color: '#a100cc', fontSize: 18, fontWeight: 'bold' },
 });
