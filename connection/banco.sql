@@ -388,66 +388,36 @@ INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, di
 ('Ofiúro de braços longos', 'Amphipholis squamata', 'Equinodermo', 'Amphiuridae', 'Detritívoro', 'Pequeno ofiúro cosmopolita que incuba seus ovos internamente até a eclosão.'),
 ('Lírio do mar gigante de fenda', 'Lamprometra palmata', 'Equinodermo', 'Mariametridae', 'Suspensívoro', 'Crinoide tropical com múltiplos braços flexíveis que formam leques filtradores.');
    
-    UPDATE insetos SET foto_insetos CASE id_insetos
-    WHEN 1 THEN foto_insetos = 'https://cults3d.com/pt/modelo-3d/arte/rhinoceros-beetle-aletrzoda?srsltid=AU7gw4XiIV_0iDbssxYQ5CR2d5SKN9V0Y8Io868xHtI5FRM6i7Y4Z81W',
-    WHEN 2 THEN foto_insetos = 'https://g1.globo.com/sp/campinas-regiao/terra-da-gente/noticia/2023/09/18/pequeno-gigante-conheca-besouro-que-mede-17-cm-e-consegue-levantar-ate-850-vezes-seu-peso.ghtml',
-    WHEN 3 THEN foto_insetos = 'https://darwinianas.com/2017/07/11/o-que-voce-sabe-sobre-os-besouros-rola-bostas/',
-    WHEN 4 THEN foto_insetos = 'https://pictureinsect.com/pt/wiki/Goliathus_goliatus.html',
-    WHEN 5 THEN foto_insetos = 'https://pt.wikipedia.org/wiki/Ficheiro:Elephant_Beetle_Megasoma_elephas_Male_Top_2170px.jpg',
-    WHEN 6 THEN foto_insetos = 'https://www.reddit.com/r/macrophotography/comments/1jlkzgb/brown_marmorated_stink_bug/?tl=pt-br',
-    WHEN 7 THEN foto_insetos = 'https://pictureinsect.com/pt/wiki/Chrysolina_herbacea.html',
-    WHEN 8 THEN foto_insetos = 'https://pictureinsect.com/pt/wiki/Chalcosoma_atlas.html',
-    WHEN 9 THEN foto_insetos = 'https://www.facebook.com/biologismo/posts/este-besouro-maravilhoso-%C3%A9-o-besouro-j%C3%B3ia-dourado-anoplognathus-aureus-uma-esp%C3%A9c/753635645321407/',
-    WHEN 10 THEN foto_insetos = 'https://www.cnpuv.embrapa.br/uzum/uva/besouro.html',
-    WHEN 11 THEN foto_insetos = 'https://www.mundoecologia.com.br/animais/besouro-violino-caracteristicas-nome-cientifico-e-fotos/',
-    WHEN 12 THEN foto_insetos = 'https://super.abril.com.br/ciencia/besouro-usa-pum-mortal-para-se-defender-de-predadores/',
-    WHEN 13 THEN foto_insetos = 'https://umsoplaneta.globo.com/biodiversidade/noticia/2025/07/04/fantastico-mudo-animal-este-besouro-que-troca-o-dourado-pelo-rubi-em-segundos.ghtml',
-    WHEN 14 THEN foto_insetos = 'https://pt.vecteezy.com/foto/3780711-besouro-tigre-verde',
-    WHEN 15 THEN foto_insetos = 'https://www.istockphoto.com/br/fotos/carabus-violaceus',
-    WHEN 16 THEN foto_insetos = 'http://www.portal.zoo.bio.br/media2135',
-    WHEN 17 THEN foto_insetos = 'https://saocarlosemrede.com.br/besouro-tigre-velocidade-precisao-caca-g4/',
-    WHEN 18 THEN foto_insetos = 'url',
-    WHEN 19 THEN foto_insetos = 'url',
-    WHEN 20 THEN foto_insetos = 'url',
-    WHEN 21 THEN foto_insetos = 'url',
-    WHEN 22 THEN foto_insetos = 'url',
-    WHEN 23 THEN foto_insetos = 'url',
-    WHEN 24 THEN foto_insetos = 'url',
-    WHEN 25 THEN foto_insetos = 'url',
-    WHEN 26 THEN foto_insetos = 'url',
-    WHEN 27 THEN foto_insetos = 'url',
-    WHEN 28 THEN foto_insetos = 'url',
-    WHEN 29 THEN foto_insetos = 'url',
-    WHEN 30 THEN foto_insetos = 'url',
-    WHEN 31 THEN foto_insetos = 'url',
-    WHEN 32 THEN foto_insetos = 'url',
-    WHEN 33 THEN foto_insetos = 'url',
-    WHEN 34 THEN foto_insetos = 'url',
-    WHEN 35 THEN foto_insetos = 'url',
-    WHEN 36 THEN foto_insetos = 'url',
-    WHEN 37 THEN foto_insetos = 'url',
-    WHEN 38 THEN foto_insetos = 'url',
-    WHEN 39 THEN foto_insetos = 'url',
-    WHEN 40 THEN foto_insetos = 'url',
-    WHEN 41 THEN foto_insetos = 'url',
-    WHEN 42 THEN foto_insetos = 'url',
-    WHEN 43 THEN foto_insetos = 'url',
-    WHEN 44 THEN foto_insetos = 'url',
-    WHEN 45 THEN foto_insetos = 'url',
-    WHEN 46 THEN foto_insetos = 'url',
-    WHEN 47 THEN foto_insetos = 'url',
-    WHEN 48 THEN foto_insetos = 'url',
-    WHEN 49 THEN foto_insetos = 'url',
-    WHEN 50 THEN foto_insetos = 'url',
-    -- 11 á 366 depois
+UPDATE insetos 
+SET foto_insetos = CASE id_insetos
+    WHEN 1 THEN 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Enema_pan%2C_Peru_%283%29.jpg/1920px-Enema_pan%2C_Peru_%283%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
+    WHEN 2 THEN 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Dynastes_hercules_ecuatorianus_MHNT.jpg/960px-Dynastes_hercules_ecuatorianus_MHNT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
+    WHEN 3 THEN 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Dichotomius_in_Caetit%C3%A9_4.jpg/960px-Dichotomius_in_Caetit%C3%A9_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
+    WHEN 4 THEN 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Goliathus.meleagris.jpg/960px-Goliathus.meleagris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
+    WHEN 5 THEN 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Megasoma_elephas_male_from_Mexico.JPG/960px-Megasoma_elephas_male_from_Mexico.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
+    WHEN 6 THEN 'https://i.redd.it/zguwbra0fcre1.jpeg'
+    WHEN 7 THEN 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIILvOlNqw4nSEhis3zICQfr_CM0t3MSZRJs_dgK2Rrc2kA14WBaMle4Cz&s=10'
+    WHEN 8 THEN 'https://thumbs.dreamstime.com/b/besouro-atlas-majestoso-se-posou-graciosamente-na-forma%C3%A7%C3%A3o-robusta-de-casca-%C3%A1rvore-uma-foto-um-escaravelho-magn%C3%ADfico-esticado-409033953.jpg'
+    WHEN 9 THEN 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJwTTJH0kJ4TPTAg2nTcywIaeKR7_vgPsCXgsCyWmG0n7Yl6U0tI8mI_U&s=10'
+    WHEN 10 THEN 'https://thumbs.dreamstime.com/b/close-up-do-besouro-da-vinha-32896151.jpg'
+    WHEN 11 THEN 'https://thumbs.dreamstime.com/z/besouro-do-violino-isolado-em-um-fundo-branco-56705604.jpg'
+    WHEN 12 THEN 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Brachinus_spPCCA20060328-2821B.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original'
+    WHEN 13 THEN 'https://s2-casaejardim.glbimg.com/Zez6ObQ_cs_w7l2v8tl_DeSeWB0=/0x0:1400x1118/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2023/M/G/vOOFyUSUCctYT6PiGIIw/besouro-dourado1.jpeg'
+    WHEN 14 THEN 'https://super.abril.com.br/wp-content/uploads/2017/01/besouro-tigre-c3a9-o-inseto-mais-rc3a1pido-e-feroz-do-mundo.jpg?quality=70&w=1024&h=682&crop=1'
+    WHEN 15 THEN 'https://thumbs.dreamstime.com/b/besouro-%C3%A0-terra-violeta-inseto-bonito-isolado-no-branco-98648233.jpg'
+    WHEN 16 THEN 'https://thumbs.dreamstime.com/b/coriaceus-carabus-do-leatherback-do-corredor-um-besouro-predat%C3%B3rio-94063561.jpg'
+    WHEN 17 THEN 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Royal_Tiger_Beetle_%28Chaetodera_regalis%29_%2816926211091%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original'
+    WHEN 18 THEN 'https://thumbs.dreamstime.com/b/o-sycophanta-de-calosoma-do-besouro-ca%C3%A7ador-caterpillar-%C3%A9-um-grande-groun-103370700.jpg'
+    WHEN 19 THEN 'https://thumbs.dreamstime.com/b/besouro-preto-isolado-no-fundo-branco-macro-56945212.jpg'
+    WHEN 20 THEN 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnvkSNuSMFqM3uizHno_CYa1BAK59cMvrZ97Ped8JL0w_odt-MtZVoYuP&s=10'
     ELSE foto_insetos
-    END
-    WHERE id_insetos BETWEEN 1 AND 366; -- adicione 1 á 366 
+END
+WHERE id_insetos BETWEEN 1 AND 20;-- adicione 1 á 366 
     
 
-
+    SELECT * FROM insetos;
     UPDATE insetos SET destaque = 1 WHERE id_insetos IN(1, 62, 123, 184, 245, 306);
-        SELECT * FROM insetos;
+        
 
 CREATE TABLE habitats (
     id_habitats INT AUTO_INCREMENT PRIMARY KEY,
