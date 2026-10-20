@@ -410,9 +410,29 @@ SET foto_insetos = CASE id_insetos
     WHEN 18 THEN 'https://thumbs.dreamstime.com/b/o-sycophanta-de-calosoma-do-besouro-ca%C3%A7ador-caterpillar-%C3%A9-um-grande-groun-103370700.jpg'
     WHEN 19 THEN 'https://thumbs.dreamstime.com/b/besouro-preto-isolado-no-fundo-branco-macro-56945212.jpg'
     WHEN 20 THEN 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnvkSNuSMFqM3uizHno_CYa1BAK59cMvrZ97Ped8JL0w_odt-MtZVoYuP&s=10'
+    WHEN 21 THEN 'https://st2.depositphotos.com/1007514/7853/i/950/depositphotos_78537730-stock-photo-black-beetle-isolated-on-white.jpg'
+    WHEN 22 THEN 'https://stobrasil.com.br/wp-content/uploads/2020/08/44530_2400x1600px_640-1024x1024.jpg'
+    WHEN 23 THEN 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtZamRaHS2_-hsM0_VxHwAct11anDRw246GEsa4PLHW0vb1hAi37j2L1NTB4QODhvDWrU4irHRBPb_i4-xiCwOrKb64QWEFPHosxSWYI2gLCA3eJPHxSQjzNswFAw_A5LVXVt8-xjN_Dc/s1600/Fig.-abertura-Coprophaneus-lancifer-Conrad-Creative-Commons.jpg'
+    WHEN 24 THEN 'https://upload.wikimedia.org/wikipedia/commons/f/f3/CSIRO_ScienceImage_11207_Dung_beetle_Onthophagus_gazella_side_view.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original'
+    WHEN 25 THEN 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cS9u17RHui0iIAGRhmWJUBOCAkKKfxye7ENgKozMxmI_YlpBX6j8cOh6&s=10'
+    WHEN 26 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0c/Scarabaeus.sacer.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original'
+    WHEN 27 THEN 'https://www.portal.zoo.bio.br/IMG/jpg/besouro_rola-bosta_marrom-2.jpg'
+    WHEN 28 THEN 'https://thumbs.dreamstime.com/z/coriaceus-carabus-do-leatherback-do-corredor-um-besouro-predat%C3%B3rio-94063561.jpg'
+    WHEN 29 THEN 'https://insetologia.com/wp-content/uploads/2018/03/Scarabaeini_niltonozanam1_besouro-escavador-diabroctis-em-goias.jpg'
+    WHEN 30 THEN 'https://oeco.org.br/wp-content/uploads/2025/09/besouro-arretado.jpeg'
+    WHEN 31 THEN 'https://thumbs.dreamstime.com/b/aproxima%C3%A7%C3%A3o-de-um-escaravelho-predador-caracol-escuro-ablattaria-laevigata-na-bulg%C3%A1ria-colheita-natural-besouro-escura-e-399339449.jpg'
+    WHEN 32 THEN 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShR70ljNz75QZccX1Oe4PPtFwB9ZYMi_EMwID_JrW0GdGFnlxaYFkHATMz&s=10'
+    WHEN 33 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/85/Anophthalmus_hitleri_HabitusDors.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original'
+    WHEN 34 THEN 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Titanus_giganteus_MHNT_dos_%28cropped%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original'
+    WHEN 35 THEN 'https://thumbs.dreamstime.com/b/besouro-do-cavalo-de-treinador-s-diabo-em-um-branco-subterr%C3%A2neo-100649590.jpg'
+    WHEN 36 THEN 'https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/TOS_Besouro_Arco_Iris_181228_1280x720_1412077123651.jpg?w=1900&h=1069'
+    WHEN 37 THEN 'https://pbs.twimg.com/media/EIw-O3pX0AAyg9s?format=webp&name=large'
+    WHEN 38 THEN 'https://conexaoplaneta.com.br/wp-content/uploads/2023/07/besouro-alien-conexao-planeta.jpg'
+    WHEN 39 THEN 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe0V5Rna_6f8e-HlBlC41zDMfScq-lJdc8vTTG8ewFLDZKWi1PoB0InTA&s=10'
+    WHEN 40 THEN 'https://s2-umsoplaneta.glbimg.com/sy1DIU7lBXwj5KZcpNQ1xsgddF0=/0x0:1024x1374/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_7d5b9b5029304d27b7ef8a7f28b4d70f/internal_photos/bs/2025/g/j/zwMkYtSnGcJlMtkezFAA/1024px-golden-tortoise-beetle-back-upper-marlboro-md-2014-06-04-13.25.12-zs-pmax-14372942103-.jpg'
     ELSE foto_insetos
 END
-WHERE id_insetos BETWEEN 1 AND 20;-- adicione 1 á 366 
+WHERE id_insetos BETWEEN 1 AND 40; -- adicione 1 á 366 
     
 
     SELECT * FROM insetos;
