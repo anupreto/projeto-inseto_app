@@ -4,29 +4,33 @@
     "slug": "wiki-invertebrados",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#111111"
-    },
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#111111"
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anuba.wikiinvertebrados",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
     "plugins": [
       "expo-router"
     ],
-    "scheme": "wiki-invertebrados"
+    "scheme": "wiki-invertebrados",
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "bfa29f65-0cb1-483b-9373-12af94119a10"
+      }
+    },
+    "android": {
+      "package": "com.anuba.wikiinvertebrados"
+    }
   }
 }

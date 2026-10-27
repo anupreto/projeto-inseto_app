@@ -1,21 +1,54 @@
-DROP DATABASE insetos_db;
-
+DROP DATABASE IF EXISTS insetos_db;
 CREATE DATABASE IF NOT EXISTS insetos_db;
 USE insetos_db;
 
-CREATE TABLE insetos (
+CREATE TABLE IF NOT EXISTS usuarios (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    email_usuario VARCHAR(100) NOT NULL UNIQUE,
+    senha_usuario VARCHAR(255) NOT NULL, -- Suporta o hash seguro (ex: BCrypt)
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS insetos (
     id_insetos INT AUTO_INCREMENT PRIMARY KEY,
     nome_insetos VARCHAR(50) NOT NULL,
     nc_insetos VARCHAR(50) NOT NULL,
-    ordem_insetos VARCHAR(65) NOT NULL,
+    ordem_insetos VARCHAR(65) NOT NULL DEFAULT 'Insecta',
     familia_insetos VARCHAR(65) NOT NULL,
-    dieta_insetos VARCHAR(50) NOT NULL,
+    dieta_insetos ENUM('Detritívoro', 'Coprófago', 'Herbívoro', 'Carnívoro', 'Onívoro', 'Nectarívoro') NOT NULL,
     destaque BOOLEAN NOT NULL DEFAULT 0,
-    curisidade TEXT,
-    foto_insetos TEXT
+    curiosidade TEXT,
+    foto_insetos TEXT,
+    
+    INDEX idx_nome (nome_insetos),
+    INDEX idx_familia (familia_insetos)
 );
 
-INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, dieta_insetos, curisidade) VALUES
+CREATE TABLE IF NOT EXISTS favoritos (
+    id_usuario INT,
+    id_insetos INT,
+    PRIMARY KEY (id_usuario, id_insetos),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario) ON DELETE CASCADE,
+    FOREIGN KEY (id_insetos) REFERENCES insetos(id_insetos) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS habitats (
+    id_habitats INT AUTO_INCREMENT PRIMARY KEY,
+    nome_habitats VARCHAR(50) NOT NULL,
+    clima_habitats VARCHAR(50),
+    bioma_habitats VARCHAR(65),
+    descricao_habitats TEXT
+);
+
+CREATE TABLE IF NOT EXISTS inseto_habitats (
+    id_insetos INT,
+    id_habitats INT,
+    PRIMARY KEY (id_insetos, id_habitats),
+    FOREIGN KEY (id_insetos) REFERENCES insetos(id_insetos) ON DELETE CASCADE,
+    FOREIGN KEY (id_habitats) REFERENCES habitats(id_habitats) ON DELETE CASCADE
+);
+
+INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, dieta_insetos, curiosidade) VALUES
 ('Besouro Rinoceronte', 'Oryctes nasicornis', 'insetos', 'Scarabaeidae', 'Detritívoro', 'Consegue levantar até vezes o seu próprio peso, equivalente a um humano erguer vários carros.'),
 ('Besouro Hércules', 'Dynastes hercules', 'insetos', 'Scarabaeidae', 'Detritívoro', 'É considerado um dos maiores insetoss do mundo e possui um chifre enorme usado para disputas territoriais.'),
 ('Besouro Rola Bosta', 'Scarabaeus sacer', 'insetos', 'Scarabaeidae', 'Coprófago', 'Navega guiando se pela luz da Via Láctea para rolar suas bolas de esterco em linha reta.'),
@@ -387,7 +420,7 @@ INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, di
 ('Estrela do mar de areia fina', 'Astropecten aranciacus', 'Equinodermo', 'Astropectinidae', 'Carnívoro', 'Estrela de areia com margens pectinadas, caçadora noturna de moluscos e vermes.'),
 ('Ofiúro de braços longos', 'Amphipholis squamata', 'Equinodermo', 'Amphiuridae', 'Detritívoro', 'Pequeno ofiúro cosmopolita que incuba seus ovos internamente até a eclosão.'),
 ('Lírio do mar gigante de fenda', 'Lamprometra palmata', 'Equinodermo', 'Mariametridae', 'Suspensívoro', 'Crinoide tropical com múltiplos braços flexíveis que formam leques filtradores.');
-   
+
 UPDATE insetos 
 SET foto_insetos = CASE id_insetos
     WHEN 1 THEN 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Enema_pan%2C_Peru_%283%29.jpg/1920px-Enema_pan%2C_Peru_%283%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail'
@@ -432,24 +465,8 @@ SET foto_insetos = CASE id_insetos
     WHEN 40 THEN 'https://s2-umsoplaneta.glbimg.com/sy1DIU7lBXwj5KZcpNQ1xsgddF0=/0x0:1024x1374/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_7d5b9b5029304d27b7ef8a7f28b4d70f/internal_photos/bs/2025/g/j/zwMkYtSnGcJlMtkezFAA/1024px-golden-tortoise-beetle-back-upper-marlboro-md-2014-06-04-13.25.12-zs-pmax-14372942103-.jpg'
     ELSE foto_insetos
 END
-WHERE id_insetos BETWEEN 1 AND 40; -- adicione 1 á 366 
-    
+WHERE id_insetos BETWEEN 1 AND 40;
 
-    SELECT * FROM insetos;
-    UPDATE insetos SET destaque = 1 WHERE id_insetos IN(1, 62, 123, 184, 245, 306);
-        
+UPDATE insetos SET destaque = 1 WHERE id_insetos IN (1, 62, 123, 184, 245, 306);
 
-CREATE TABLE habitats (
-    id_habitats INT AUTO_INCREMENT PRIMARY KEY,
-    nome_habitats VARCHAR(50),
-    clima_habitats VARCHAR(50),
-    bioma_habitats VARCHAR(65),
-    descricao_habitats TEXT, 
-     id_insetos INT, 
-    CONSTRAINT fk_habitats_insetos  FOREIGN KEY (id_insetos) 
-    REFERENCES insetos(id_insetos)
-);
-
-INSERT INTO (nome_habitats)
-TRUNCATE Table insetos;
 SELECT * FROM insetos;

@@ -1,233 +1,176 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, TextInput, ActivityIndicator, FlatList, StatusBar, TouchableOpacity } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import { Image } from 'expo-image';
-import api from './api';
+import { 
+  View, 
+  Text, 
+  TextInput, 
+  TouchableOpacity, 
+  StyleSheet, 
+  KeyboardAvoidingView, 
+  Platform, 
+  ScrollView, 
+  ActivityIndicator 
+} from 'react-native'
+import React, { useState } from 'react'
+import { router } from 'expo-router'
+import { Ionicons } from '@expo/vector-icons' 
+import api from './api'
 
-interface Bicho {
-  id_insetos: number;
-  nome_insetos: string;
-  nc_insetos: string;
-  ordem_insetos: string;
-  familia_insetos: string;
-  dieta_insetos: string;
-  destaque: number | boolean;
-  curisidade: string; 
-  foto_insetos: string;
-}
-
-export default function Teste() {
-  const [listaDeBichos, setListaDeBichos] = useState<Bicho[]>([]);
-  const [carregando, setCarregando] = useState<boolean>(true);
-  const [busca, setBusca] = useState<string>('');
-  const [termoBuscaReal, setTermoBuscaReal] = useState<string>('');
+export default function TelaLogin() {
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
   
-  const [paginaAtual, setPaginaAtual] = useState<number>(1);
-  const [totalPaginas, setTotalPaginas] = useState<number>(1);
-
-  const flatListRef = useRef<FlatList>(null);
+  const [focoEmail, setFocoEmail] = useState(false)
+  const [focoSenha, setFocoSenha] = useState(false)
+  const [ocultarSenha, setOcultarSenha] = useState(true)
+  const [carregando, setCarregando] = useState(false)
   
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setTermoBuscaReal(busca);
-      setPaginaAtual(1);
-    }, 400);
+  const [mensagemFeedback, setMensagemFeedback] = useState<{ tipo: 'erro' | 'sucesso', texto: string } | null>(null)
 
-    return () => clearTimeout(timer);
-  }, [busca]);
-  
-  useEffect(() => {
-    const carregarDados = async () => {
-      try {
-        setCarregando(true);
-        const resposta = await api.get('conexao.php', {
-          params: {
-            page: paginaAtual,
-            search: termoBuscaReal,
-          }
-        });
+  const emailEstruturaValida = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())
 
-        if (resposta.data && Array.isArray(resposta.data.dados)) {
-          setListaDeBichos(resposta.data.dados);
-          setTotalPaginas(resposta.data.totalPaginas || 1);
-        } else {
-          setListaDeBichos([]);
-          setTotalPaginas(1);
-        }
-      } catch (erro) {
-        console.error('Erro ao buscar dados do banco:', erro);
-        setListaDeBichos([]);
-      } finally {
-        setCarregando(false);
-      }
-    };
+  async function lidarComLogin() {
+    setMensagemFeedback(null)
 
-    carregarDados();
-  }, [paginaAtual, termoBuscaReal]);
-
-  const mudePagina = (novaPagina: number) => {
-    if (novaPagina >= 1 && novaPagina <= totalPaginas) {
-      setPaginaAtual(novaPagina);
-      flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
-    }
-  };
-
-  const renderBotoesPagina = () => {
-    const paginas: (number | string)[] = [];
-
-    if (totalPaginas <= 7) {
-      for (let i = 1; i <= totalPaginas; i++) paginas.push(i);
-    } else {
-      paginas.push(1);
-      if (paginaAtual > 3) paginas.push('...');
-      
-      const inicioIntervalo = Math.max(2, paginaAtual - 1);
-      const fimIntervalo = Math.min(totalPaginas - 1, paginaAtual + 1);
-
-      for (let i = inicioIntervalo; i <= fimIntervalo; i++) {
-        paginas.push(i);
-      }
-
-      if (paginaAtual < totalPaginas - 2) paginas.push('...');
-      paginas.push(totalPaginas);
+    if (!email.trim() || !senha.trim()) {
+      setMensagemFeedback({ tipo: 'erro', texto: 'Por favor, preencha o e-mail e a senha.' })
+      return
     }
 
-    return paginas.map((num, idx) => {
-      if (num === '...') {
-        return (
-          <Text key={`po-reticencias-${idx}`} style={styles.textoReticencias}>
-            ...
-          </Text>
-        );
+    if (!emailEstruturaValida) {
+      setMensagemFeedback({ tipo: 'erro', texto: 'Insira um formato de e-mail válido.' })
+      return
+    }
+
+    try {
+      setCarregando(true)
+
+      const resposta = await api.post('login.php', {
+        email: email,
+        senha: senha
+      })
+
+      if (resposta.data.sucesso) {
+        setMensagemFeedback({ tipo: 'sucesso', texto: 'Login efetuado com sucesso! Entrando...' })
+        setTimeout(() => {
+          router.replace('/home') 
+        }, 1200)
       }
-
-      const ehAtiva = num === paginaAtual;
-      return (
-        <TouchableOpacity
-          key={`btn-pag-${num}`}
-          style={[styles.btnNumero, ehAtiva && styles.btnNumeroAtivo]}
-          onPress={() => mudePagina(num as number)}
-        >
-          <Text style={[styles.textoNumero, ehAtiva && styles.textoNumeroAtivo]}>
-            {num}
-          </Text>
-        </TouchableOpacity>
-      );
-    });
-  };
-
-  if (carregando && listaDeBichos.length === 0) {
-    return (
-      <SafeAreaProvider>
-        <SafeAreaView style={styles.centerLoading}>
-          <StatusBar barStyle="light-content" backgroundColor="#111" />
-          <ActivityIndicator size="large" color="#a100cc" />
-        </SafeAreaView>
-      </SafeAreaProvider>
-    );
+    } catch (error: any) {
+      const mensagemErro = error.response?.data?.erro || 'E-mail ou senha incorretos.'
+      setMensagemFeedback({ tipo: 'erro', texto: mensagemErro })
+    } finally {
+      setCarregando(false)
+    }
   }
 
   return (
-    <SafeAreaProvider>
-      <SafeAreaView style={styles.containerTela}>
-        <StatusBar barStyle="light-content" backgroundColor="#111" />
+    <KeyboardAvoidingView 
+      style={{ flex: 1, backgroundColor: '#0F172A' }} 
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+    >
+      <ScrollView 
+        contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center', paddingVertical: 24 }} 
+        showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View style={a.login}>
+            <Text style={a.tituloTela}>Entrar na Wiki</Text>
 
-        <FlatList
-          ref={flatListRef}
-          data={listaDeBichos}
-          keyExtractor={(item) => item.id_insetos.toString()}
-          numColumns={2}
-          columnWrapperStyle={styles.linhaGrid}
-          contentContainerStyle={styles.corpoFlatList}
-          showsVerticalScrollIndicator={false}
-          ListHeaderComponent={
-            <View style={styles.cabecalho}>
-              <Text style={styles.tituloApp}>Wiki Invertebrados - app</Text> 
+            {mensagemFeedback && (
+              <View style={[
+                a.bannerFeedback, 
+                mensagemFeedback.tipo === 'sucesso' ? a.bannerSucesso : a.bannerErro
+              ]}>
+                <Ionicons 
+                  name={mensagemFeedback.tipo === 'sucesso' ? "checkmark-circle" : "alert-circle"} 
+                  size={20} 
+                  color="#FFFFFF" 
+                  style={{ marginRight: 8 }}
+                />
+                <Text style={a.textoFeedback}>{mensagemFeedback.texto}</Text>
+              </View>
+            )}
+            
+            <Text style={a.label}>E-mail</Text>
+            <View style={[
+              a.inputContainer, 
+              focoEmail && a.inputEmFoco,
+              (!emailEstruturaValida && email.length > 0 && !focoEmail) && a.inputErro
+            ]}>
               <TextInput 
-                style={styles.pesquisa} 
-                value={busca} 
-                onChangeText={setBusca}
-                placeholder="Pesquisar..."
-                placeholderTextColor="#888"
+                style={a.input} 
+                placeholder="exemplo@email.com" 
+                placeholderTextColor="#64748B" 
+                keyboardType="email-address"
+                autoCapitalize="none"
+                autoCorrect={false}
+                value={email} 
+                onChangeText={setEmail}
+                onFocus={() => setFocoEmail(true)}
+                onBlur={() => setFocoEmail(false)}
               />
             </View>
-          }
-          renderItem={({ item: bicho }) => (
-            <View style={styles.cardBesouro}>
-              <Image 
-                source={{ uri: bicho.foto_insetos || 'https://via.placeholder.com/100' }} 
-                style={styles.imagemBesouro} 
-                contentFit="cover"
+            
+            <Text style={a.label}>Senha</Text>
+            <View style={[a.inputContainer, focoSenha && a.inputEmFoco, a.inputSenhaRow]}>
+              <TextInput 
+                style={a.input} 
+                placeholder="Sua senha" 
+                placeholderTextColor="#64748B" 
+                secureTextEntry={ocultarSenha} 
+                autoCapitalize="none"
+                value={senha} 
+                onChangeText={setSenha}
+                onFocus={() => setFocoSenha(true)}
+                onBlur={() => setFocoSenha(false)}
               />
               
-              <View style={styles.containerInfos}>
-                <Text numberOfLines={1} style={styles.nome}>{bicho.nome_insetos || 'Sem nome'}</Text>
-                <Text numberOfLines={1} style={styles.nc}>{bicho.nc_insetos || 'Nome científico indisponível'}</Text>
-                <Text numberOfLines={2} style={styles.curiosidade}>{bicho.curisidade || ''}</Text>
-              </View>
+              <TouchableOpacity style={a.btnOlho} onPress={() => setOcultarSenha(!ocultarSenha)} activeOpacity={0.6}>
+                <Ionicons name={ocultarSenha ? "eye-off-outline" : "eye-outline"} size={22} color="#94A3B8" />
+              </TouchableOpacity>
             </View>
-          )}
-          ListEmptyComponent={
-            carregando ? (
-              <ActivityIndicator size="small" color="#a100cc" style={{ marginTop: 20 }} />
-            ) : (
-              <Text style={styles.textoVazio}>Nenhum invertebrado encontrado.</Text>
-            )
-          }
-          ListFooterComponent={
-            listaDeBichos.length > 0 ? (
-              <View style={styles.containerPaginacao}>
-                <TouchableOpacity 
-                  style={[styles.btnSeta, paginaAtual === 1 && styles.btnDesabilitado]}
-                  disabled={paginaAtual === 1}
-                  onPress={() => mudePagina(paginaAtual - 1)}
-                >
-                  <Text style={styles.textoSeta}>‹</Text>
-                </TouchableOpacity>
 
-                <View style={styles.numerosContainer}>
-                  {renderBotoesPagina()}
-                </View>
+            <TouchableOpacity 
+              style={[a.btn, carregando && a.btnDesativado]} 
+              activeOpacity={0.7} 
+              onPress={lidarComLogin} 
+              disabled={carregando}
+            >
+              {carregando ? (
+                <ActivityIndicator color="#FFFFFF" size="small" />
+              ) : (
+                <Text style={a.text_btn}>Entrar</Text>
+              )}
+            </TouchableOpacity>
 
-                <TouchableOpacity 
-                  style={[styles.btnSeta, paginaAtual === totalPaginas && styles.btnDesabilitado]}
-                  disabled={paginaAtual === totalPaginas}
-                  onPress={() => mudePagina(paginaAtual + 1)}
-                >
-                  <Text style={styles.textoSeta}>›</Text>
-                </TouchableOpacity>
-              </View>
-            ) : null
-          }
-        />
-      </SafeAreaView>
-    </SafeAreaProvider>
-  );
+            <TouchableOpacity style={a.containerCadastro} activeOpacity={0.6} onPress={() => router.push('/cadastro')}>
+              <Text style={a.textoCinza}>Não tem uma conta? <Text style={a.textoLinkVerde}>Cadastre-se</Text></Text>
+            </TouchableOpacity>
+        </View>
+      </ScrollView>
+    </KeyboardAvoidingView>
+  )
 }
 
-const styles = StyleSheet.create({
-  containerTela: { flex: 1, backgroundColor: '#111' },
-  centerLoading: { flex: 1, backgroundColor: '#111', justifyContent: 'center', alignItems: 'center' },
-  corpoFlatList: { paddingHorizontal: 12, paddingBottom: 40 },
-  linhaGrid: { justifyContent: 'space-between', marginBottom: 12 },
-  cabecalho: { width: '100%', alignItems: 'center', paddingTop: 8 },
-  tituloApp: { color: '#f1f1f1', fontSize: 22, fontWeight: 'bold', marginBottom: 16, textAlign: 'center' },
-  pesquisa: { width: '100%', height: 48, color: '#fff', backgroundColor: '#1c1c1c', borderRadius: 25, borderWidth: 2, borderColor: '#a100cc', paddingHorizontal: 20, marginBottom: 20 },
-  cardBesouro: { backgroundColor: '#1c1c1c', borderRadius: 16, padding: 12, width: '48.5%', alignItems: 'center', gap: 10 },
-  imagemBesouro: { height: 90, width: 90, borderRadius: 45 },
-  containerInfos: { width: '100%', gap: 4 },
-  nome: { color: '#f1f1f1', fontSize: 14, fontWeight: 'bold', textAlign: 'center' },
-  nc: { color: '#aaa', fontSize: 11, fontStyle: 'italic', textAlign: 'center' },
-  curiosidade: { color: '#ddd', fontSize: 11, textAlign: 'center' },
-  textoVazio: { color: '#aaa', marginTop: 20, textAlign: 'center' },
-  containerPaginacao: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginTop: 25, gap: 6, width: '100%' },
-  numerosContainer: { flexDirection: 'row', alignItems: 'center', gap: 4 },
-  btnNumero: { minWidth: 32, height: 32, borderRadius: 16, backgroundColor: '#1c1c1c', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 6 },
-  btnNumeroAtivo: { backgroundColor: '#a100cc' },
-  textoNumero: { color: '#aaa', fontSize: 13, fontWeight: '600' },
-  textoNumeroAtivo: { color: '#fff', fontWeight: 'bold' },
-  textoReticencias: { color: '#666', paddingHorizontal: 2, fontSize: 13 },
-  btnSeta: { width: 32, height: 32, borderRadius: 16, backgroundColor: '#1c1c1c', alignItems: 'center', justifyContent: 'center' },
-  btnDesabilitado: { opacity: 0.3 },
-  textoSeta: { color: '#a100cc', fontSize: 18, fontWeight: 'bold' },
-});
+const a = StyleSheet.create({
+  corpo: { flex: 1, backgroundColor: '#0F172A' },
+  scrollContainer: { flexGrow: 1, justifyContent: 'center', alignItems: 'center', paddingVertical: 24 },
+  login: { backgroundColor: '#1E293B', width: '88%', maxWidth: 400, padding: 24, borderRadius: 12, elevation: 4, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 4 },
+  tituloTela: { color: '#ffffff', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 24 },
+  bannerFeedback: { flexDirection: 'row', alignItems: 'center', padding: 12, borderRadius: 8, marginBottom: 16 },
+  bannerErro: { backgroundColor: 'rgba(239, 68, 68, 0.15)', borderWidth: 1, borderColor: '#EF4444' },
+  bannerSucesso: { backgroundColor: 'rgba(16, 185, 129, 0.15)', borderWidth: 1, borderColor: '#10B981' },
+  textoFeedback: { color: '#F8FAFC', fontSize: 13, flex: 1, fontWeight: '500' },
+  label: { color: '#94A3B8', fontSize: 12, marginBottom: 8, fontWeight: '700', textTransform: 'uppercase', letterSpacing: 0.8 },
+  inputContainer: { width: '100%', height: 50, backgroundColor: '#334155', borderRadius: 8, marginBottom: 16, borderWidth: 1, borderColor: 'transparent' },
+  inputSenhaRow: { flexDirection: 'row', alignItems: 'center' },
+  inputEmFoco: { borderColor: '#10B981' },
+  inputErro: { borderColor: '#EF4444' },
+  input: { flex: 1, color: '#F8FAFC', paddingHorizontal: 16, fontSize: 16 },
+  btnOlho: { paddingHorizontal: 14, justifyContent: 'center', alignItems: 'center', height: '100%' },
+  btn: { width: '100%', height: 52, backgroundColor: '#10B981', borderRadius: 8, justifyContent: 'center', alignItems: 'center', marginTop: 10 },
+  btnDesativado: { backgroundColor: '#334155', opacity: 0.5 }, 
+  text_btn: { color: '#ffffff', fontSize: 16, fontWeight: 'bold' },
+  containerCadastro: { marginTop: 24, alignItems: 'center' },
+  textoCinza: { color: '#94A3B8', fontSize: 14 },
+  textoLinkVerde: { color: '#10B981', fontWeight: '600' }
+})
