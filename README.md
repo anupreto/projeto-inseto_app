@@ -31,6 +31,18 @@ Antes de começar, certifique-se de ter instalado no seu sistema:
 ```bash
 git clone [https://github.com/anupreto/projeto-inseto_app.git](https://github.com/anupreto/projeto-inseto_app.git)
 cd projeto-inseto_app
+```
+
+### 2️⃣ Subir o Backend & Banco de Dados (Docker)
+```bash
 docker compose up -d --build
+```
+
+### 3️⃣ Instalar as Dependências do App (Expo)
+```bash
 npm install
+```
+### 4️⃣ Iniciar a Aplicação Mobile
+```bash
 npx expo start
+```
