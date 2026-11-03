@@ -1,25 +1,33 @@
 # 🪲 Wiki Invertebrados
 
-> **Uma enciclopédia digital e colaborativa para catalogar e explorar a fauna de invertebrados.**
-> *Desenvolvido com backend containerizado em PHP/MySQL e interface mobile em React Native com Expo.*
+> **Uma enciclopédia digital e colaborativa desenvolvida para catalogar, consultar e organizar espécies de invertebrados de forma rápida e intuitiva.**
 
 ---
 
-## 🚀 Setup Rápido do Ambiente
+## 🛠️ Tecnologias & Arquitetura
 
-Se acabaste de clonar o repositório, segue a receita abaixo para colocar a infraestrutura inteira a rodar em segundos!
+O projeto foi estruturado com uma arquitetura moderna, dividida entre um backend altamente performático containerizado e um frontend mobile leve:
 
-### 🛠️ Pré-requisitos
-Certifica-te de que tens instalado no teu sistema:
-- **Docker Engine** + **Docker Compose**
-- **Node.js** (LTS) & **npm**
+* **Backend & API:** PHP 8.x + Apache
+* **Banco de Dados:** MySQL 8.0
+* **Containerização:** Docker & Docker Compose
+* **Frontend Mobile:** React Native + Expo Framework
+* **Controle de Versão:** Git & GitHub
 
 ---
 
-## ⚡ Passo a Passo: Pôr a Máquina a Rugir
+## 🚀 Como Executar o Projeto
 
-### 1️⃣ Subir o Backend & Banco de Dados (Docker)
-Constrói e levanta os contentores PHP (Apache) e MySQL em segundo plano com um único comando:
+Siga os passos abaixo para levantar todo o ecossistema (backend + banco de dados + aplicação mobile) na sua máquina local.
 
+### 📋 Pré-requisitos
+Antes de começar, certifique-se de ter instalado no seu sistema:
+* [Docker Engine](https://www.docker.com/) & **Docker Compose**
+* [Node.js](https://nodejs.org/) (versão LTS) & **npm**
+
+---
+
+### 1️⃣ Clonar o Repositório
 ```bash
-docker compose up -d --build
+git clone [https://github.com/anupreto/projeto-inseto_app.git](https://github.com/anupreto/projeto-inseto_app.git)
+cd projeto-inseto_app
