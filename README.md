@@ -1,25 +1,25 @@
-# Guia de Instalação e Execução - Wiki Invertebrados
+# 🪲 Wiki Invertebrados
 
-## 1. Pré-requisitos
-- Node.js e npm instalados
-- Docker e Docker Compose instalados na máquina
+> **Uma enciclopédia digital e colaborativa para catalogar e explorar a fauna de invertebrados.**
+> *Desenvolvido com backend containerizado em PHP/MySQL e interface mobile em React Native com Expo.*
 
 ---
 
-## 2. Subir o Backend (Docker)
-Na pasta raiz do projeto, roda o comando para construir e iniciar os contentores em segundo plano:
-\`\`\`bash
+## 🚀 Setup Rápido do Ambiente
+
+Se acabaste de clonar o repositório, segue a receita abaixo para colocar a infraestrutura inteira a rodar em segundos!
+
+### 🛠️ Pré-requisitos
+Certifica-te de que tens instalado no teu sistema:
+- **Docker Engine** + **Docker Compose**
+- **Node.js** (LTS) & **npm**
+
+---
+
+## ⚡ Passo a Passo: Pôr a Máquina a Rugir
+
+### 1️⃣ Subir o Backend & Banco de Dados (Docker)
+Constrói e levanta os contentores PHP (Apache) e MySQL em segundo plano com um único comando:
+
+```bash
 docker compose up -d --build
-\`\`\`
-
-## 3. Instalar Dependências do Frontend (Expo)
-Ainda na pasta raiz (ou na pasta respetiva do mobile), instala as dependências do projeto:
-\`\`\`bash
-npm install
-\`\`\`
-
-## 4. Iniciar a Aplicação Mobile
-Para correr a aplicação com o Expo:
-\`\`\`bash
-npx expo start
-\`\`\`
