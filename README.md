@@ -1,13 +1,25 @@
-# Instalação do Expo
+# Guia de Instalação e Execução - Wiki Invertebrados
 
-## Pré-requisitos
-* **Node.js**
-* **npm** (já vem incluído junto com a instalação do Node.js)
+## 1. Pré-requisitos
+- Node.js e npm instalados
+- Docker e Docker Compose instalados na máquina
 
 ---
 
-## Como instalar o Expo
-Se você já clonou/baixou o projeto existente, basta abrir o terminal na pasta raiz e rodar o comando abaixo para instalar todas as dependências (incluindo o Expo):
+## 2. Subir o Backend (Docker)
+Na pasta raiz do projeto, roda o comando para construir e iniciar os contentores em segundo plano:
+\`\`\`bash
+docker compose up -d --build
+\`\`\`
 
-```bash
+## 3. Instalar Dependências do Frontend (Expo)
+Ainda na pasta raiz (ou na pasta respetiva do mobile), instala as dependências do projeto:
+\`\`\`bash
 npm install
+\`\`\`
+
+## 4. Iniciar a Aplicação Mobile
+Para correr a aplicação com o Expo:
+\`\`\`bash
+npx expo start
+\`\`\`
