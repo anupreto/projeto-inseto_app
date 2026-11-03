@@ -29,7 +29,7 @@ Antes de começar, certifique-se de ter instalado no seu sistema:
 
 ### 1️⃣ Clonar o Repositório
 ```bash
-git clone [https://github.com/anupreto/projeto-inseto_app.git](https://github.com/anupreto/projeto-inseto_app.git)
+git clone https://github.com/anupreto/projeto-inseto_app.git
 cd projeto-inseto_app
 ```
 
