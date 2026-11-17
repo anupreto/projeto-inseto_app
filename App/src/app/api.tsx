@@ -5,9 +5,14 @@ import Constants from 'expo-constants';
 const PASTA_HTDOCS = 'Projeto-app';
 const PORTA_APACHE = '';
 const IP_MANUAL = '';
+const URL_WEB_PRODUCAO = 'seu-backend.infinityfreeapp.com';
 
 const getDynamicIp = (): string => {
   if (IP_MANUAL) return IP_MANUAL;
+
+  if (Platform.OS === 'web') {
+    return URL_WEB_PRODUCAO;
+  }
 
   const expoConfig = Constants.expoConfig as any;
   const hostUri: string | undefined =
@@ -23,7 +28,11 @@ const getDynamicIp = (): string => {
 };
 
 const ip = getDynamicIp();
-export const baseURL = `http://${ip}${PORTA_APACHE}/${PASTA_HTDOCS}/connection/`;
+
+// Na web usamos HTTPS e a rota direta; no app mobile local usamos HTTP com a pasta do XAMPP/local
+export const baseURL = Platform.OS === 'web'
+  ? `https://${ip}/connection/`
+  : `http://${ip}${PORTA_APACHE}/${PASTA_HTDOCS}/connection/`;
 
 if (__DEV__) {
   console.log('[API] baseURL =', baseURL);
@@ -64,10 +73,10 @@ api.interceptors.response.use(
 
 export function mensagemDeErro(error: any, padrao: string): string {
   if (error?.naoEhJson) {
-    return 'O servidor respondeu algo que não é JSON (provável warning/erro PHP). Veja os logs do Apache.';
+    return 'O servidor respondeu algo que não é JSON (provável warning/erro PHP). Veja os logs do servidor.';
   }
   if (!error?.response) {
-    return `Sem conexão com o servidor (${baseURL}). Confira o Apache, IP e a rede Wi-Fi.`;
+    return `Sem conexão com o servidor (${baseURL}). Confira a internet ou o servidor PHP.`;
   }
   if (error.response.status === 404) {
     return `Endpoint não encontrado (404): ${error.config?.baseURL ?? ''}${error.config?.url ?? ''}.`;
