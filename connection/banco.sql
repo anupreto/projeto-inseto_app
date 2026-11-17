@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS insetos (
     nc_insetos VARCHAR(50) NOT NULL,
     ordem_insetos VARCHAR(65) NOT NULL DEFAULT 'Insecta',
     familia_insetos VARCHAR(65) NOT NULL,
-    dieta_insetos ENUM('Detritívoro', 'Coprófago', 'Herbívoro', 'Carnívoro', 'Onívoro', 'Nectarívoro') NOT NULL,
+    dieta_insetos VARCHAR(100) NOT NULL,
     destaque BOOLEAN NOT NULL DEFAULT 0,
     curiosidade TEXT,
     foto_insetos TEXT,
