@@ -1,44 +1,18 @@
 import axios from 'axios';
-import { Platform } from 'react-native';
-import Constants from 'expo-constants';
 
-const PASTA_HTDOCS = 'Projeto-app';
-const PORTA_APACHE = '';
-const IP_MANUAL = ''; // Se precisar forçar um IP fixo local, coloque aqui ex: '192.168.1.15'
-const URL_WEB_PRODUCAO = 'seu-backend.infinityfreeapp.com';
+// URL de produção padrão na nuvem ou injetada via variável de ambiente do Expo
+const PRODUCTION_URL = 'https://wikiinverto.up.railway.app/'; 
 
-const getDynamicIp = (): string => {
-  if (IP_MANUAL) return IP_MANUAL;
-
-  if (Platform.OS === 'web') {
-    // Na web, se estiver em desenvolvimento local, usa localhost ou o IP atual da página
-    if (typeof window !== 'undefined' && window.location.hostname !== 'localhost') {
-      return window.location.hostname;
-    }
-    return URL_WEB_PRODUCAO;
+const getBaseUrl = (): string => {
+  // @ts-ignore
+  const envUrl = typeof process !== 'undefined' ? process.env.EXPO_PUBLIC_API_URL : undefined;
+  if (envUrl) {
+    return envUrl.endsWith('/') ? envUrl : `${envUrl}/`;
   }
-
-  const expoConfig = Constants.expoConfig as any;
-  const hostUri: string | undefined =
-    expoConfig?.hostUri ||
-    (Constants as any).manifest2?.extra?.expoGo?.debuggerHost ||
-    (Constants as any).manifest?.debuggerHost;
-
-  if (hostUri) {
-    return hostUri.split(':')[0];
-  }
-
-  return Platform.OS === 'android' ? '10.0.2.2' : 'localhost';
+  return PRODUCTION_URL;
 };
 
-const ip = getDynamicIp();
-
-// Ajuste seguro: se for web em produção usa https, senão http limpo
-const protocolo = Platform.OS === 'web' && ip === URL_WEB_PRODUCAO ? 'https://' : 'http://';
-
-export const baseURL = Platform.OS === 'web'
-  ? `${protocolo}${ip}/connection/`
-  : `${protocolo}${ip}${PORTA_APACHE}/${PASTA_HTDOCS}/connection/`;
+export const baseURL = getBaseUrl();
 
 if (__DEV__) {
   console.log('[API] baseURL =', baseURL);
@@ -82,7 +56,7 @@ export function mensagemDeErro(error: any, padrao: string): string {
     return 'O servidor respondeu algo que não é JSON (provável warning/erro PHP). Veja os logs do servidor.';
   }
   if (!error?.response) {
-    return `Sem conexão com o servidor (${baseURL}). Confira a internet ou o servidor PHP.`;
+    return `Sem conexão com o servidor (${baseURL}). Confira sua internet ou o status da hospedagem.`;
   }
   if (error.response.status === 404) {
     return `Endpoint não encontrado (404): ${error.config?.baseURL ?? ''}${error.config?.url ?? ''}.`;
