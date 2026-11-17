@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', '0');
+ini_set('log_errors', '1');
+error_reporting(E_ALL);
+
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
@@ -63,10 +67,9 @@ try {
         "paginaAtual" => $pagina
     ], JSON_UNESCAPED_UNICODE);
 
-} catch (PDOException $e) {
+} catch (Throwable $e) {
     http_response_code(500);
     echo json_encode([
         "erro" => "Erro no MySQL: " . $e->getMessage()
     ], JSON_UNESCAPED_UNICODE);
 }
-?>

@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', '0');
+ini_set('log_errors', '1');
+error_reporting(E_ALL);
+
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
@@ -42,8 +46,7 @@ try {
         echo json_encode(["erro" => "E-mail ou senha incorretos."], JSON_UNESCAPED_UNICODE);
     }
 
-} catch (PDOException $e) {
+} catch (Throwable $e) {
     http_response_code(500);
     echo json_encode(["erro" => "Erro no servidor.", "detalhes" => $e->getMessage()], JSON_UNESCAPED_UNICODE);
 }
-?>

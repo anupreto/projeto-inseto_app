@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, TextInput, ActivityIndicator, FlatList, StatusBar, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TextInput, ActivityIndicator, FlatList, StatusBar, TouchableOpacity, Alert } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
-import api from './api';
+import api, { mensagemDeErro } from './api';
 
 interface Bicho {
   id_insetos: number;
@@ -12,7 +12,7 @@ interface Bicho {
   familia_insetos: string;
   dieta_insetos: string;
   destaque: number | boolean;
-  curisidade: string; 
+  curiosidade: string; 
   foto_insetos: string;
 }
 
@@ -56,6 +56,7 @@ export default function TelaHome() {
         }
       } catch (erro) {
         console.error('Erro ao buscar dados do banco:', erro);
+        Alert.alert('Erro ao buscar dados', mensagemDeErro(erro, 'Falha ao buscar dados.'));
         setListaDeBichos([]);
       } finally {
         setCarregando(false);
@@ -163,7 +164,7 @@ export default function TelaHome() {
               <View style={styles.containerInfos}>
                 <Text numberOfLines={1} style={styles.nome}>{bicho.nome_insetos || 'Sem nome'}</Text>
                 <Text numberOfLines={1} style={styles.nc}>{bicho.nc_insetos || 'Nome científico indisponível'}</Text>
-                <Text numberOfLines={2} style={styles.curiosidade}>{bicho.curisidade || ''}</Text>
+                <Text numberOfLines={2} style={styles.curiosidade}>{bicho.curiosidade || ''}</Text>
               </View>
             </View>
           )}

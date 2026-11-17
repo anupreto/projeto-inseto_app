@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', '0');
+ini_set('log_errors', '1');
+error_reporting(E_ALL);
+
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
@@ -22,7 +26,7 @@ try {
     ]);
 
     $dadosRecebidos = json_decode(file_get_contents('php://input'), true);
-    $email = trim($dadosRecebidos['email'] ?? '');
+    $email = trim(strtolower($dadosRecebidos['email'] ?? ''));
     $senha = trim($dadosRecebidos['senha'] ?? '');
 
     if (empty($email) || empty($senha)) {
@@ -31,11 +35,18 @@ try {
         exit();
     }
 
+    // Trava de segurança no backend para aceitar apenas @gmail.com
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL) || !preg_match('/@gmail\.com$/i', $email)) {
+        http_response_code(400);
+        echo json_encode(["erro" => "Apenas e-mails do Gmail (@gmail.com) são permitidos."], JSON_UNESCAPED_UNICODE);
+        exit();
+    }
+
     $stmtCheck = $pdo->prepare("SELECT id_usuario FROM usuarios WHERE email_usuario = :email LIMIT 1");
     $stmtCheck->execute([':email' => $email]);
     if ($stmtCheck->fetch()) {
         http_response_code(400);
-        echo json_encode(["erro" => "Este e-mail já está registado."], JSON_UNESCAPED_UNICODE);
+        echo json_encode(["erro" => "Este e-mail já está registrado."], JSON_UNESCAPED_UNICODE);
         exit();
     }
 
@@ -46,8 +57,7 @@ try {
 
     echo json_encode(["sucesso" => true], JSON_UNESCAPED_UNICODE);
 
-} catch (PDOException $e) {
+} catch (Throwable $e) {
     http_response_code(500);
     echo json_encode(["erro" => "Erro no servidor.", "detalhes" => $e->getMessage()], JSON_UNESCAPED_UNICODE);
 }
-?>

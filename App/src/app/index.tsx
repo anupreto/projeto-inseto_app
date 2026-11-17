@@ -12,7 +12,7 @@ import {
 import React, { useState } from 'react'
 import { router } from 'expo-router'
 import { Ionicons } from '@expo/vector-icons' 
-import api from './api'
+import api, { mensagemDeErro } from './api'
 
 export default function TelaLogin() {
   const [email, setEmail] = useState('')
@@ -25,7 +25,7 @@ export default function TelaLogin() {
   
   const [mensagemFeedback, setMensagemFeedback] = useState<{ tipo: 'erro' | 'sucesso', texto: string } | null>(null)
 
-  const emailEstruturaValida = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())
+  const emailGmailValido = /^[^\s@]+@gmail\.com$/.test(email.trim().toLowerCase())
 
   async function lidarComLogin() {
     setMensagemFeedback(null)
@@ -35,8 +35,8 @@ export default function TelaLogin() {
       return
     }
 
-    if (!emailEstruturaValida) {
-      setMensagemFeedback({ tipo: 'erro', texto: 'Insira um formato de e-mail válido.' })
+    if (!emailGmailValido) {
+      setMensagemFeedback({ tipo: 'erro', texto: 'Insira um e-mail válido do Gmail (@gmail.com).' })
       return
     }
 
@@ -44,7 +44,7 @@ export default function TelaLogin() {
       setCarregando(true)
 
       const resposta = await api.post('login.php', {
-        email: email,
+        email: email.trim().toLowerCase(),
         senha: senha
       })
 
@@ -53,9 +53,11 @@ export default function TelaLogin() {
         setTimeout(() => {
           router.replace('/home') 
         }, 1200)
+      } else {
+        setMensagemFeedback({ tipo: 'erro', texto: 'Resposta inesperada do servidor.' })
       }
     } catch (error: any) {
-      const mensagemErro = error.response?.data?.erro || 'E-mail ou senha incorretos.'
+      const mensagemErro = mensagemDeErro(error, 'E-mail ou senha incorretos.')
       setMensagemFeedback({ tipo: 'erro', texto: mensagemErro })
     } finally {
       setCarregando(false)
@@ -90,15 +92,11 @@ export default function TelaLogin() {
               </View>
             )}
             
-            <Text style={a.label}>E-mail</Text>
-            <View style={[
-              a.inputContainer, 
-              focoEmail && a.inputEmFoco,
-              (!emailEstruturaValida && email.length > 0 && !focoEmail) && a.inputErro
-            ]}>
+            <Text style={a.label}>E-mail (Gmail)</Text>
+            <View style={[a.inputContainer, focoEmail && a.inputEmFoco]}>
               <TextInput 
                 style={a.input} 
-                placeholder="exemplo@email.com" 
+                placeholder="usuario@gmail.com" 
                 placeholderTextColor="#64748B" 
                 keyboardType="email-address"
                 autoCapitalize="none"
@@ -152,8 +150,6 @@ export default function TelaLogin() {
 }
 
 const a = StyleSheet.create({
-  corpo: { flex: 1, backgroundColor: '#0F172A' },
-  scrollContainer: { flexGrow: 1, justifyContent: 'center', alignItems: 'center', paddingVertical: 24 },
   login: { backgroundColor: '#1E293B', width: '88%', maxWidth: 400, padding: 24, borderRadius: 12, elevation: 4, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 4 },
   tituloTela: { color: '#ffffff', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 24 },
   bannerFeedback: { flexDirection: 'row', alignItems: 'center', padding: 12, borderRadius: 8, marginBottom: 16 },
@@ -164,7 +160,6 @@ const a = StyleSheet.create({
   inputContainer: { width: '100%', height: 50, backgroundColor: '#334155', borderRadius: 8, marginBottom: 16, borderWidth: 1, borderColor: 'transparent' },
   inputSenhaRow: { flexDirection: 'row', alignItems: 'center' },
   inputEmFoco: { borderColor: '#10B981' },
-  inputErro: { borderColor: '#EF4444' },
   input: { flex: 1, color: '#F8FAFC', paddingHorizontal: 16, fontSize: 16 },
   btnOlho: { paddingHorizontal: 14, justifyContent: 'center', alignItems: 'center', height: '100%' },
   btn: { width: '100%', height: 52, backgroundColor: '#10B981', borderRadius: 8, justifyContent: 'center', alignItems: 'center', marginTop: 10 },

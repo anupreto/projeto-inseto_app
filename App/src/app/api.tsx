@@ -2,14 +2,19 @@ import axios from 'axios';
 import { Platform } from 'react-native';
 import Constants from 'expo-constants';
 
-const getDynamicIp = (): string => {
-  const expoConfig = Constants.expoConfig as any;
+const PASTA_HTDOCS = 'Projeto-app';
+const PORTA_APACHE = '';
+const IP_MANUAL = '';
 
-  const hostUri = 
-    expoConfig?.hostUri || 
-    Constants.manifest2?.extra?.expoGo?.debuggerHost || 
-    Constants.manifest?.debuggerHost;
-  
+const getDynamicIp = (): string => {
+  if (IP_MANUAL) return IP_MANUAL;
+
+  const expoConfig = Constants.expoConfig as any;
+  const hostUri: string | undefined =
+    expoConfig?.hostUri ||
+    (Constants as any).manifest2?.extra?.expoGo?.debuggerHost ||
+    (Constants as any).manifest?.debuggerHost;
+
   if (hostUri) {
     return hostUri.split(':')[0];
   }
@@ -18,30 +23,37 @@ const getDynamicIp = (): string => {
 };
 
 const ip = getDynamicIp();
-const baseURL = `http://${ip}/trabalho-app/connection/`;
+export const baseURL = `http://${ip}${PORTA_APACHE}/${PASTA_HTDOCS}/connection/`;
+
+if (__DEV__) {
+  console.log('[API] baseURL =', baseURL);
+}
 
 export const api = axios.create({
   baseURL,
-  timeout: 10000, 
+  timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
-    'Accept': 'application/json',
+    Accept: 'application/json',
   },
 });
 
-api.interceptors.request.use(
-  (config) => {
-    return config;
-  },
-  (error) => Promise.reject(error)
-);
-
 api.interceptors.response.use(
-  (response) => response,
+  (response) => {
+    if (typeof response.data === 'string') {
+      if (__DEV__) {
+        console.warn('[API] Resposta NÃO é JSON:', response.config.url, response.data.slice(0, 300));
+      }
+      return Promise.reject(
+        Object.assign(new Error('Resposta não é JSON'), { naoEhJson: true, config: response.config, response })
+      );
+    }
+    return response;
+  },
   (error) => {
     if (__DEV__) {
       console.warn('[API Error]', {
-        url: error.config?.url,
+        urlCompleta: `${error.config?.baseURL ?? ''}${error.config?.url ?? ''}`,
         status: error.response?.status,
         mensagem: error.response?.data?.erro || error.message,
       });
@@ -49,5 +61,18 @@ api.interceptors.response.use(
     return Promise.reject(error);
   }
 );
+
+export function mensagemDeErro(error: any, padrao: string): string {
+  if (error?.naoEhJson) {
+    return 'O servidor respondeu algo que não é JSON (provável warning/erro PHP). Veja os logs do Apache.';
+  }
+  if (!error?.response) {
+    return `Sem conexão com o servidor (${baseURL}). Confira o Apache, IP e a rede Wi-Fi.`;
+  }
+  if (error.response.status === 404) {
+    return `Endpoint não encontrado (404): ${error.config?.baseURL ?? ''}${error.config?.url ?? ''}.`;
+  }
+  return error.response.data?.erro || padrao;
+}
 
 export default api;

@@ -12,7 +12,7 @@ import {
 import React, { useState } from 'react'
 import { router } from 'expo-router'
 import { Ionicons } from '@expo/vector-icons'
-import api from './api' 
+import api, { mensagemDeErro } from './api'
 
 export default function TelaCadastro() {
   const [novoEmail, setNovoEmail] = useState('')
@@ -38,8 +38,10 @@ export default function TelaCadastro() {
       return
     }
 
-    if (!novoEmail.includes('@')) {
-      setMensagemFeedback({ tipo: 'erro', texto: 'Por favor, insira um endereço de e-mail válido.' })
+    // Trava estrita para aceitar apenas @gmail.com
+    const emailGmailValido = /^[^\s@]+@gmail\.com$/.test(novoEmail.trim().toLowerCase())
+    if (!emailGmailValido) {
+      setMensagemFeedback({ tipo: 'erro', texto: 'Por favor, insira um e-mail válido do Gmail (@gmail.com).' })
       return
     }
 
@@ -52,7 +54,7 @@ export default function TelaCadastro() {
       setCarregando(true)
 
       const resposta = await api.post('cadastro.php', {
-        email: novoEmail,
+        email: novoEmail.trim().toLowerCase(),
         senha: novaSenha
       })
 
@@ -61,9 +63,11 @@ export default function TelaCadastro() {
         setTimeout(() => {
           router.replace('/home')
         }, 1200)
+      } else {
+        setMensagemFeedback({ tipo: 'erro', texto: 'Resposta inesperada do servidor.' })
       }
     } catch (error: any) {
-      const mensagemErro = error.response?.data?.erro || 'Não foi possível realizar o cadastro. Tente novamente.'
+      const mensagemErro = mensagemDeErro(error, 'Não foi possível realizar o cadastro. Tente novamente.')
       setMensagemFeedback({ tipo: 'erro', texto: mensagemErro })
     } finally {
       setCarregando(false)
@@ -98,11 +102,11 @@ export default function TelaCadastro() {
               </View>
             )}
 
-            <Text style={a.label}>E-mail</Text>
+            <Text style={a.label}>E-mail (Gmail)</Text>
             <View style={[a.inputContainer, focoEmail && a.inputEmFoco]}>
               <TextInput 
                 style={a.input} 
-                placeholder="Digite seu melhor e-mail" 
+                placeholder="seuusuario@gmail.com" 
                 placeholderTextColor="#64748B" 
                 keyboardType="email-address"
                 autoCapitalize="none"
@@ -137,55 +141,28 @@ export default function TelaCadastro() {
               <Text style={a.tituloRequisitos}>A senha deve ser alfanumérica contendo:</Text>
               
               <View style={a.linhaRequisito}>
-                <Ionicons 
-                  name={tamanhoOk ? "checkmark-circle" : "ellipse-outline"} 
-                  size={16} 
-                  color={tamanhoOk ? "#10B981" : "#64748B"} 
-                />
-                <Text style={[a.textoRequisito, tamanhoOk ? a.requisitoOk : a.requisitoPendente]}>
-                  No mínimo 8 caracteres
-                </Text>
+                <Ionicons name={tamanhoOk ? "checkmark-circle" : "ellipse-outline"} size={16} color={tamanhoOk ? "#10B981" : "#64748B"} />
+                <Text style={[a.textoRequisito, tamanhoOk ? a.requisitoOk : a.requisitoPendente]}>No mínimo 8 caracteres</Text>
               </View>
               
               <View style={a.linhaRequisito}>
-                <Ionicons 
-                  name={temMaiuscula ? "checkmark-circle" : "ellipse-outline"} 
-                  size={16} 
-                  color={temMaiuscula ? "#10B981" : "#64748B"} 
-                />
-                <Text style={[a.textoRequisito, temMaiuscula ? a.requisitoOk : a.requisitoPendente]}>
-                  Pelo menos uma letra maiúscula (A-Z)
-                </Text>
+                <Ionicons name={temMaiuscula ? "checkmark-circle" : "ellipse-outline"} size={16} color={temMaiuscula ? "#10B981" : "#64748B"} />
+                <Text style={[a.textoRequisito, temMaiuscula ? a.requisitoOk : a.requisitoPendente]}>Pelo menos uma letra maiúscula (A-Z)</Text>
               </View>
               
               <View style={a.linhaRequisito}>
-                <Ionicons 
-                  name={temMinuscula ? "checkmark-circle" : "ellipse-outline"} 
-                  size={16} 
-                  color={temMinuscula ? "#10B981" : "#64748B"} 
-                />
-                <Text style={[a.textoRequisito, temMinuscula ? a.requisitoOk : a.requisitoPendente]}>
-                  Pelo menos uma letra minúscula (a-z)
-                </Text>
+                <Ionicons name={temMinuscula ? "checkmark-circle" : "ellipse-outline"} size={16} color={temMinuscula ? "#10B981" : "#64748B"} />
+                <Text style={[a.textoRequisito, temMinuscula ? a.requisitoOk : a.requisitoPendente]}>Pelo menos uma letra minúscula (a-z)</Text>
               </View>
               
               <View style={a.linhaRequisito}>
-                <Ionicons 
-                  name={temNumero ? "checkmark-circle" : "ellipse-outline"} 
-                  size={16} 
-                  color={temNumero ? "#10B981" : "#64748B"} 
-                />
-                <Text style={[a.textoRequisito, temNumero ? a.requisitoOk : a.requisitoPendente]}>
-                  Pelo menos um número (0-9)
-                </Text>
+                <Ionicons name={temNumero ? "checkmark-circle" : "ellipse-outline"} size={16} color={temNumero ? "#10B981" : "#64748B"} />
+                <Text style={[a.textoRequisito, temNumero ? a.requisitoOk : a.requisitoPendente]}>Pelo menos um número (0-9)</Text>
               </View>
             </View>
 
             <TouchableOpacity 
-              style={[
-                a.btn, 
-                carregando && a.btnDesativado
-              ]} 
+              style={[a.btn, carregando && a.btnDesativado]} 
               activeOpacity={0.7} 
               onPress={lidarComCadastro} 
               disabled={carregando}
@@ -203,8 +180,6 @@ export default function TelaCadastro() {
 }
 
 const a = StyleSheet.create({
-  corpo: { flex: 1, backgroundColor: '#0F172A' },
-  scrollContainer: { flexGrow: 1, justifyContent: 'center', alignItems: 'center', paddingVertical: 24 },
   login: { backgroundColor: '#1E293B', width: '88%', maxWidth: 400, padding: 24, borderRadius: 12, elevation: 4, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 4 },
   tituloTela: { color: '#ffffff', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 24 },
   bannerFeedback: { flexDirection: 'row', alignItems: 'center', padding: 12, borderRadius: 8, marginBottom: 16 },
