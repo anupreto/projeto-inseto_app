@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // URL de produção padrão na nuvem ou injetada via variável de ambiente do Expo
-const PRODUCTION_URL = 'http://wikiinverto.up.railway.app/'; 
+const PRODUCTION_URL = 'https://wikiinverto.up.railway.app/'; 
 
 const getBaseUrl = (): string => {
   // @ts-ignore
