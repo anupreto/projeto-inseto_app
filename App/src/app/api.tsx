@@ -1,29 +1,18 @@
 import axios from 'axios';
-import { Platform } from 'react-native';
-import Constants from 'expo-constants';
 
-const PASTA_HTDOCS = 'Projeto-app';
-const PORTA_APACHE = '';
-const IP_MANUAL = '';
+// URL de produção padrão na nuvem ou injetada via variável de ambiente do Expo (ex: EXPO_PUBLIC_API_URL)
+const PRODUCTION_URL = 'https://seu-projeto-na-nuvem.up.railway.app/'; 
 
-const getDynamicIp = (): string => {
-  if (IP_MANUAL) return IP_MANUAL;
-
-  const expoConfig = Constants.expoConfig as any;
-  const hostUri: string | undefined =
-    expoConfig?.hostUri ||
-    (Constants as any).manifest2?.extra?.expoGo?.debuggerHost ||
-    (Constants as any).manifest?.debuggerHost;
-
-  if (hostUri) {
-    return hostUri.split(':')[0];
+const getBaseUrl = (): string => {
+  // Permite ler do arquivo .env ou configuração do Expo EAS se definida
+  const envUrl = process.env.EXPO_PUBLIC_API_URL;
+  if (envUrl) {
+    return envUrl.endsWith('/') ? envUrl : `${envUrl}/`;
   }
-
-  return Platform.OS === 'android' ? '10.0.2.2' : 'localhost';
+  return PRODUCTION_URL;
 };
 
-const ip = getDynamicIp();
-export const baseURL = `http://${ip}${PORTA_APACHE}/${PASTA_HTDOCS}/connection/`;
+export const baseURL = getBaseUrl();
 
 if (__DEV__) {
   console.log('[API] baseURL =', baseURL);
@@ -64,10 +53,10 @@ api.interceptors.response.use(
 
 export function mensagemDeErro(error: any, padrao: string): string {
   if (error?.naoEhJson) {
-    return 'O servidor respondeu algo que não é JSON (provável warning/erro PHP). Veja os logs do Apache.';
+    return 'O servidor respondeu algo que não é JSON (provável warning/erro PHP). Veja os logs do servidor.';
   }
   if (!error?.response) {
-    return `Sem conexão com o servidor (${baseURL}). Confira o Apache, IP e a rede Wi-Fi.`;
+    return `Sem conexão com o servidor (${baseURL}). Confira sua internet ou o status da hospedagem.`;
   }
   if (error.response.status === 404) {
     return `Endpoint não encontrado (404): ${error.config?.baseURL ?? ''}${error.config?.url ?? ''}.`;

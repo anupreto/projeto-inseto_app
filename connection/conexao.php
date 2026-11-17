@@ -13,13 +13,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 }
 
-$host = "127.0.0.1";
-$user = "root";
-$password = "";
-$name_db = "insetos_db";
+// Configuração para nuvem via Variáveis de Ambiente (com fallback para local se precisar)
+$host = getenv('DB_HOST') ?: '127.0.0.1';
+$user = getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASS') ?: '';
+$name_db = getenv('DB_NAME') ?: 'insetos_db';
+$port = getenv('DB_PORT') ?: '3306';
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$name_db;charset=utf8mb4", $user, $password, [
+    $pdo = new PDO("mysql:host=$host;port=$port;dbname=$name_db;charset=utf8mb4", $user, $password, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         PDO::ATTR_EMULATE_PREPARES => false,
@@ -50,12 +52,14 @@ try {
     $inicioInt = (int)$inicio;
     $limiteInt = (int)$limite;
     
-    $sqlDados = "SELECT * FROM insetos $whereClause LIMIT $inicioInt, $limiteInt";
+    $sqlDados = "SELECT * FROM insetos $whereClause LIMIT :inicio, :limite";
     $stmtDados = $pdo->prepare($sqlDados);
     
     foreach ($params as $key => $val) {
         $stmtDados->bindValue($key, $val, PDO::PARAM_STR);
     }
+    $stmtDados->bindValue(':inicio', $inicioInt, PDO::PARAM_INT);
+    $stmtDados->bindValue(':limite', $limiteInt, PDO::PARAM_INT);
     
     $stmtDados->execute();
     $resultados = $stmtDados->fetchAll() ?: [];
