@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 }
 
-$host = "127.0.0.1";
+$host = "db";
 $user = "root";
 $password = "";
 $name_db = "insetos_db";

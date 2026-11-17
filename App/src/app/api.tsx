@@ -4,13 +4,17 @@ import Constants from 'expo-constants';
 
 const PASTA_HTDOCS = 'Projeto-app';
 const PORTA_APACHE = '';
-const IP_MANUAL = '';
+const IP_MANUAL = ''; // Se precisar forçar um IP fixo local, coloque aqui ex: '192.168.1.15'
 const URL_WEB_PRODUCAO = 'seu-backend.infinityfreeapp.com';
 
 const getDynamicIp = (): string => {
   if (IP_MANUAL) return IP_MANUAL;
 
   if (Platform.OS === 'web') {
+    // Na web, se estiver em desenvolvimento local, usa localhost ou o IP atual da página
+    if (typeof window !== 'undefined' && window.location.hostname !== 'localhost') {
+      return window.location.hostname;
+    }
     return URL_WEB_PRODUCAO;
   }
 
@@ -29,10 +33,12 @@ const getDynamicIp = (): string => {
 
 const ip = getDynamicIp();
 
-// Na web usamos HTTPS e a rota direta; no app mobile local usamos HTTP com a pasta do XAMPP/local
+// Ajuste seguro: se for web em produção usa https, senão http limpo
+const protocolo = Platform.OS === 'web' && ip === URL_WEB_PRODUCAO ? 'https://' : 'http://';
+
 export const baseURL = Platform.OS === 'web'
-  ? `https://${ip}/connection/`
-  : `http://${ip}${PORTA_APACHE}/${PASTA_HTDOCS}/connection/`;
+  ? `${protocolo}${ip}/connection/`
+  : `${protocolo}${ip}${PORTA_APACHE}/${PASTA_HTDOCS}/connection/`;
 
 if (__DEV__) {
   console.log('[API] baseURL =', baseURL);
