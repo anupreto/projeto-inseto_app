@@ -681,7 +681,7 @@ INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, di
 
 UPDATE insetos 
 SET foto_insetos = CASE id_insetos
-       WHEN 1 THEN 'https://upload.wikimedia.org/wikipedia/commons/d/da/Oryctes_nasicornis.jpg'
+        WHEN 1 THEN 'https://upload.wikimedia.org/wikipedia/commons/d/da/Oryctes_nasicornis.jpg'
         WHEN 2 THEN 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Dynastes_hercules.jpg'
         WHEN 3 THEN 'https://upload.wikimedia.org/wikipedia/commons/f/fe/Scarabaeus_sacer.jpg'
         WHEN 4 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/60/Goliathus_goliatus.jpg'
@@ -1282,6 +1282,5 @@ SET foto_insetos = CASE id_insetos
         WHEN 599 THEN 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Nerita_peloronta.jpg'
         WHEN 600 THEN 'https://upload.wikimedia.org/wikipedia/commons/e/e8/Busycon_carica.jpg'
     ELSE foto_insetos
-        ELSE foto_insetos
-    END
+END
 WHERE id_insetos BETWEEN 1 AND 600;
