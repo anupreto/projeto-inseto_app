@@ -42,6 +42,37 @@ const DIETAS_RAPIDAS = [
   'Filtrador',
 ];
 
+const BICHOS_FALLBACK_LOCAL: Bicho[] = [
+  {
+    id_insetos: 1,
+    nome_insetos: 'Borboleta-monarca',
+    nc_insetos: 'Danaus plexippus',
+    ordem_insetos: 'Insetos',
+    familia_insetos: 'Nymphalidae',
+    dieta_insetos: 'Herbívoro',
+    destaque: 1,
+    curiosidade: 'Conhecida por suas longas migrações sazonais e cores de aviso.',
+    foto_insetos: 'https://upload.wikimedia.org/wikipedia/commons/6/63/Monarch_In_May.jpg',
+  },
+  {
+    id_insetos: 2,
+    nome_insetos: 'Aranha-lobo',
+    nc_insetos: 'Lycosa erythrognatha',
+    ordem_insetos: 'Aracnídeos',
+    familia_insetos: 'Lycosidae',
+    dieta_insetos: 'Carnívoro',
+    destaque: 1,
+    curiosidade: 'Caça ativamente no solo e carrega os filhotes no dorso.',
+    foto_insetos: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Lycosa_tarantula.jpg',
+  },
+];
+
+function capitalizarPrimeiraLetra(texto: string): string {
+  const limpo = texto.trim();
+  if (!limpo) return '';
+  return limpo.charAt(0).toLocaleUpperCase('pt-BR') + limpo.slice(1);
+}
+
 function obterSaudacaoPorHorario(): string {
   const hora = new Date().getHours();
   if (hora >= 5 && hora < 12) return 'Bom dia';
@@ -52,14 +83,14 @@ function obterSaudacaoPorHorario(): string {
 function formatarNomeUsuario(nomeParam?: string | string[], emailParam?: string | string[]): string {
   const rawNome = Array.isArray(nomeParam) ? nomeParam[0] : nomeParam;
   if (rawNome && rawNome.trim()) {
-    return rawNome.trim();
+    return capitalizarPrimeiraLetra(rawNome);
   }
 
   const rawEmail = Array.isArray(emailParam) ? emailParam[0] : emailParam;
   if (rawEmail && rawEmail.includes('@')) {
     const prefixo = rawEmail.split('@')[0].replace(/[._-]+/g, ' ').trim();
     if (prefixo) {
-      return prefixo.replace(/\b\w/g, (letra) => letra.toUpperCase());
+      return capitalizarPrimeiraLetra(prefixo);
     }
   }
 
@@ -74,7 +105,7 @@ function normalizarOrdem(valor?: string): string {
   const encontrada = ORDENS_PADRAO.find((item) => item.toLowerCase() === chave);
   if (encontrada) return encontrada;
 
-  return limpo.charAt(0).toUpperCase() + limpo.slice(1);
+  return limpo.charAt(0).toLocaleUpperCase('pt-BR') + limpo.slice(1);
 }
 
 function obterIndiceDiario(total: number): number {
@@ -132,10 +163,15 @@ export default function TelaHome() {
           ? resposta.data
           : [];
 
-        setListaDeBichos(dados);
+        if (dados.length > 0) {
+          setListaDeBichos(dados);
+        } else {
+          setListaDeBichos(BICHOS_FALLBACK_LOCAL);
+        }
       } catch (erro: any) {
         if (!ativo) return;
-        setErroCarga(mensagemDeErro(erro, 'Não foi possível carregar o resumo.'));
+        setListaDeBichos(BICHOS_FALLBACK_LOCAL);
+        setErroCarga(mensagemDeErro(erro, 'Modo offline local ativo.'));
       } finally {
         if (ativo) setCarregando(false);
       }
