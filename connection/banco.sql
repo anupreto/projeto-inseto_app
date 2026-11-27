@@ -149,155 +149,6 @@ INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, di
 ('Mosca-das-frutas', 'Drosophila melanogaster', 'insetos', 'Drosophilidae', 'Frugívoro', 'Organismo modelo fundamental na genética, com vários Prêmios Nobel associados a seu estudo.'),
 ('Mosca tsé-tsé', 'Glossina morsitans', 'insetos', 'Glossinidae', 'Hematófago', 'Transmite o protozoário causador da doença do sono na África.'),
 ('Mosca-da-bicheira', 'Cochliomyia hominivorax', 'insetos', 'Calliphoridae', 'Parasita', 'Suas larvas se alimentam de tecidos vivos de animais de sangue quente.'),
-('Mosca sirfídea', 'Episyrphus balteatus', 'insetos', 'Syrphidae', 'Nectarívoro', 'Imita o padrão listrado das vespas para se proteger, mesmo sem possuir ferrão.'),
-('Mutuca', 'Tabanus bovinus', 'insetos', 'Tabanidae', 'Hematófago', 'As fêmeas cortam a pele com peças bucais em forma de lâmina para sugar o sangue.'),
-('Pernilongo comum', 'Culex pipiens', 'insetos', 'Culicidae', 'Hematófago', 'Põe os ovos agrupados em jangadas flutuantes sobre a água parada.'),
-('Barbeiro', 'Triatoma infestans', 'insetos', 'Reduviidae', 'Hematófago', 'Principal transmissor do Trypanosoma cruzi, causador da doença de Chagas.'),
-('Cochonilha-do-carmim', 'Dactylopius coccus', 'insetos', 'Dactylopiidae', 'Herbívoro', 'Fornece o corante vermelho carmim, usado há séculos em tecidos, alimentos e cosméticos.'),
-('Pulgão verde do pessegueiro', 'Myzus persicae', 'insetos', 'Aphididae', 'Herbívoro', 'Reproduz-se rapidamente por partenogênese e transmite diversos vírus de plantas.'),
-('Cigarrinha-das-pastagens', 'Philaenus spumarius', 'insetos', 'Aphrophoridae', 'Herbívoro', 'Suas ninfas se protegem dentro de uma espuma que produzem sobre as plantas.'),
-('Percevejo-assassino', 'Zelus renardii', 'insetos', 'Reduviidae', 'Carnívoro', 'Usa substâncias pegajosas nas patas para segurar presas e injeta enzimas digestivas.'),
-('Besouro-veado', 'Lucanus cervus', 'insetos', 'Lucanidae', 'Detritívoro', 'Os machos possuem mandíbulas enormes em forma de galhada, usadas em lutas.'),
-('Tenébrio', 'Tenebrio molitor', 'insetos', 'Tenebrionidae', 'Onívoro', 'Suas larvas, chamadas de bichos-da-farinha, são estudadas como fonte alternativa de proteína.'),
-('Gorgulho do milho', 'Sitophilus zeamais', 'insetos', 'Curculionidae', 'Herbívoro', 'Perfura grãos armazenados para depositar ovos, causando grandes perdas pós-colheita.'),
-('Cantárida', 'Lytta vesicatoria', 'insetos', 'Meloidae', 'Herbívoro', 'Produz cantaridina, substância tóxica que provoca bolhas na pele.'),
-('Pirilampo tuco-tuco', 'Pyrophorus noctilucus', 'insetos', 'Elateridae', 'Herbívoro', 'Emite uma intensa luz verde pelo tórax, uma das mais brilhantes entre os insetos.'),
-('Besouro Titã', 'Titanus giganteus', 'insetos', 'Cerambycidae', 'Xilófago', 'Um dos maiores besouros do mundo, com mandíbulas capazes de cortar um lápis.'),
-('Besouro arlequim', 'Acrocinus longimanus', 'insetos', 'Cerambycidae', 'Xilófago', 'Possui patas dianteiras muito longas e um padrão colorido que lembra um arlequim.'),
-('Besouro mergulhador', 'Dytiscus marginalis', 'insetos', 'Dytiscidae', 'Carnívoro', 'Carrega uma bolha de ar sob os élitros para respirar enquanto caça debaixo d''água.'),
-('Besouro japonês', 'Popillia japonica', 'insetos', 'Scarabaeidae', 'Herbívoro', 'Praga agrícola que devora folhas e flores de centenas de espécies de plantas.'),
-('Besouro-enterrador', 'Nicrophorus vespilloides', 'insetos', 'Silphidae', 'Necrófago', 'Enterra pequenos cadáveres e cuida das larvas, algo raro entre os besouros.'),
-('Traça-dos-livros', 'Lepisma saccharina', 'insetos', 'Lepismatidae', 'Detritívoro', 'Inseto primitivo e sem asas que se alimenta de papel, cola e outros materiais com amido.'),
-('Tripes-das-flores', 'Frankliniella occidentalis', 'insetos', 'Thripidae', 'Herbívoro', 'Minúsculo inseto de asas franjadas que causa danos a flores e hortaliças.'),
-('Borboleta-coruja', 'Caligo eurilochus', 'insetos', 'Nymphalidae', 'Frugívoro', 'Tem manchas nas asas que lembram olhos de coruja para assustar predadores.'),
-('Mosca-soldado-negra', 'Hermetia illucens', 'insetos', 'Stratiomyidae', 'Detritívoro', 'Suas larvas decompõem resíduos orgânicos rapidamente e são usadas como ração animal.'),
-('Mosca-do-estábulo', 'Stomoxys calcitrans', 'insetos', 'Muscidae', 'Hematófago', 'Parece uma mosca doméstica, mas pica de verdade o gado e outros animais.'),
-('Mosca-da-carne', 'Sarcophaga carnaria', 'insetos', 'Sarcophagidae', 'Detritívoro', 'A fêmea deposita larvas vivas, em vez de ovos, sobre a matéria em decomposição.'),
-('Mosquito-anófele', 'Anopheles gambiae', 'insetos', 'Culicidae', 'Hematófago', 'É o principal transmissor da malária na África.'),
-('Maruim', 'Culicoides impunctatus', 'insetos', 'Ceratopogonidae', 'Hematófago', 'Minúsculo, atravessa telas comuns e provoca picadas muito irritantes.'),
-('Borrachudo', 'Simulium damnosum', 'insetos', 'Simuliidae', 'Hematófago', 'Suas larvas vivem em rios de correnteza e dependem de água limpa e oxigenada.'),
-('Mosquito-tigre-asiático', 'Aedes albopictus', 'insetos', 'Culicidae', 'Hematófago', 'Reconhecido pelas listras brancas no corpo e nas patas, espalhou-se por vários continentes.'),
-('Mosca-ladrão', 'Asilus crabroniformis', 'insetos', 'Asilidae', 'Carnívoro', 'Captura outros insetos em pleno voo e os paralisa com saliva tóxica.'),
-('Mosca-abelha', 'Bombylius major', 'insetos', 'Bombyliidae', 'Nectarívoro', 'Paira no ar como um beija-flor enquanto alcança o néctar com sua longa probóscide.'),
-('Pernilongo-gigante', 'Tipula paludosa', 'insetos', 'Tipulidae', 'Herbívoro', 'Apesar de parecer um mosquito enorme, é inofensivo e não pica.'),
-('Borboleta-zebra', 'Heliconius charithonia', 'insetos', 'Nymphalidae', 'Nectarívoro', 'Também se alimenta de pólen, o que lhe permite viver muito mais que a maioria das borboletas.'),
-('Borboleta-almirante', 'Vanessa atalanta', 'insetos', 'Nymphalidae', 'Frugívoro', 'Gosta de frutas fermentadas e é capaz de migrar por longas distâncias.'),
-('Borboleta-pavão', 'Aglais io', 'insetos', 'Nymphalidae', 'Nectarívoro', 'Suas asas têm grandes manchas semelhantes a olhos que assustam predadores.'),
-('Borboleta-rainha-alexandra', 'Ornithoptera alexandrae', 'insetos', 'Papilionidae', 'Nectarívoro', 'É a maior borboleta do mundo e vive somente em florestas de Papua-Nova Guiné.'),
-('Borboleta-limão', 'Gonepteryx rhamni', 'insetos', 'Pieridae', 'Nectarívoro', 'Hiberna na fase adulta e, de asas fechadas, lembra uma folha amarelada.'),
-('Borboleta-da-couve', 'Pieris brassicae', 'insetos', 'Pieridae', 'Herbívoro', 'Suas lagartas são pragas de plantações de couve e de outras crucíferas.'),
-('Borboleta-folha-seca', 'Kallima inachus', 'insetos', 'Nymphalidae', 'Frugívoro', 'Com as asas fechadas, imita com perfeição uma folha seca, inclusive as nervuras.'),
-('Borboleta-de-vidro', 'Greta oto', 'insetos', 'Nymphalidae', 'Nectarívoro', 'Suas asas são transparentes porque quase não possuem escamas coloridas.'),
-('Borboleta-oitenta-e-oito', 'Diaethria clymena', 'insetos', 'Nymphalidae', 'Frugívoro', 'Tem na face inferior das asas um desenho que lembra o número oitenta e oito.'),
-('Mariposa-atlas', 'Attacus atlas', 'insetos', 'Saturniidae', 'Herbívoro', 'Está entre as maiores mariposas do mundo, e as pontas de suas asas lembram cabeças de serpente.'),
-('Mariposa-beija-flor', 'Macroglossum stellatarum', 'insetos', 'Sphingidae', 'Nectarívoro', 'Paira diante das flores batendo as asas rapidamente, como um beija-flor.'),
-('Mariposa-do-tabaco', 'Manduca sexta', 'insetos', 'Sphingidae', 'Herbívoro', 'É muito usada em pesquisas sobre voo e neurobiologia de insetos.'),
-('Mariposa-cigana', 'Lymantria dispar', 'insetos', 'Erebidae', 'Herbívoro', 'Suas lagartas podem desfolhar florestas inteiras durante surtos populacionais.'),
-('Mariposa-cometa', 'Argema mittrei', 'insetos', 'Saturniidae', 'Herbívoro', 'Possui caudas longuíssimas nas asas posteriores e vive em Madagascar.'),
-('Traça-da-roupa', 'Tineola bisselliella', 'insetos', 'Tineidae', 'Detritívoro', 'Suas larvas digerem queratina, por isso estragam lã, penas e peles.'),
-('Traça-das-crucíferas', 'Plutella xylostella', 'insetos', 'Plutellidae', 'Herbívoro', 'Desenvolveu resistência a muitos inseticidas e é praga mundial de hortaliças.'),
-('Lagarta-do-cartucho', 'Spodoptera frugiperda', 'insetos', 'Noctuidae', 'Herbívoro', 'Ataca milho e outras culturas e se espalhou das Américas para outros continentes.'),
-('Traça-da-cera', 'Galleria mellonella', 'insetos', 'Pyralidae', 'Detritívoro', 'Suas larvas vivem em colmeias e conseguem digerir a cera das abelhas.'),
-('Bicho-da-maçã', 'Cydia pomonella', 'insetos', 'Tortricidae', 'Herbívoro', 'A larva penetra no fruto e se alimenta dele de dentro para fora.'),
-('Arapuá', 'Trigona spinipes', 'insetos', 'Apidae', 'Nectarívoro', 'Abelha sem ferrão que constrói grandes ninhos expostos nos galhos das árvores.'),
-('Mamangaba-das-orquídeas', 'Eulaema nigrita', 'insetos', 'Apidae', 'Nectarívoro', 'Os machos coletam fragrâncias de orquídeas e as usam para atrair fêmeas.'),
-('Abelha-cortadeira-de-folhas', 'Megachile rotundata', 'insetos', 'Megachilidae', 'Nectarívoro', 'Corta pedaços circulares de folhas para forrar as células do ninho e é usada na polinização da alfafa.'),
-('Abelha-pedreira', 'Osmia bicornis', 'insetos', 'Megachilidae', 'Nectarívoro', 'Faz ninho em cavidades e separa cada câmara com barro.'),
-('Abelha-do-suor-verde', 'Augochlora pura', 'insetos', 'Halictidae', 'Nectarívoro', 'Tem brilho verde metálico e é atraída pelo suor humano.'),
-('Abelha-cuco', 'Nomada flava', 'insetos', 'Apidae', 'Nectarívoro', 'Põe ovos em ninhos de outras abelhas, e sua larva consome o alimento do hospedeiro.'),
-('Formiga-carpinteira', 'Camponotus pennsylvanicus', 'insetos', 'Formicidae', 'Onívoro', 'Escava galerias na madeira para fazer o ninho, mas não se alimenta dela.'),
-('Formiga-tecelã', 'Oecophylla smaragdina', 'insetos', 'Formicidae', 'Onívoro', 'Costura folhas umas às outras usando a seda produzida pelas próprias larvas.'),
-('Formiga-louca', 'Anoplolepis gracilipes', 'insetos', 'Formicidae', 'Onívoro', 'Espécie invasora que forma supercolônias e ameaça a fauna nativa de ilhas.'),
-('Formiga-de-mel', 'Myrmecocystus mexicanus', 'insetos', 'Formicidae', 'Onívoro', 'Algumas operárias, chamadas repletas, armazenam néctar em um abdome muito inchado.'),
-('Formiga-faraó', 'Monomorium pharaonis', 'insetos', 'Formicidae', 'Onívoro', 'Minúscula, forma colônias com várias rainhas e é comum em prédios e hospitais.'),
-('Saúva', 'Atta sexdens', 'insetos', 'Formicidae', 'Herbívoro', 'Pode desfolhar plantações rapidamente, e seus formigueiros têm câmaras subterrâneas enormes.'),
-('Formiga-buldogue', 'Myrmecia gulosa', 'insetos', 'Formicidae', 'Carnívoro', 'Possui visão apurada, mandíbulas longas e um ferrão muito potente.'),
-('Formiga-pastora', 'Formica rufa', 'insetos', 'Formicidae', 'Onívoro', 'Constrói grandes montes de gravetos e protege pulgões em troca da secreção açucarada deles.'),
-('Formiga-drácula', 'Mystrium camillae', 'insetos', 'Formicidae', 'Carnívoro', 'Fecha as mandíbulas com um estalo extremamente veloz, entre os movimentos mais rápidos do reino animal.'),
-('Marimbondo-caboclo', 'Polybia paulista', 'insetos', 'Vespidae', 'Carnívoro', 'Constrói ninhos de papel, e seu veneno é estudado por propriedades contra células tumorais.'),
-('Vespão-europeu', 'Vespa crabro', 'insetos', 'Vespidae', 'Carnívoro', 'É a maior vespa social da Europa e, apesar da fama, costuma ser relativamente dócil.'),
-('Vespa-do-figo', 'Blastophaga psenes', 'insetos', 'Agaonidae', 'Herbívoro', 'Entra nos figos para pôr ovos e é essencial para a polinização das figueiras.'),
-('Vespa-parasita-da-couve', 'Cotesia glomerata', 'insetos', 'Braconidae', 'Parasita', 'Põe ovos dentro de lagartas e é usada no controle biológico de pragas.'),
-('Vespa-da-madeira', 'Sirex noctilio', 'insetos', 'Siricidae', 'Xilófago', 'Suas larvas perfuram troncos de pinheiros com ajuda de um fungo que auxilia na digestão da madeira.'),
-('Vespa-ichneumon-gigante', 'Megarhyssa atrata', 'insetos', 'Ichneumonidae', 'Parasita', 'Perfura troncos com um ovipositor longuíssimo para alcançar larvas escondidas na madeira.'),
-('Libélula-vagabunda', 'Pantala flavescens', 'insetos', 'Libellulidae', 'Carnívoro', 'Realiza migrações sobre os oceanos, entre as mais longas já registradas para insetos.'),
-('Libélula-azul-caçadora', 'Aeshna cyanea', 'insetos', 'Aeshnidae', 'Carnívoro', 'O macho patrulha seu território e é frequente em jardins com lagos.'),
-('Donzelinha-azul', 'Ischnura elegans', 'insetos', 'Coenagrionidae', 'Carnívoro', 'Pousa com as asas dobradas sobre o corpo, ao contrário das libélulas verdadeiras.'),
-('Libélula-gigante-da-floresta', 'Megaloprepus caerulatus', 'insetos', 'Pseudostigmatidae', 'Carnívoro', 'Tem a maior envergadura entre as libélulas-agulha e captura aranhas direto de suas teias.'),
-('Plecóptero', 'Perla bipunctata', 'insetos', 'Perlidae', 'Carnívoro', 'Suas ninfas vivem em rios limpos e servem como indicadores da qualidade da água.'),
-('Tricóptero', 'Limnephilus rhombicus', 'insetos', 'Limnephilidae', 'Onívoro', 'A larva constrói um estojo protetor com gravetos e grãos de areia.'),
-('Mosca-escorpião', 'Panorpa communis', 'insetos', 'Panorpidae', 'Onívoro', 'O macho tem o abdome curvado como a cauda de um escorpião, mas é totalmente inofensivo.'),
-('Pulga-do-rato', 'Xenopsylla cheopis', 'insetos', 'Pulicidae', 'Hematófago', 'Foi a principal transmissora da bactéria da peste bubônica em epidemias históricas.'),
-('Chato', 'Pthirus pubis', 'insetos', 'Pthiridae', 'Hematófago', 'Prefere pelos mais grossos e se fixa a eles com garras largas.'),
-('Louva-a-deus-empusa', 'Empusa pennata', 'insetos', 'Empusidae', 'Carnívoro', 'Tem uma crista pontuda na cabeça e um corpo fino que imita galhos secos.'),
-('Louva-a-deus-flor', 'Creobroter gemmatus', 'insetos', 'Hymenopodidae', 'Carnívoro', 'Assemelha-se a uma flor e espera suas presas imóvel em meio à vegetação.'),
-('Louva-a-deus-folha-morta', 'Deroplatys dessicata', 'insetos', 'Mantidae', 'Carnívoro', 'Imita uma folha seca e, quando ameaçado, abre as asas para parecer maior.'),
-('Bicho-pau-gigante', 'Phobaeticus chani', 'insetos', 'Phasmatidae', 'Herbívoro', 'Está entre os insetos mais compridos já registrados no mundo.'),
-('Inseto-folha-gigante', 'Phyllium giganteum', 'insetos', 'Phylliidae', 'Herbívoro', 'As fêmeas são largas e achatadas, imitando folhas até na cor e nas nervuras.'),
-('Grilo-de-campo', 'Gryllus campestris', 'insetos', 'Gryllidae', 'Onívoro', 'O macho defende uma toca e canta na entrada dela para atrair as fêmeas.'),
-('Gafanhoto-lubber', 'Romalea microptera', 'insetos', 'Romaleidae', 'Herbívoro', 'Exibe cores vivas de aviso e libera uma secreção espumosa e tóxica ao ser atacado.'),
-('Gafanhoto-gigante-sul-americano', 'Tropidacris collaris', 'insetos', 'Romaleidae', 'Herbívoro', 'Está entre os maiores gafanhotos das Américas e possui asas coloridas.'),
-('Esperança-katydid', 'Pterophylla camellifolia', 'insetos', 'Tettigoniidae', 'Herbívoro', 'O canto noturno dos machos é característico das florestas no verão.'),
-('Cupim-arborícola', 'Nasutitermes corniger', 'insetos', 'Termitidae', 'Xilófago', 'Os soldados disparam uma secreção pegajosa pela cabeça em forma de bico.'),
-('Cupim-cultivador', 'Macrotermes bellicosus', 'insetos', 'Termitidae', 'Fungívoro', 'Cultiva fungos em jardins dentro do cupinzeiro, que também ajuda a regular a temperatura.'),
-('Cupim-de-montículo', 'Cornitermes cumulans', 'insetos', 'Termitidae', 'Detritívoro', 'Constrói grandes montículos de terra, muito comuns em pastagens brasileiras.'),
-('Barata-australiana', 'Periplaneta australasiae', 'insetos', 'Blattidae', 'Onívoro', 'Tem faixas amareladas nas asas e prefere ambientes quentes e úmidos.'),
-('Barata-d''água-gigante', 'Lethocerus indicus', 'insetos', 'Belostomatidae', 'Carnívoro', 'Captura peixes e anfíbios e é consumida como iguaria em países do sudeste asiático.'),
-('Percevejo-fedorento-marmorizado', 'Halyomorpha halys', 'insetos', 'Pentatomidae', 'Herbívoro', 'Entra em casas para hibernar e libera um odor desagradável quando incomodado.'),
-('Notonecta', 'Notonecta glauca', 'insetos', 'Notonectidae', 'Carnívoro', 'Nada de barriga para cima, logo abaixo da superfície da água.'),
-('Patinador-de-lagoa', 'Gerris lacustris', 'insetos', 'Gerridae', 'Carnívoro', 'Desliza sobre a água graças à tensão superficial e aos pelos que repelem água nas patas.'),
-('Escorpião-d''água', 'Nepa cinerea', 'insetos', 'Nepidae', 'Carnívoro', 'Respira por um tubo no fim do abdome que funciona como um snorkel.'),
-('Percevejo-de-fogo', 'Pyrrhocoris apterus', 'insetos', 'Pyrrhocoridae', 'Herbívoro', 'Vive em grandes grupos, e a coloração vermelha e preta serve de aviso aos predadores.'),
-('Percevejo-do-pinheiro', 'Leptoglossus occidentalis', 'insetos', 'Coreidae', 'Herbívoro', 'Suas patas traseiras possuem expansões em forma de folha.'),
-('Jequitiranaboia', 'Fulgora laternaria', 'insetos', 'Fulgoridae', 'Herbívoro', 'Tem a cabeça alongada e de aspecto curioso, que inspirou muitas lendas populares.'),
-('Membracídeo-espinhoso', 'Umbonia spinosa', 'insetos', 'Membracidae', 'Herbívoro', 'As mães protegem grupos de ninfas nos galhos contra predadores.'),
-('Cigarra-do-mediterrâneo', 'Cicada orni', 'insetos', 'Cicadidae', 'Herbívoro', 'Seu canto forte é um símbolo do verão em regiões do Mediterrâneo.'),
-('Besouro-tapete', 'Anthrenus verbasci', 'insetos', 'Dermestidae', 'Detritívoro', 'Suas larvas peludas danificam tapetes, couros e coleções de museus.'),
-('Pirilampo-europeu', 'Lampyris noctiluca', 'insetos', 'Lampyridae', 'Carnívoro', 'As fêmeas não têm asas e emitem luz do chão para atrair os machos.'),
-('Besouro-capricórnio', 'Cerambyx cerdo', 'insetos', 'Cerambycidae', 'Xilófago', 'Suas larvas perfuram carvalhos antigos durante vários anos até completar o desenvolvimento.'),
-('Besouro-dermestídeo', 'Dermestes lardarius', 'insetos', 'Dermestidae', 'Necrófago', 'É usado em museus para limpar esqueletos de animais sem danificar os ossos.'),
-('Besouro-da-farinha-vermelho', 'Tribolium castaneum', 'insetos', 'Tenebrionidae', 'Detritívoro', 'É praga de farinhas armazenadas e também organismo-modelo em pesquisas genéticas.'),
-('Bicudo-da-palmeira', 'Rhynchophorus ferrugineus', 'insetos', 'Curculionidae', 'Herbívoro', 'Suas larvas destroem o interior das palmeiras e podem matá-las.'),
-('Bicudo-do-algodoeiro', 'Anthonomus grandis', 'insetos', 'Curculionidae', 'Herbívoro', 'Foi uma das piores pragas da cultura do algodão nas Américas.'),
-('Besouro-da-batata', 'Leptinotarsa decemlineata', 'insetos', 'Chrysomelidae', 'Herbívoro', 'Desenvolveu resistência a muitos inseticidas e devora as folhas da batateira.'),
-('Vaquinha', 'Diabrotica speciosa', 'insetos', 'Chrysomelidae', 'Herbívoro', 'Os adultos comem folhas, e as larvas atacam as raízes de várias culturas.'),
-('Besouro-meloe', 'Meloe proscarabaeus', 'insetos', 'Meloidae', 'Herbívoro', 'Libera hemolinfa com cantaridina, e suas larvas se prendem a abelhas para chegar aos ninhos.'),
-('Potó', 'Paederus fuscipes', 'insetos', 'Staphylinidae', 'Carnívoro', 'O contato com a pele esmagada provoca dermatite por causa de uma substância tóxica.'),
-('Estafilinídeo-fedorento', 'Ocypus olens', 'insetos', 'Staphylinidae', 'Carnívoro', 'Ergue o abdome como um escorpião e libera odor desagradável quando ameaçado.'),
-('Broca-esmeralda', 'Agrilus planipennis', 'insetos', 'Buprestidae', 'Xilófago', 'Praga invasora que já matou milhões de freixos na América do Norte.'),
-('Besouro-joia', 'Sternocera aequisignata', 'insetos', 'Buprestidae', 'Herbívoro', 'Seus élitros iridescentes são usados em artesanato em países do sudeste asiático.'),
-('Gorgulho-magnífico', 'Eupholus magnificus', 'insetos', 'Curculionidae', 'Herbívoro', 'Exibe cores azuis e verdes metálicas muito vivas e vive na Nova Guiné.'),
-('Besouro-aquático-gigante', 'Hydrophilus piceus', 'insetos', 'Hydrophilidae', 'Onívoro', 'Respira com uma camada de ar presa ao corpo, que renova na superfície.'),
-('Besouro-girino', 'Gyrinus natator', 'insetos', 'Gyrinidae', 'Carnívoro', 'Gira em círculos na superfície da água e tem olhos divididos para enxergar acima e abaixo dela.'),
-('Besouro-serra-pau', 'Macrodontia cervicornis', 'insetos', 'Cerambycidae', 'Xilófago', 'Está entre os maiores besouros do mundo e possui mandíbulas enormes.'),
-('Mantispa', 'Mantispa styriaca', 'insetos', 'Mantispidae', 'Carnívoro', 'Parece um louva-a-deus, mas na verdade é parente das crisopas.'),
-('Tesourinha-da-praia', 'Labidura riparia', 'insetos', 'Anisolabididae', 'Carnívoro', 'Predadora noturna que escava galerias em solos arenosos.'),
-('Peixinho-de-prata-doméstico', 'Thermobia domestica', 'insetos', 'Lepismatidae', 'Detritívoro', 'Prefere locais quentes, como atrás de fornos, e se alimenta de materiais com amido.'),
-('Joaninha-de-dois-pontos', 'Adalia bipunctata', 'insetos', 'Coccinellidae', 'Carnívoro', 'Pode ser vermelha com pontos pretos ou preta com manchas vermelhas, conforme a população.'),
-('Joaninha-do-oídio', 'Psyllobora vigintiduopunctata', 'insetos', 'Coccinellidae', 'Fungívoro', 'Ao contrário da maioria das joaninhas, se alimenta de fungos que causam o oídio nas plantas.'),
-('Besouro-esterqueiro', 'Geotrupes stercorarius', 'insetos', 'Geotrupidae', 'Coprófago', 'Cava túneis sob o esterco e enterra porções do material para alimentar as larvas.'),
-('Besouro-relógio-da-morte', 'Xestobium rufovillosum', 'insetos', 'Ptinidae', 'Xilófago', 'Bate a cabeça contra a madeira para atrair parceiros, e o ruído já foi tido como mau presságio.'),
-('Caruncho-do-feijão', 'Acanthoscelides obtectus', 'insetos', 'Chrysomelidae', 'Herbívoro', 'Suas larvas se desenvolvem dentro dos grãos de feijão armazenados.'),
-('Gorgulho-do-arroz', 'Sitophilus oryzae', 'insetos', 'Curculionidae', 'Herbívoro', 'A fêmea faz um pequeno furo no grão, deposita o ovo e fecha a abertura com uma secreção.'),
-('Besouro-do-fumo', 'Lasioderma serricorne', 'insetos', 'Ptinidae', 'Herbívoro', 'Praga de fumo, especiarias e outros produtos armazenados em depósitos.'),
-('Golias-real', 'Goliathus regius', 'insetos', 'Scarabaeidae', 'Detritívoro', 'Tem um desenho branco e preto nos élitros e vive em florestas da África Ocidental.'),
-('Besouro-netuno', 'Dynastes neptunus', 'insetos', 'Scarabaeidae', 'Detritívoro', 'Os machos têm dois chifres que funcionam como uma pinça ao disputar fêmeas.'),
-('Besouro-boi', 'Strategus aloeus', 'insetos', 'Scarabaeidae', 'Detritívoro', 'Os machos possuem chifres na cabeça e no tórax, e as larvas se desenvolvem em matéria vegetal em decomposição.'),
-('Besouro-rola-bosta-touro', 'Onthophagus taurus', 'insetos', 'Scarabaeidae', 'Coprófago', 'O tamanho dos chifres do macho depende da quantidade de alimento que a larva recebeu.'),
-('Besouro-esterqueiro-metálico', 'Phanaeus vindex', 'insetos', 'Scarabaeidae', 'Coprófago', 'Tem brilho metálico verde e cobre, e os machos exibem um chifre curvo na cabeça.'),
-('Besouro-do-pinheiro-ponderosa', 'Dendroctonus ponderosae', 'insetos', 'Curculionidae', 'Xilófago', 'Seus surtos já devastaram grandes áreas de florestas de pinheiros na América do Norte.'),
-('Besouro-tipógrafo', 'Ips typographus', 'insetos', 'Curculionidae', 'Xilófago', 'Escava galerias sob a casca de abetos, formando desenhos que lembram letras.'),
-('Broca-do-café', 'Hypothenemus hampei', 'insetos', 'Curculionidae', 'Herbívoro', 'A fêmea perfura o grão de café para botar ovos, e as larvas se alimentam da semente.'),
-('Bicho-mineiro-do-café', 'Leucoptera coffeella', 'insetos', 'Lyonetiidae', 'Herbívoro', 'Suas lagartas escavam galerias dentro das folhas do cafeeiro.'),
-('Cascudinho', 'Alphitobius diaperinus', 'insetos', 'Tenebrionidae', 'Onívoro', 'É muito comum em aviários, onde vive na cama e nos restos de ração.'),
-('Besouro-lanterna-do-cerrado', 'Pyrearinus termitilluminans', 'insetos', 'Elateridae', 'Carnívoro', 'Suas larvas brilham nos cupinzeiros do Cerrado para atrair insetos voadores.'),
-('Besouro-estalador-de-olhos', 'Alaus oculatus', 'insetos', 'Elateridae', 'Carnívoro', 'Possui manchas semelhantes a olhos e salta com um estalo quando virado de costas.'),
-('Besouro-rinoceronte-japonês', 'Trypoxylus dichotomus', 'insetos', 'Scarabaeidae', 'Herbívoro', 'É muito popular como animal de estimação no Japão, onde é chamado de kabutomushi.'),
-('Besouro-longicórnio-do-eucalipto', 'Phoracantha semipunctata', 'insetos', 'Cerambycidae', 'Xilófago', 'Suas larvas perfuram o tronco de eucaliptos enfraquecidos e causam prejuízos florestais.'),
-('Besouro-tartaruga-dourado', 'Charidotella sexpunctata', 'insetos', 'Chrysomelidae', 'Herbívoro', 'Pode alternar entre dourado e avermelhado, mudando de cor conforme o estresse.'),
-('Besouro-formigueiro', 'Thanasimus formicarius', 'insetos', 'Cleridae', 'Carnívoro', 'Caça besouros-da-casca e é considerado um aliado no controle de pragas florestais.'),
-('Vaga-lume-sincrônico', 'Photinus carolinus', 'insetos', 'Lampyridae', 'Carnívoro', 'Os machos piscam em sincronia, criando espetáculos luminosos nas florestas dos Apalaches.'),
-('Besouro-passalídeo', 'Odontotaenius disjunctus', 'insetos', 'Passalidae', 'Xilófago', 'Vive em troncos podres e produz sons para se comunicar com os outros membros da colônia.'),
 
 
 
@@ -402,156 +253,6 @@ INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, di
 ('Ricínuleo-de-Floresta', 'Cryptocellus sp.', 'Aracnídeos', 'Ricinoididae', 'Carnívoro', 'Tem uma aba móvel na frente do corpo que cobre a boca.'),
 ('Caranguejeira-Azul-do-Brasil', 'Pterinopelma sazimai', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Espécie nativa de áreas altas com reflexos azulados.'),
 ('Caranguejeira-de-Listras-Brancas', 'Acanthoscurria brocklehursti', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Aranha grande de hábitos terrestres e temperamento variável.'),
-('Caranguejeira-Goiaba', 'Lasiodora klugi', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Espécie brasileira robusta comum em matas e bordas.'),
-('Caranguejeira-do-Cerrado', 'Vitalius wacketi', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Habita áreas abertas e matas do Sudeste e Sul do Brasil.'),
-('Tarântula-de-Joelhos-Laranja', 'Brachypelma auratum', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Tem marcações laranja-avermelhadas vivas nas pernas.'),
-('Tarântula-Redonda-Mexicana', 'Brachypelma emilia', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Exibe um triângulo escuro bem nítido no cefalotórax.'),
-('Tarântula-de-Listras-Vermelhas', 'Aphonopelma moderatum', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Cava tocas profundas e costuma ficar calma quando manuseada.'),
-('Tarântula-do-Deserto-Americano', 'Aphonopelma chalcodes', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Os machos adultos saem em caminhadas no outono para achar parceiras.'),
-('Tarântula-de-Chifre-de-Búfalo', 'Ceratogyrus brachycephalus', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Apresenta elevação cônica no dorso do cefalotórax.'),
-('Tarântula-Ornamental-Indiana', 'Poecilotheria formosa', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Tem desenhos geométricos claros e escuros na face ventral.'),
-('Tarântula-Ornamental-do-Sri-Lanka', 'Poecilotheria ornata', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Aranha arborícola ágil com listras amarelas nas pernas.'),
-('Tarântula-Rei-Baboon', 'Pelinobius muticus', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Emite som raspando as quelíceras quando se sente ameaçada.'),
-('Tarântula-de-Cobalto-Azul', 'Haplopelma lividum', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Escava galerias sinuosas e forradas de seda no solo.'),
-('Tarântula-de-Fogo-da-Costa-Rica', 'Brachypelma vagans', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Tem corpo escuro com cerdas avermelhadas no abdômen.'),
-('Aranha-de-Teia-de-Seda-Dourada', 'Trichonephila edulis', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Tece grandes teias verticais entre árvores e arbustos.'),
-('Aranha-de-Teia-Circular-Gigante', 'Trichonephila pilipes', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Produz teias amplas que chegam a resistir a presas maiores.'),
-('Aranha-de-Jardim-Listrada', 'Argiope trifasciata', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Tem faixas prateadas e amarelas no abdômen alongado.'),
-('Aranha-de-Bola-Australiana', 'Mastophora cornigera', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Atrai mariposas imitando feromônios sexuais femininos.'),
-('Aranha-Espinhosa-de-Dois-Espinhos', 'Micrathena sagittata', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Possui projeções rígidas na parte posterior do abdômen.'),
-('Aranha-de-Teia-Espiralada', 'Neoscona crucifera', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Costuma refazer sua teia circular quase todas as noites.'),
-('Aranha-de-Cúpula', 'Neriene radiata', 'Aracnídeos', 'Linyphiidae', 'Carnívoro', 'Tece uma estrutura em forma de cúpula sobre a vegetação.'),
-('Aranha-de-Folha-Dobrada', 'Phonognatha graeffei', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Usa uma folha seca enrolada como abrigo no centro da teia.'),
-('Aranha-Saltadora-de-Fita', 'Menemerus bivittatus', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Frequente em muros e paredes externas de casas.'),
-('Aranha-Saltadora-de-Peito-Branco', 'Plexippus paykulli', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Caça à luz do dia com saltos curtos e precisos.'),
-('Aranha-Saltadora-Verde', 'Mopsus mormon', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Tem corpo esverdeado e grandes olhos frontais.'),
-('Aranha-Saltadora-de-Formiga', 'Synemosyna formica', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Tem cintura estreita que lembra o corpo de uma formiga.'),
-('Aranha-Saltadora-de-Bigode', 'Hasarius adansoni', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Comum em áreas urbanas e jardins em regiões quentes.'),
-('Aranha-Lobo-de-Jardim', 'Hogna carolinensis', 'Aracnídeos', 'Lycosidae', 'Carnívoro', 'É uma das maiores aranhas-lobo da América do Norte.'),
-('Aranha-Lobo-de-Areia', 'Arctosa perita', 'Aracnídeos', 'Lycosidae', 'Carnívoro', 'Camufla-se perfeitamente sobre areia e cascalho.'),
-('Aranha-Lobo-de-Mata', 'Trochosa ruricola', 'Aracnídeos', 'Lycosidae', 'Carnívoro', 'Vive sob troncos, pedras e folhas caídas.'),
-('Aranha-Caçadora-de-Paredes', 'Selenops radiatus', 'Aracnídeos', 'Selenopidae', 'Carnívoro', 'Corpo superachatado ideal para frestas estreitas.'),
-('Aranha-Caçadora-de-Troncos', 'Sparassidae sp.', 'Aracnídeos', 'Sparassidae', 'Carnívoro', 'Desloca-se lateralmente com facilidade em cascas de árvores.'),
-('Aranha-Caranguejo-de-Pino', 'Misumenoides formosipes', 'Aracnídeos', 'Thomisidae', 'Carnívoro', 'Espera presas polinizadoras sobre inflorescências.'),
-('Aranha-Caranguejo-de-Solo', 'Ozyptila praticola', 'Aracnídeos', 'Thomisidae', 'Carnívoro', 'Vive entre folhas mortas e musgo em áreas sombreadas.'),
-('Aranha-de-Alçapão-de-Costa', 'Bothriocyrtum californicum', 'Aracnídeos', 'Halonoproctidae', 'Carnívoro', 'Disfarça a tampa da toca com terra e detritos locais.'),
-('Aranha-de-Toca-Sul-Americana', 'Actinopus sp.', 'Aracnídeos', 'Actinopodidae', 'Carnívoro', 'Cava galerias verticais com porta camuflada no solo.'),
-('Aranha-de-Porão-Curta', 'Physocyclus globosus', 'Aracnídeos', 'Pholcidae', 'Carnívoro', 'Tem abdômen globoso e teia irregular em cantos secos.'),
-('Aranha-Cuspidora-Marrom', 'Scytodes fusca', 'Aracnídeos', 'Scytodidae', 'Carnívoro', 'Expele um líquido que solidifica rápido sobre a presa.'),
-('Aranha-de-Saco-Verde', 'Cheiracanthium punctorium', 'Aracnídeos', 'Cheiracanthiidae', 'Carnívoro', 'Encontra-se frequentemente em gramíneas e arbustos altos.'),
-('Aranha-de-Tubo', 'Segestria florentina', 'Aracnídeos', 'Segestriidae', 'Carnívoro', 'Constrói um túnel de seda em fendas com fios de alerta.'),
-('Aranha-de-Teia-de-Folha', 'Hippasa holmerae', 'Aracnídeos', 'Lycosidae', 'Carnívoro', 'Tece teias em formato de lençol sobre a vegetação baixa.'),
-('Aranha-de-Água-Sul-Americana', 'Ancylometes rufus', 'Aracnídeos', 'Ctenidae', 'Carnívoro', 'Grande, vive perto de rios e córregos e pode andar na água.'),
-('Aranha-Pescadora-Listrada', 'Dolomedes scriptus', 'Aracnídeos', 'Pisauridae', 'Carnívoro', 'Sente vibrações na água para localizar girinos e insetos.'),
-('Aranha-de-Areia-da-Praia', 'Arctosa littoralis', 'Aracnídeos', 'Lycosidae', 'Carnívoro', 'Habita faixas arenosas próximas a praias e margens.'),
-('Aranha-de-Fenda', 'Kukulcania hibernalis', 'Aracnídeos', 'Filistatidae', 'Carnívoro', 'Deixa teias emaranhadas azuladas ao redor de frestas de muros.'),
-('Aranha-de-Teia-Irregular-Doméstica', 'Parasteatoda tepidariorum', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Muito comum em beirais, janelas e cantos de paredes.'),
-('Aranha-Viúva-de-Dorso-Vermelho', 'Latrodectus hasselti', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Reconhecida pela faixa avermelhada no dorso do abdômen.'),
-('Aranha-Viúva-Marrom-Australiana', 'Latrodectus geometricus', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Frequente em estruturas artificiais em áreas urbanas.'),
-('Aranha-Marrom-Mediterrânea', 'Loxosceles rufescens', 'Aracnídeos', 'Sicariidae', 'Carnívoro', 'Esconde-se em frestas secas, pedras e atrás de móveis.'),
-('Aranha-Armadeira-de-Floresta', 'Phoneutria fera', 'Aracnídeos', 'Ctenidae', 'Carnívoro', 'Predadora noturna ágil de florestas tropicais.'),
-('Aranha-Armadeira-de-Chave', 'Phoneutria keyserlingi', 'Aracnídeos', 'Ctenidae', 'Carnívoro', 'Encontrada em áreas de mata e vegetação densa.'),
-('Aranha-Gladiadora-de-Olhos-Grandes', 'Deinopis longipes', 'Aracnídeos', 'Deinopidae', 'Carnívoro', 'Estica uma pequena teia entre as pernas para laçar presas.'),
-('Aranha-de-Teia-de-Funil-de-Floresta', 'Atrax sydneyensis', 'Aracnídeos', 'Atracidae', 'Carnívoro', 'Constrói toca tubular com fios de disparo ao redor.'),
-('Aranha-de-Teia-Circular-de-Lagoa', 'Cyclosa conica', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Acumula restos de presas no centro da teia para camuflagem.'),
-('Aranha-de-Teia-de-Orbe-Noturna', 'Eriophora fuliginea', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Ativa à noite, tece grandes teias circulares em matas.'),
-('Aranha-Saltadora-de-Cílios', 'Habronattus coecatus', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Machos exibem adornos faciais durante a corte visual.'),
-('Aranha-Saltadora-de-Folha', 'Lyssomanes viridis', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Corpo verde-claro translúcido comum em arbustos.'),
-('Aranha-Lobo-de-Listras-Claras', 'Alopecosa pulverulenta', 'Aracnídeos', 'Lycosidae', 'Carnívoro', 'Frequente em campos abertos, prados e clareiras.'),
-('Aranha-Caranguejo-de-Flores-Brancas', 'Diaea dorsata', 'Aracnídeos', 'Thomisidae', 'Carnívoro', 'Caça insetos visitantes em flores de árvores e arbustos.'),
-('Aranha-de-Saco-Doméstica', 'Cheiracanthium mildei', 'Aracnídeos', 'Cheiracanthiidae', 'Carnívoro', 'Pode ser encontrada dentro de casas e sobre plantas.'),
-('Aranha-de-Teia-de-Lençol', 'Agelenopsis naevia', 'Aracnídeos', 'Agelenidae', 'Carnívoro', 'Tece um lençol de seda que termina em um funil de abrigo.'),
-('Aranha-de-Teia-de-Funil-Doméstica', 'Tegenaria domestica', 'Aracnídeos', 'Agelenidae', 'Carnívoro', 'Comum em porões, garagens e construções antigas.'),
-('Aranha-de-Alçapão-de-Floresta', 'Cyclocosmia truncata', 'Aracnídeos', 'Halonoproctidae', 'Carnívoro', 'Tem o fim do abdômen endurecido como um disco para tampar a toca.'),
-('Aranha-de-Seda-de-Orbe-Dourada', 'Trichonephila senegalensis', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Produz fios de seda fortes e de tonalidade dourada.'),
-('Caranguejeira-Prateada-Brasileira', 'Lasiodora cristata', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Apresenta reflexos prateados na carapaça e porte robusto.'),
-('Caranguejeira-Goiaba-Rosa', 'Lasiodora difficilis', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Espécie terrestre brasileira com cerdas avermelhadas no abdômen.'),
-('Caranguejeira-de-Toca-Paulista', 'Vitalius sorocabae', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Habita áreas de mata e bordas no interior paulista.'),
-('Caranguejeira-Negra-do-Cerrado', 'Grammostola actaeon', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Tem corpo escuro com pelos avermelhados nas pernas.'),
-('Caranguejeira-de-Patas-Rosadas', 'Lasiodora parahybana', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Cresce rápido e possui cerdas urticantes no dorso.'),
-('Tarântula-Azul-Elétrica', 'Chromatopelma cyaneopubescens', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Produz teias densas em arbustos secos e pedras.'),
-('Tarântula-de-Joelhos-Laranja-Mexicana', 'Brachypelma auratum', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Exibe faixas alaranjadas vivas nas articulações das pernas.'),
-('Tarântula-de-Cabeça-Preta', 'Aphonopelma anax', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Espécie grande e robusta encontrada no sul do Texas.'),
-('Tarântula-do-Deserto-de-Sonora', 'Aphonopelma chalcodes', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Adapta-se bem a solos secos e pedregosos.'),
-('Tarântula-de-Chifre-Central', 'Ceratogyrus marshalli', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Possui projeção cônica no dorso do cefalotórax.'),
-('Tarântula-Ornamental-de-Listras-Azuis', 'Poecilotheria metallica', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Aranha arborícola de coloração azul-metálica marcante.'),
-('Tarântula-Ornamental-de-Fantasmas', 'Poecilotheria vittata', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Tem desenhos claros e escuros que ajudam na camuflagem em troncos.'),
-('Tarântula-Ornamental-de-Ruanda', 'Poecilotheria rufilata', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Apresenta detalhes avermelhados nas pernas e hábitos arborícolas.'),
-('Tarântula-Baboon-de-Chifre', 'Ceratogyrus darlingi', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Usa o chifre cefalotorácico em posturas defensivas.'),
-('Tarântula-Baboon-Marrom', 'Pterinochilus chordatus', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Constrói abrigos tubulares em fendas e solos secos.'),
-('Tarântula-de-Teia-Azul', 'Pterinopelma sazimai', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Destaca-se pelo brilho azulado sob iluminação natural.'),
-('Tarântula-de-Toca-Indiana', 'Poecilotheria miranda', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Aranha arborícola ágil com padrões geométricos no dorso.'),
-('Tarântula-de-Listras-Amarelas', 'Aphonopelma hentzi', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Comum em pradarias e campos abertos da América do Norte.'),
-('Tarântula-de-Patas-Douradas', 'Brachypelma albiceps', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Combina cefalotórax dourado-claro com pernas escuras.'),
-('Tarântula-de-Veludo-Escuro', 'Aphonopelma iodius', 'Aracnídeos', 'Theraphosidae', 'Carnívoro', 'Espécie terrestre de aparência discreta e movimentos lentos.'),
-('Viúva-Negra-Australiana', 'Latrodectus hasselti', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Constrói teias irregulares próximas ao solo e em frestas.'),
-('Viúva-Negra-do-Sul', 'Latrodectus mactans', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Apresenta marca avermelhada na face ventral do abdômen.'),
-('Viúva-Negra-do-Oeste', 'Latrodectus hesperus', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Comum em áreas secas, arbustos e construções.'),
-('Viúva-Marrom-Urbana', 'Latrodectus geometricus', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Frequente em muros, janelas e áreas externas de casas.'),
-('Viúva-Vermelha-da-Flórida', 'Latrodectus bishopi', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Vive em teias ligadas a folhas de palmeiras anãs.'),
-('Falsa-Viúva-Nobre', 'Steatoda nobilis', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Tem marcações claras no dorso do abdômen e teia irregular.'),
-('Falsa-Viúva-de-Barriga-Branca', 'Steatoda triangulosa', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Pequena aranha doméstica com fileira de manchas claras.'),
-('Aranha-Marrom-do-Sul', 'Loxosceles intermedia', 'Aracnídeos', 'Sicariidae', 'Carnívoro', 'Esconde-se em frestas, pilhas de materiais e atrás de móveis.'),
-('Aranha-Marrom-Chilena', 'Loxosceles laeta', 'Aracnídeos', 'Sicariidae', 'Carnívoro', 'Habita abrigos secos e protegidos, inclusive dentro de residências.'),
-('Aranha-Marrom-Americana', 'Loxosceles reclusa', 'Aracnídeos', 'Sicariidae', 'Carnívoro', 'Possui marca escura em formato de violino no cefalotórax.'),
-('Aranha-de-Areia-Seis-Olhos', 'Sicarius terrosus', 'Aracnídeos', 'Sicariidae', 'Carnívoro', 'Cobre o corpo com grãos de areia para camuflagem.'),
-('Aranha-Armadeira-Paulista', 'Phoneutria nigriventer', 'Aracnídeos', 'Ctenidae', 'Carnívoro', 'Tem hábitos noturnos e postura defensiva erguendo as pernas.'),
-('Aranha-Armadeira-da-Amazônia', 'Phoneutria fera', 'Aracnídeos', 'Ctenidae', 'Carnívoro', 'Ativa à noite na vegetação e serrapilheira florestal.'),
-('Aranha-Armadeira-de-Pernas-Claras', 'Phoneutria keyserlingi', 'Aracnídeos', 'Ctenidae', 'Carnívoro', 'Ocorre em áreas de floresta e bordas de mata.'),
-('Aranha-Saltadora-Zebra-Comum', 'Salticus scenicus', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Tem listras brancas e pretas e caça durante o dia.'),
-('Aranha-Saltadora-Real-do-Sul', 'Phidippus regius', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Possui excelente acuidade visual e caça sem usar teia.'),
-('Aranha-Saltadora-Ousada-Americana', 'Phidippus audax', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Exibe mancha clara no dorso e quelíceras esverdeadas.'),
-('Aranha-Saltadora-Pavão-Azul', 'Maratus speciosus', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'O macho levanta uma aba abdominal colorida na corte.'),
-('Aranha-Saltadora-Formiga', 'Myrmarachne plataleoides', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Imita formigas tecelãs no formato do corpo e no andar.'),
-('Aranha-Saltadora-de-Folhas-Verdes', 'Lyssomanes viridis', 'Aracnídeos', 'Salticidae', 'Carnívoro', 'Tem corpo verde-translúcido adaptado a folhas e arbustos.'),
-('Aranha-Lobo-de-Jardim-Europeia', 'Lycosa singoriensis', 'Aracnídeos', 'Lycosidae', 'Carnívoro', 'Cava tocas verticais no solo e caça à espreita ou correndo.'),
-('Aranha-Lobo-Rabidosa-Noturna', 'Rabidosa rabida', 'Aracnídeos', 'Lycosidae', 'Carnívoro', 'A fêmea carrega a ooteca e os filhotes sobre o abdômen.'),
-('Aranha-Lobo-de-Praia', 'Arctosa perita', 'Aracnídeos', 'Lycosidae', 'Carnívoro', 'Apresenta coloração acinzentada e amarronzada sobre areia.'),
-('Aranha-Lobo-de-Mata-Úmida', 'Trochosa terricola', 'Aracnídeos', 'Lycosidae', 'Carnívoro', 'Vive sob pedras, troncos caídos e serrapilheira.'),
-('Aranha-Pescadora-de-Riacho', 'Dolomedes vittatus', 'Aracnídeos', 'Pisauridae', 'Carnívoro', 'Fica junto às margens de água e captura pequenos animais aquáticos.'),
-('Aranha-Pescadora-Escura', 'Dolomedes tenebrosus', 'Aracnídeos', 'Pisauridae', 'Carnívoro', 'Aranha grande que caça na superfície da água e em troncos.'),
-('Aranha-Caranguejo-das-Flores', 'Misumena vatia', 'Aracnídeos', 'Thomisidae', 'Carnívoro', 'Altera a coloração lentamente para combinar com flores.'),
-('Aranha-Caranguejo-de-Pinos', 'Misumenoides formosipes', 'Aracnídeos', 'Thomisidae', 'Carnívoro', 'Aguarda insetos visitantes sobre flores abertas.'),
-('Aranha-Caranguejo-de-Solo-Escura', 'Xysticus ferrugineus', 'Aracnídeos', 'Thomisidae', 'Carnívoro', 'Caça de emboscada entre folhas secas e vegetação rasteira.'),
-('Aranha-de-Teia-Circular-Dourada-Maior', 'Trichonephila clavipes', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Tece teias grandes entre árvores e arbustos em áreas abertas e matas.'),
-('Aranha-de-Teia-Circular-de-Lagoa-Maior', 'Trichonephila pilipes', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Produz teias amplas com fios resistentes de brilho dourado.'),
-('Aranha-de-Jardim-de-Cruz', 'Araneus diadematus', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Apresenta manchas claras no dorso que formam um desenho em cruz.'),
-('Aranha-de-Jardim-Prateada', 'Argiope argentata', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Tem cefalotórax prateado e teia com faixa de seda em ziguezague.'),
-('Aranha-de-Jardim-Listrada-de-Amarelo', 'Argiope aurantia', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Possui abdômen com faixas amarelas e pretas e teia vertical.'),
-('Aranha-Espinhosa-Estrela', 'Gasteracantha cancriformis', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Tem abdômen rígido com espinhos bem marcados.'),
-('Aranha-Espinhosa-de-Dois-Espinhos-Maior', 'Micrathena sagittata', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Exibe projeções cônicas na parte posterior do abdômen.'),
-('Aranha-de-Bola-Noturna', 'Mastophora hutchinsoni', 'Aracnídeos', 'Araneidae', 'Carnívoro', 'Usa um fio com gota adesiva para capturar mariposas no escuro.'),
-('Aranha-Gladiadora-de-Olhos-Escuros', 'Deinopis subrufa', 'Aracnídeos', 'Deinopidae', 'Carnívoro', 'Estica uma pequena teia entre as pernas para laçar presas.'),
-('Aranha-Caçadora-Gigante-de-Caverna', 'Heteropoda maxima', 'Aracnídeos', 'Sparassidae', 'Carnívoro', 'Destaca-se pela longa envergadura das pernas.'),
-('Aranha-Caçadora-Marrom-Doméstica', 'Heteropoda venatoria', 'Aracnídeos', 'Sparassidae', 'Carnívoro', 'Move-se rapidamente por paredes, troncos e abrigos.'),
-('Aranha-Caçadora-Dourada-Australiana', 'Beregama aurea', 'Aracnídeos', 'Sparassidae', 'Carnívoro', 'Espécie grande e ágil encontrada em troncos e folhagens.'),
-('Aranha-de-Alçapão-de-Costa-Californiana', 'Bothriocyrtum californicum', 'Aracnídeos', 'Halonoproctidae', 'Carnívoro', 'Fecha a entrada da toca com tampa articulada de terra e seda.'),
-('Aranha-de-Alçapão-de-Tampa-Espessa', 'Ummidia audouini', 'Aracnídeos', 'Halonoproctidae', 'Carnívoro', 'Constrói galerias revestidas de seda com tampa camuflada.'),
-('Aranha-Funil-de-Sydney', 'Atrax robustus', 'Aracnídeos', 'Atracidae', 'Carnívoro', 'Abriga-se em tocas tubulares com fios de disparo ao redor.'),
-('Aranha-Funil-de-Árvore-Australiana', 'Hadronyche cerberea', 'Aracnídeos', 'Atracidae', 'Carnívoro', 'Habita ocos de árvores e troncos úmidos.'),
-('Aranha-Rato-de-Cabeça-Larga', 'Missulena bradleyi', 'Aracnídeos', 'Actinopodidae', 'Carnívoro', 'Cava tocas profundas com tampa discreta no solo.'),
-('Aranha-de-Toca-Sul-Americana-Maior', 'Actinopus crassipes', 'Aracnídeos', 'Actinopodidae', 'Carnívoro', 'Vive em galerias subterrâneas com entrada camuflada.'),
-('Aranha-Tecelã-Social-de-Floresta', 'Anelosimus eximius', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Forma grandes teias comunitárias onde vários indivíduos caçam juntos.'),
-('Aranha-de-Seda-Lanosa-Sem-Veneno', 'Uloborus plumipes', 'Aracnídeos', 'Uloboridae', 'Carnívoro', 'Envolve presas em seda e não possui glândulas de veneno.'),
-('Aranha-Pirata-de-Teias', 'Mimetus puritanus', 'Aracnídeos', 'Mimetidae', 'Carnívoro', 'Preda outras aranhas dentro das teias delas.'),
-('Aranha-de-Saco-Amarelo-de-Folhas', 'Cheiracanthium inclusum', 'Aracnídeos', 'Cheiracanthiidae', 'Carnívoro', 'Abriga-se durante o dia em câmaras de seda dobradas em folhas.'),
-('Aranha-de-Porão-de-Pernas-Longas', 'Pholcus phalangioides', 'Aracnídeos', 'Pholcidae', 'Carnívoro', 'Vibra rapidamente na teia quando perturbada.'),
-('Aranha-de-Porão-Globosa', 'Physocyclus globosus', 'Aracnídeos', 'Pholcidae', 'Carnívoro', 'Comum em cantos secos de paredes, tetos e abrigos.'),
-('Aranha-Cuspidora-Pintada', 'Scytodes thoracica', 'Aracnídeos', 'Scytodidae', 'Carnívoro', 'Lança jatos de seda pegajosa para imobilizar presas.'),
-('Aranha-Espadachim-de-Tatuzinhos', 'Dysdera crocata', 'Aracnídeos', 'Dysderidae', 'Carnívoro', 'Tem quelíceras robustas adaptadas a presas de carapaça dura.'),
-('Aranha-de-Tubo-de-Fendas', 'Segestria florentina', 'Aracnídeos', 'Segestriidae', 'Carnívoro', 'Constrói túneis de seda em muros e fendas com fios radiais.'),
-('Aranha-de-Fenda-Americana', 'Kukulcania hibernalis', 'Aracnídeos', 'Filistatidae', 'Carnívoro', 'Tece teias densas e azuladas ao redor de aberturas.'),
-('Aranha-de-Pelúcia-Europeia', 'Eresus sandaliatus', 'Aracnídeos', 'Eresidae', 'Carnívoro', 'O macho apresenta dorso avermelhado com manchas escuras.'),
-('Escorpião-Amarelo-Brasileiro', 'Tityus serrulatus', 'Aracnídeos', 'Buthidae', 'Carnívoro', 'Apresenta serrilhas na cauda e reprodução partenogenética.'),
-('Escorpião-Negro-do-Sudeste', 'Tityus bahiensis', 'Aracnídeos', 'Buthidae', 'Carnívoro', 'Tem corpo escuro e pernas alaranjadas ou amareladas.'),
-('Escorpião-de-Barriga-Preta-Nordestino', 'Tityus stigmurus', 'Aracnídeos', 'Buthidae', 'Carnívoro', 'Exibe manchas escuras na região ventral e cauda serrilhada.'),
-('Escorpião-Imperador-Africano', 'Pandinus imperator', 'Aracnídeos', 'Scorpionidae', 'Carnívoro', 'Possui pedipalpos largos e robustos e coloração escura.'),
-('Escorpião-de-Floresta-Asiático', 'Heterometrus spinifer', 'Aracnídeos', 'Scorpionidae', 'Carnívoro', 'Espécie grande e escura com pinças largas.'),
-('Escorpião-Dourado-do-Oriente-Médio', 'Leiurus quinquestriatus', 'Aracnídeos', 'Buthidae', 'Carnívoro', 'Tem coloração amarelada e cauda esbelta.'),
-('Escorpião-de-Cauda-Grossa-Norte-Africano', 'Androctonus australis', 'Aracnídeos', 'Buthidae', 'Carnívoro', 'Habita áreas áridas e pedregosas com cauda espessa.'),
-('Escorpião-do-Deserto-Gigante', 'Hadrurus arizonensis', 'Aracnídeos', 'Caraboctonidae', 'Carnívoro', 'Um dos maiores escorpiões da América do Norte.'),
-('Escorpião-de-Casca-do-Deserto', 'Centruroides sculpturatus', 'Aracnídeos', 'Buthidae', 'Carnívoro', 'Tem corpo fino e amarelado e escala superfícies com facilidade.'),
-('Viúva Florestal', 'Latrodectus florestalensis', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Constrói teias irregulares resistentes em frestas e arbustos. Exemplar associado a ambiente florestal.'),
 ('Viúva-Campestre', 'Latrodectus campestreensis', 'Aracnídeos', 'Theridiidae', 'Carnívoro', 'Constrói teias irregulares resistentes em frestas e arbustos. Exemplar associado a ambiente campestre.'),
 
 
@@ -658,156 +359,6 @@ INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, di
 ('Ostra de Rocha', 'Striostrea prismatica', 'Moluscos', 'Ostreidae', 'Filtrador', 'Fixa-se firmemente em rochas da zona entremarés.'),
 ('Lesma do Mar Cinza', 'Arion vulgaris', 'Moluscos', 'Arionidae', 'Onívoro', 'Adapta-se bem a jardins e áreas agrícolas úmidas.'),
 ('Caramujo Nerita', 'Nerita peloronta', 'Moluscos', 'Neritidae', 'Herbívoro', 'Vive na faixa de respingos das ondas em costões.'),
-('Caracol Trompa', 'Busycon carica', 'Moluscos', 'Busyconidae', 'Carnívoro', 'Usa a borda da concha para abrir bivalves.'),
-('Bivalve Surf', 'Spisula solidissima', 'Moluscos', 'Mactridae', 'Filtrador', 'Enterra-se rapidamente na areia com o pé musculoso.'),
-('Polvo de Estufa', 'Octopus joubini', 'Moluscos', 'Octopodidae', 'Carnívoro', 'Espécie pequena de águas rasas do Atlântico.'),
-('Lula de Profundidade', 'Mastigoteuthis flammea', 'Moluscos', 'Mastigoteuthidae', 'Carnívoro', 'Possui tentáculos muito longos e finos.'),
-('Caramujo Espiral de Marfim', 'Babylonia spirata', 'Moluscos', 'Babyloniidae', 'Carnívoro', 'Concha clara com manchas castanhas em espiral.'),
-('Ostra de Pérola Akoya', 'Pinctada fucata', 'Moluscos', 'Pteriidae', 'Filtrador', 'Tradicional no cultivo de pérolas redondas.'),
-('Lesma do Mar Verde Folha', 'Oxynoe viridis', 'Moluscos', 'Oxynoidae', 'Herbívoro', 'Associa-se a algas verdes do gênero Caulerpa.'),
-('Caracol Olho de Vidro', 'Littorina littorea', 'Moluscos', 'Littorinidae', 'Herbívoro', 'Muito comum em pedras da zona entremarés.'),
-('Mexilhão Azul do Pacífico', 'Mytilus trossulus', 'Moluscos', 'Mytilidae', 'Filtrador', 'Forma bancos densos em costas rochosas frias.'),
-('Lula de Cauda Chicote', 'Chiroteuthis veranyi', 'Moluscos', 'Chiroteuthidae', 'Carnívoro', 'Tem cauda alongada com fotóforos nas pontas.'),
-('Caramujo Pagode', 'Pagodula', 'Moluscos', 'Muricidae', 'Carnívoro', 'Concha com cristas que lembram um telhado em camadas.'),
-('Bivalve Navio Gigante', 'Kuphus polythalamia', 'Moluscos', 'Teredinidae', 'Detritívoro', 'Forma um tubo calcário longo e espesso no lodo.'),
-('Polvo de Algas', 'Macrotritopus defilippi', 'Moluscos', 'Octopodidae', 'Carnívoro', 'Larvas e juvenis imitam a aparência de algas flutuantes.'),
-('Caracol Concha de Olho', 'Conus textile', 'Moluscos', 'Conidae', 'Carnívoro', 'Conhecido como caracol-pano pelo padrão triangular.'),
-('Lesma do Mar Dourada', 'Halgerda', 'Moluscos', 'Discodorididae', 'Carnívoro', 'Superfície com saliências e padrões geométricos.'),
-('Bivalve Amêijoa Branca', 'Meretrix lyrata', 'Moluscos', 'Veneridae', 'Filtrador', 'Comum em fundos arenosos e estuários.'),
-('Caramujo Estrela de Mar', 'Thais haemastoma', 'Moluscos', 'Muricidae', 'Carnívoro', 'Predador de cracas e moluscos em costões.'),
-('Lula de Recifes de Coral', 'Loligo vulgaris', 'Moluscos', 'Loliginidae', 'Carnívoro', 'Nadadora ágil com nadadeiras em forma de diamante.'),
-('Caracol de Jardim Branco', 'Theba pisana', 'Moluscos', 'Helicidae', 'Herbívoro', 'Costuma subir em plantas para fugir do calor intenso.'),
-('Ostra de Água Doce', 'Margaratifera margaritifera', 'Moluscos', 'Margaritiferidae', 'Filtrador', 'Pode viver por várias décadas em rios limpos.'),
-('Lesma do Mar Violeta', 'Janthina janthina', 'Moluscos', 'Janthinidae', 'Carnívoro', 'Flutua na superfície usando uma balsa de bolhas.'),
-('Caramujo Cônico Imperial', 'Conus imperialis', 'Moluscos', 'Conidae', 'Carnívoro', 'Possui faixas escuras e manchas brancas bem definidas.'),
-('Bivalve Castanha de Mar', 'Glycymeris glycymeris', 'Moluscos', 'Glycymerididae', 'Filtrador', 'Concha quase circular e espessa.'),
-('Polvo de Pontos Azuis', 'Octopus cyanea', 'Moluscos', 'Octopodidae', 'Carnívoro', 'Ativo durante o dia em recifes de coral.'),
-('Lula de Manto Curto', 'Alloteuthis subulata', 'Moluscos', 'Loliginidae', 'Carnívoro', 'Pequena e frequente em águas costeiras.'),
-('Caracol de Terra Listado', 'Polymita picta', 'Moluscos', 'Camaenidae', 'Herbívoro', 'Famoso pelas cores vivas e variadas da concha.'),
-('Bivalve Penacho', 'Pinna nobilis', 'Moluscos', 'Pinnidae', 'Filtrador', 'Concha grande e triangular fixada no sedimento.'),
-('Lesma do Mar Azul Cobalto', 'Hypselodoris', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Apresenta tons intensos de azul e amarelo.'),
-('Caramujo Buzina', 'Cymatium', 'Moluscos', 'Cymatiidae', 'Carnívoro', 'Concha com saliências espirais e abertura espessa.'),
-('Mexilhão de Rio Sul Americano', 'Diplodon', 'Moluscos', 'Hyriidae', 'Filtrador', 'Bivalve nativo de rios e lagoas da América do Sul.'),
-('Lula de Olhos Grandes', 'Histioteuthis reversa', 'Moluscos', 'Histioteuthidae', 'Carnívoro', 'Um olho é bem maior que o outro para enxergar acima e abaixo.'),
-('Caracol de Areia Rosa', 'Polinices mammilla', 'Moluscos', 'Naticidae', 'Carnívoro', 'Concha lisa e arredondada que escava a areia.'),
-('Ostra de Fundo Arenoso', 'Ostrea edulis', 'Moluscos', 'Ostreidae', 'Filtrador', 'Espécie tradicional de ostra europeia.'),
-('Lesma do Mar Peluda', 'Doto coronata', 'Moluscos', 'Dotidae', 'Carnívoro', 'Possui projeções em formato de clava nas costas.'),
-('Caramujo Concha de Concha', 'Xenophora conchyliophora', 'Moluscos', 'Xenophoridae', 'Detritívoro', 'Cola outras conchas e pedrinhas na própria concha.'),
-('Bivalve Marisco Faca', 'Solen marginatus', 'Moluscos', 'Solenidae', 'Filtrador', 'Concha estreita e alongada que cava na vertical.'),
-('Polvo de Cabeça Grande', 'Bathypolypus arcticus', 'Moluscos', 'Octopodidae', 'Carnívoro', 'Adapta-se a águas frias e profundas.'),
-('Lula de Nadadeira Redonda', 'Rossia macrosoma', 'Moluscos', 'Sepiolidae', 'Carnívoro', 'Corpo compacto com nadadeiras arredondadas.'),
-('Caracol de Jardim Alemão', 'Arianta arbustorum', 'Moluscos', 'Helicidae', 'Herbívoro', 'Concha moteada em tons de marrom e amarelo.'),
-('Bivalve Estrela', 'Pecten jacobaeus', 'Moluscos', 'Pectinidae', 'Filtrador', 'Concha com costelas radiais marcadas.'),
-('Lesma do Mar Laranja', 'Triopha catalinae', 'Moluscos', 'Polyceridae', 'Carnívoro', 'Corpo claro com projeções alaranjadas.'),
-('Caramujo de Água Doce Ampulária', 'Pomacea canaliculata', 'Moluscos', 'Ampullariidae', 'Herbívoro', 'Forte apetite por plantas aquáticas e arrozais.'),
-('Lula de Braços Curtos', 'Sepiola atlantica', 'Moluscos', 'Sepiolidae', 'Carnívoro', 'Enterra-se na areia deixando apenas os olhos à mostra.'),
-('Caracol Concha de Tigre', 'Cypraecassis rufa', 'Moluscos', 'Cassidae', 'Carnívoro', 'Concha alaranjada e densa usada em entalhes.'),
-('Bivalve Espinho de Mar', 'Spondylus gaederopus', 'Moluscos', 'Spondylidae', 'Filtrador', 'Coberto de espinhos que ajudam na proteção.'),
-('Polvo de Pele Lisa', 'Eledone cirrhosa', 'Moluscos', 'Eledoneidae', 'Carnívoro', 'Possui uma única fileira de ventosas em cada braço.'),
-('Caramujo de Mangue', 'Littoraria angulifera', 'Moluscos', 'Littorinidae', 'Herbívoro', 'Sobe em troncos e raízes de manguezais.'),
-('Lesma do Mar Branca', 'Diaulula sandiegensis', 'Moluscos', 'Discodorididae', 'Carnívoro', 'Corpo claro com anéis ou manchas escuras.'),
-('Bivalve Coração de Boi', 'Isocardia', 'Moluscos', 'Glossidae', 'Filtrador', 'Concha bojuda e curvada de águas profundas.'),
-('Caracol de Jardim Francês', 'Cornu', 'Moluscos', 'Helicidae', 'Herbívoro', 'Gênero bastante conhecido em jardins e hortas.'),
-('Lula de Luz Azul', 'Abraliopsis', 'Moluscos', 'Enoploteuthidae', 'Carnívoro', 'Emite luz azulada na parte inferior para camuflagem.'),
-('Caramujo Concha de Sino', 'Turbinella pyrum', 'Moluscos', 'Turbinellidae', 'Carnívoro', 'Concha pesada e alongada usada como instrumento de sopro.'),
-('Bivalve Pérola de Rio', 'Unio pictorum', 'Moluscos', 'Unionidae', 'Filtrador', 'Vive enterrado no fundo de rios e lagos.'),
-('Lesma do Mar Vermelha', 'Hexabranchus', 'Moluscos', 'Hexabranchidae', 'Carnívoro', 'Gênero famoso pelos movimentos amplos na água.'),
-('Caracol de Rocha Escuro', 'Nucella lapillus', 'Moluscos', 'Muricidae', 'Carnívoro', 'Perfura conchas de outros moluscos com sua rádula.'),
-('Polvo de Anéis Roxos', 'Hapalochlaena lunulata', 'Moluscos', 'Octopodidae', 'Carnívoro', 'Exibe anéis brilhantes quando se sente ameaçado.'),
-('Lula de Cauda Longa', 'Lolliguncula brevis', 'Moluscos', 'Loliginidae', 'Carnívoro', 'Tolera variações maiores de salinidade em águas costeiras.'),
-('Caramujo de Jardim Amarelo', 'Cepaea hortensis', 'Moluscos', 'Helicidae', 'Herbívoro', 'Concha de coloração clara em ambientes temperados.'),
-('Bivalve Concha de Leque', 'Chlamys islandica', 'Moluscos', 'Pectinidae', 'Filtrador', 'Habita águas frias do Atlântico Norte.'),
-('Lesma do Mar Zebra', 'Hypselodoris zebra', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Listras azuis e amarelas bem contrastantes.'),
-('Caramujo Cônico Marfim', 'Conus eburneus', 'Moluscos', 'Conidae', 'Carnívoro', 'Concha branca com pequenas manchas escuras.'),
-('Bivalve Marisco Gigante', 'Panopea generosa', 'Moluscos', 'Hiatellidae', 'Filtrador', 'Tem sifão bem longo e pode viver mais de 100 anos.'),
-('Polvo de Fundo Arenoso', 'Octopus bimaculoides', 'Moluscos', 'Octopodidae', 'Carnívoro', 'Tem manchas escuras marcantes perto dos olhos.'),
-('Lula de Profundidade Média', 'Gonatus fabricii', 'Moluscos', 'Gonatidae', 'Carnívoro', 'Muito comum em águas frias e de meia-profundidade.'),
-('Caramujo de Terra Tropical', 'Orthostylus', 'Moluscos', 'Bradybaenidae', 'Herbívoro', 'Espécies terrestres de regiões tropicais.'),
-('Bivalve Ostra de Cavalo', 'Atrina rigida', 'Moluscos', 'Pinnidae', 'Filtrador', 'Fixa-se no substrato por filamentos resistentes.'),
-('Lesma do Mar Pintada', 'Peltodoris', 'Moluscos', 'Discodorididae', 'Carnívoro', 'Apresenta manchas irregulares sobre o dorso.'),
-('Caramujo Buzina do Pacífico', 'Charonia tritonis', 'Moluscos', 'Charoniidae', 'Carnívoro', 'Grande predador de recifes de coral tropicais.'),
-('Mexilhão de Água Salobra', 'Mytilopsis leucophaeata', 'Moluscos', 'Mytilidae', 'Filtrador', 'Adapta-se a ambientes onde água doce e salgada se misturam.'),
-('Lula de Tentáculos Curtos', 'Sepioloidea lineolata', 'Moluscos', 'Sepiolidae', 'Carnívoro', 'Corpo arredondado com listras escuras e claras.'),
-('Caracol Concha de Espinho', 'Murex pecten', 'Moluscos', 'Muricidae', 'Carnívoro', 'Conhecido pela quantidade de espinhos finos.'),
-('Bivalve Amêijoa do Mar', 'Ruditapes decussatus', 'Moluscos', 'Veneridae', 'Filtrador', 'Enterra-se em sedimentos arenosos e lodosos.'),
-('Polvo de Estufa Comum', 'Octopus vulgaris', 'Moluscos', 'Octopodidae', 'Carnívoro', 'Distribuição ampla em águas temperadas e tropicais.'),
-('Caramujo de Jardim Marrom', 'Eobania vermiculata', 'Moluscos', 'Helicidae', 'Herbívoro', 'Concha com faixas amarronzadas e abertura clara.'),
-('Lesma do Mar Verde Esmeralda', 'Elysia chlorotica', 'Moluscos', 'Plakobranchidae', 'Herbívoro', 'Mantém cloroplastos funcionais por longos períodos.'),
-('Bivalve Concha de Placa', 'Placopecten magellanicus', 'Moluscos', 'Pectinidae', 'Filtrador', 'Bivalve relevante na pesca do Atlântico Noroeste.'),
-('Caramujo Cônico Leopardo', 'Conus leopardus', 'Moluscos', 'Conidae', 'Carnívoro', 'Concha grande e pesada com pintas escuras.'),
-('Lula de Recifes Tropicais', 'Sepioteuthis', 'Moluscos', 'Loliginidae', 'Carnívoro', 'Gênero de lulas costeiras muito ativas.'),
-('Caramujo de Terra Pequeno', 'Zonitoides arboreus', 'Moluscos', 'Gastrodontidae', 'Detritívoro', 'Caracol diminuto comum em solo úmido e madeira em decomposição.'),
-('Bivalve Marisco Comum', 'Cerastoderma', 'Moluscos', 'Cardiidae', 'Filtrador', 'Gênero frequente em praias e bancos de areia.'),
-('Polvo de Pele Rugosa', 'Octopus maya', 'Moluscos', 'Octopodidae', 'Carnívoro', 'Endêmico da região da península de Yucatán.'),
-('Caramujo Buzina Pequeno', 'Nassarius vibex', 'Moluscos', 'Nassariidae', 'Detritívoro', 'Rastreia matéria orgânica no fundo arenoso.'),
-('Lesma do Mar Listrada', 'Chromodoris', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Gênero rico em espécies coloridas de recifes.'),
-('Bivalve Ostra de Manguezal', 'Crassostrea gasar', 'Moluscos', 'Ostreidae', 'Filtrador', 'Comum em estuários e raízes de mangue.'),
-('Caramujo Concha de Cone', 'Conus', 'Moluscos', 'Conidae', 'Carnívoro', 'Gênero amplo de gastrópodes marinhos predadores.'),
-('Lula de Profundidade Escura', 'Vampyroteuthis', 'Moluscos', 'Vampyroteuthidae', 'Detritívoro', 'Habita zonas de mínimo oxigênio no oceano profundo.'),
-('Caramujo de Jardim Cinza', 'Helicigona lapicida', 'Moluscos', 'Helicidae', 'Herbívoro', 'Concha achatada com quilha marcante na borda.'),
-('Bivalve Concha de Vela', 'Pecten', 'Moluscos', 'Pectinidae', 'Filtrador', 'Gênero clássico de vieiras.'),
-('Lesma do Mar Azul Turquesa', 'Felimare', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Apresenta tons vibrantes de azul e linhas marcadas.'),
-('Caramujo de Água Doce Pequeno', 'Planorbarius corneus', 'Moluscos', 'Planorbidae', 'Herbívoro', 'Concha enrolada no mesmo plano, como uma espiral plana.'),
-('Bivalve Marisco de Areia', 'Mya arenaria', 'Moluscos', 'Myaidae', 'Filtrador', 'Vive enterrado fundo na areia ou lama costeira.'),
-('Polvo de Braços Longos', 'Abdopus aculeatus', 'Moluscos', 'Octopodidae', 'Carnívoro', 'Habita planícies de maré com algas e ervas marinhas.'),
-('Caramujo Concha de Pérola', 'Turbo', 'Moluscos', 'Turbinidae', 'Herbívoro', 'Concha robusta e brilhante por dentro.'),
-('Lula de Olhos Telescópicos', 'Bathothauma lyromma', 'Moluscos', 'Cranchiidae', 'Carnívoro', 'Olhos voltados para cima em formato alongado.'),
-('Caramujo de Terra de Folhiço', 'Discus rotundatus', 'Moluscos', 'Discidae', 'Detritívoro', 'Concha achatada e listrada encontrada sob folhas.'),
-('Bivalve Mexilhão de Rocha', 'Perna perna', 'Moluscos', 'Mytilidae', 'Filtrador', 'Muito presente em costões rochosos.'),
-('Lesma do Mar Rosada', 'Flabellinopsis', 'Moluscos', 'Coryphellidae', 'Carnívoro', 'Nudibrânquio de cores vivas associado a hidrozoários.'),
-('Caramujo Buzina de Areia', 'Polinices hepaticus', 'Moluscos', 'Naticidae', 'Carnívoro', 'Predador que caça outros moluscos no sedimento.'),
-('Bivalve Concha de Leque Gigante', 'Amusium pleuronectes', 'Moluscos', 'Pectinidae', 'Filtrador', 'Concha fina e leve capaz de nadar com facilidade.'),
-('Polvo de Profundidade Tropical', 'Grimpoteuthis bathynectes', 'Moluscos', 'Opisthoteuthidae', 'Carnívoro', 'Vive em grandes profundidades oceânicas.'),
-('Nudibrânquio Espanhol', 'Flabellina affinis', 'Moluscos', 'Flabellinidae', 'Carnívoro', 'Apresenta ceratas violetas e corpo translúcido em recifes.'),
-('Lesma do Mar Arco Íris', 'Dendronotus iris', 'Moluscos', 'Dendronotidae', 'Carnívoro', 'Nada com movimentos laterais rápidos usando o corpo.'),
-('Nudibrânquio Tigre', 'Felimare tricolor', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Exibe faixas longitudinais azuis, brancas e amarelas.'),
-('Lesma do Mar Coroa', 'Hermissenda crassicornis', 'Moluscos', 'Facelinidae', 'Carnívoro', 'Tem ceratas coloridas e é muito estudada em neurobiologia.'),
-('Nudibrânquio Peludo', 'Aeolidia papillosa', 'Moluscos', 'Aeolidiidae', 'Carnívoro', 'Alimenta-se de anêmonas e reaproveita nematocistos para defesa.'),
-('Lesma do Mar Folha', 'Phyllidia varicosa', 'Moluscos', 'Phyllidiidae', 'Carnívoro', 'Possui tubérculos rígidos e não possui brânquia dorsal externa.'),
-('Nudibrânquio Azul Elétrico', 'Hypselodoris kanga', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Destaca-se pelo azul intenso com manchas amarelas.'),
-('Lesma do Mar Mancha Roxa', 'Diaulula odonoghuei', 'Moluscos', 'Discodorididae', 'Carnívoro', 'Corpo amarelado com manchas escuras discretas.'),
-('Nudibrânquio Pálido', 'Archidoris pseudoargus', 'Moluscos', 'Dorididae', 'Carnívoro', 'Dorso coberto por pequenos tubérculos sensoriais.'),
-('Lesma do Mar Cristal', 'Hypselodoris jacksonianae', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Apresenta bordas claras e listras longitudinais vivas.'),
-('Nudibrânquio Estrela Azul', 'Chromodoris willani', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Comum em recifes do Indo-Pacífico com tons azuis e pretos.'),
-('Lesma do Mar Coral', 'Goniobranchus kuniei', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Exibe manchas alaranjadas e borda roxa chamativa.'),
-('Nudibrânquio Flamejante', 'Goniobranchus coi', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Combina tons de rosa, branco e alaranjado nos recifes.'),
-('Lesma do Mar Pérola', 'Goniobranchus geminus', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Possui pontuações claras em fundo escuro.'),
-('Nudibrânquio Veludo', 'Doriprismatica atromarginata', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Corpo amarelo-claro com margem escura bem definida.'),
-('Lesma do Mar Flor', 'Glossodoris rufomarginata', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Margem avermelhada contrasta com o corpo claro.'),
-('Nudibrânquio Sol', 'Mexichromis multituberculata', 'Moluscos', 'Chromodorididae', 'Carnívoro', 'Pequeno e colorido, vive em fundos rochosos e recifais.'),
-('Lesma do Mar Esponja', 'Rostanga pulchra', 'Moluscos', 'Rostangidae', 'Carnívoro', 'Possui coloração avermelhada que se camufla em esponjas.'),
-('Nudibrânquio Pluma', 'Melibe leonina', 'Moluscos', 'Tethydidae', 'Carnívoro', 'Tem capuz bucal largo que funciona como rede para capturar presas.'),
-('Lesma do Mar Fantasma', 'Melibe viridis', 'Moluscos', 'Tethydidae', 'Carnívoro', 'Corpo semiesverdeado translúcido com apêndices ramificados.'),
-('Nudibrânquio Dragão Anão', 'Pteraeolidia ianthina', 'Moluscos', 'Facelinidae', 'Carnívoro', 'Mantém algas simbióticas em suas ceratas alongadas.'),
-('Lesma do Mar Renda', 'Trapania reticulata', 'Moluscos', 'Goniodorididae', 'Carnívoro', 'Apresenta rede escura sobre fundo claro.'),
-('Nudibrânquio Chifre', 'Okenia elegans', 'Moluscos', 'Goniodorididae', 'Carnívoro', 'Possui projeções finas e alongadas ao redor do corpo.'),
-('Lesma do Mar Bolha', 'Hydatina physis', 'Moluscos', 'Aplustridae', 'Carnívoro', 'Concha fina e listrada que abriga o corpo mole.'),
-('Bolha do Mar Pintada', 'Micromelo undatus', 'Moluscos', 'Aplustridae', 'Carnívoro', 'Concha translúcida com linhas escuras onduladas.'),
-('Lesma Cabeça de Martelo', 'Navanax inermis', 'Moluscos', 'Aglajidae', 'Carnívoro', 'Segue rastros de muco de outras lesmas marinhas para caçar.'),
-('Lesma do Mar Sapato', 'Phidiana lynceus', 'Moluscos', 'Facelinidae', 'Carnívoro', 'Exibe linha branca na cabeça e ceratas alaranjadas.'),
-('Lesma do Mar Brilho', 'Cuthona fulgens', 'Moluscos', 'Tergipedidae', 'Carnívoro', 'Pequena e colorida, associa-se a colônias de hidrozoários.'),
-('Lesma do Mar Coral Rosa', 'Phidiana hiltoni', 'Moluscos', 'Facelinidae', 'Carnívoro', 'Comum em zonas entremarés e poças de maré.'),
-('Lesma do Mar Fita', 'Pleurobranchaea maculata', 'Moluscos', 'Pleurobranchaeidae', 'Carnívoro', 'Possui brânquia lateral e dieta predadora variada.'),
-('Caracol Cone Geográfico', 'Conus striatus', 'Moluscos', 'Conidae', 'Carnívoro', 'Caça peixes utilizando dardos com neurotoxinas.'),
-('Caracol Cone Letrado', 'Conus litteratus', 'Moluscos', 'Conidae', 'Carnívoro', 'Concha branca com fileiras de pontos escuros.'),
-('Caracol Cone Príncipe', 'Conus princeps', 'Moluscos', 'Conidae', 'Carnívoro', 'Concha com listras longitudinais escuras.'),
-('Caracol Cone Rainha', 'Conus regius', 'Moluscos', 'Conidae', 'Carnívoro', 'Habita recifes tropicais e áreas rochosas.'),
-('Caracol Cone Betulinus', 'Conus betulinus', 'Moluscos', 'Conidae', 'Carnívoro', 'Concha robusta e amarelada com manchas espirais.'),
-('Caracol Cone Virgem', 'Conus virgo', 'Moluscos', 'Conidae', 'Carnívoro', 'Concha clara com base escura característica.'),
-('Caracol Cone General', 'Conus generalis', 'Moluscos', 'Conidae', 'Carnívoro', 'Apresenta faixas coloridas e concha cônica alongada.'),
-('Caracol Cone Capitão', 'Conus capitaneus', 'Moluscos', 'Conidae', 'Carnívoro', 'Concha esverdeada ou amarronzada com faixas claras.'),
-('Caracol Cone Marmoreado', 'Conus caracteristicus', 'Moluscos', 'Conidae', 'Carnívoro', 'Padrão reticulado escuro sobre fundo claro.'),
-('Caracol Cone Bandido', 'Conus vexillum', 'Moluscos', 'Conidae', 'Carnívoro', 'Concha grande e pesada de recifes do Indo-Pacífico.'),
-('Búzio de Porcelana', 'Cypraea arabica', 'Moluscos', 'Cypraeidae', 'Onívoro', 'Concha brilhante com desenhos que lembram escrita.'),
-('Búzio Moeda', 'Monetaria moneta', 'Moluscos', 'Cypraeidae', 'Herbívoro', 'Historicamente usado como moeda em trocas comerciais.'),
-('Búzio Anel', 'Monetaria annulus', 'Moluscos', 'Cypraeidae', 'Herbívoro', 'Apresenta um anel claro marcante no dorso.'),
-('Búzio Cervinho', 'Cypraea cervus', 'Moluscos', 'Cypraeidae', 'Onívoro', 'Uma das maiores espécies de cipreídeos, com pintas claras.'),
-('Búzio Mapa', 'Leporicypraea mappa', 'Moluscos', 'Cypraeidae', 'Onívoro', 'Concha com linhas finas que lembram um mapa.'),
-('Búzio Talpa', 'Talparia talpa', 'Moluscos', 'Cypraeidae', 'Carnívoro', 'Concha alongada com faixas castanhas.'),
-('Búzio Maurício', 'Mauritia mauritiana', 'Moluscos', 'Cypraeidae', 'Onívoro', 'Base escura e dorso marrom com manchas claras.'),
-('Búzio Carneiro', 'Cypraea zebra', 'Moluscos', 'Cypraeidae', 'Onívoro', 'Concha alongada com manchas claras em fundo escuro.'),
-('Murex Espinhoso', 'Murex tribulus', 'Moluscos', 'Muricidae', 'Carnívoro', 'Concha coberta de espinhos finos e alongados.'),
-('Murex Tintura', 'Bolinus brandaris', 'Moluscos', 'Muricidae', 'Carnívoro', 'Relacionado historicamente à obtenção de pigmento púrpura.'),
 
 
 
@@ -913,156 +464,6 @@ INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, di
 ('Água viva flor de lótus', 'Mastigias albipunctatus', 'Cnidário', 'Mastigiidae', 'Carnívoro', 'Possui manchas brancas características na umbrella e vive em associação com algas fotossintéticas.'),
 ('Coral cérebro rugoso', 'Diploria clivosa', 'Cnidário', 'Faviidae', 'Carnívoro', 'Coral incrustante ou maciço de superfície ondulada, adaptado a zonas de maior agitação da água.'),
 ('Anêmona tentáculo longo', 'Macrodactyla doreensis', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Prefere substratos arenosos ou lodosos e estende tentáculos compridos com pontas levemente arredondadas.'),
-('Água viva do pacífico', 'Chrysaora fuscescens', 'Cnidário', 'Pelagiidae', 'Carnívoro', 'Apresenta um sino marrom-dourado e tentáculos longos e finos muito comuns na costa do Pacífico.'),
-('Coral cérebro comum', 'Diploria labyrinthiformis', 'Cnidário', 'Faviidae', 'Carnívoro', 'Forma colônias arredondadas com sulcos profundos e tortuosos que lembram a superfície cerebral.'),
-('Anêmona de maré vermelha', 'Actinia tenebrosa', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Espécie de coloração vermelho-escura intensa, frequente em fendas e rochas de zonas entremarés.'),
-('Água viva borboleta', 'Porpita porpita', 'Cnidário', 'Porpitidae', 'Carnívoro', 'Colônia flutuante em forma de disco dourado ou azulado circundada por tentáculos curtos.'),
-('Coral chifre de veado ramificado', 'Acropora cervicornis', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Cresce em ramos cilíndricos alongados que formam emaranhados importantes nos recifes rasos.'),
-('Anêmona estrela do golfo', 'Bunodosoma cavernata', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Possui coluna coberta por verrugas adesivas que ajudam a fixar grãos de areia e fragmentos.'),
-('Água viva lunar', 'Aurelia labiata', 'Cnidário', 'Ulmaridae', 'Carnívoro', 'Medusa translúcida com quatro estruturas em formato de ferradura ou anel visíveis no centro do sino.'),
-('Coral couve-flor de recife', 'Pocillopora meandrina', 'Cnidário', 'Pocilloporidae', 'Carnívoro', 'Colônia robusta de ramos curtos e arredondados que suporta bem ondas fortes.'),
-('Anêmona do fundo arenoso', 'Cerianthus lloydii', 'Cnidário', 'Cerianthidae', 'Carnívoro', 'Habita fundos moles construindo um tubo protetor de muco e sedimento de onde estende os tentáculos.'),
-('Água viva de sino transparente', 'Clytia hemisphaerica', 'Cnidário', 'Campanulariidae', 'Carnívoro', 'Pequena hidromedusa transparente muito utilizada em estudos de desenvolvimento e biologia celular.'),
-('Coral cérebro liso', 'Diploria clivosa', 'Cnidário', 'Faviidae', 'Carnívoro', 'Apresenta relevo ondulado mais suave em comparação a outras espécies de corais-cérebro.'),
-('Anêmona verde de recife', 'Stichodactyla mertensii', 'Cnidário', 'Stichodactylidae', 'Carnívoro', 'Grande anêmona de disco largo com verrugas na face inferior e associação frequente com peixes-palhaço.'),
-('Água viva bola de fogo', 'Chrysaora colorata', 'Cnidário', 'Pelagiidae', 'Carnívoro', 'Destaca-se por listras radiais marcantes e tons alaranjados ou arroxeados no sino.'),
-('Coral dedo de luva', 'Alcyonium glomeratum', 'Cnidário', 'Alcyoniidae', 'Carnívoro', 'Coral mole de águas frias com projeções lobadas avermelhadas ou rosadas.'),
-('Anêmona de rocha costeira', 'Anthopleura artemisia', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Costuma viver parcialmente enterrada na areia junto a rochas, exibindo tentáculos listrados ou pontuados.'),
-('Água viva lanterna do abismo', 'Atolla vanhoeffeni', 'Cnidário', 'Atollidae', 'Carnívoro', 'Medusa de águas profundas com sulco coronal pronunciado e emissão de luz azul em padrão circular.'),
-('Coral prato de recife', 'Agaricia agaricites', 'Cnidário', 'Agariciidae', 'Carnívoro', 'Forma placas ou lâminas foliáceas finas com pequenas cristas paralelas onde se alojam os pólipos.'),
-('Anêmona de tentáculos curtos', 'Phymanthus pulcher', 'Cnidário', 'Phymanthidae', 'Carnívoro', 'Apresenta borda repleta de tentáculos pequenos e disco oral decorado com padrões variados.'),
-('Água viva guarda-chuva azul', 'Cyanea capillata', 'Cnidário', 'Cyaneidae', 'Carnívoro', 'Variante de grande porte com tons azulados e longos tentáculos especializados na captura de presas.'),
-('Coral estrela grande', 'Montastraea cavernosa', 'Cnidário', 'Faviidae', 'Carnívoro', 'Possui coralitos grandes e salientes, sendo comum em diferentes profundidades de recifes tropicais.'),
-('Anêmona do manguezal', 'Aiptasia pallida', 'Cnidário', 'Aiptasiidae', 'Carnívoro', 'Espécie resistente que se propaga com facilidade por divisão longitudinal e laceração pedal.'),
-('Água viva de cauda longa', 'Chrysaora achlyos', 'Cnidário', 'Pelagiidae', 'Carnívoro', 'Medusa de grandes dimensões e coloração escura, com apêndices orais extensos e ondulados.'),
-('Coral mesa gigante', 'Acropora cytherea', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Constrói mesas largas e horizontais formadas por uma rede densa de ramificações finas.'),
-('Anêmona de maré rochosa', 'Actinia equina', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Encontrada em costões rochosos, fecha-se como uma bolha compacta quando exposta ao ar.'),
-('Água viva capacete profundo', 'Periphylla periphylla', 'Cnidário', 'Periphyllidae', 'Carnívoro', 'Habita grandes profundidades oceânicas, apresentando sino alto e pigmentação escura protetora.'),
-('Coral chifre de alce tropical', 'Acropora palmata', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Possui ramos largos e achatados que lembram galhadas e absorvem grande energia das ondas.'),
-('Anêmona tapete do pacífico', 'Stichodactyla haddoni', 'Cnidário', 'Stichodactylidae', 'Carnívoro', 'Espécie de disco espesso e pegajoso que serve de abrigo para diversas espécies de peixes-palhaço.'),
-('Água viva disco dourado', 'Chrysaora fuscescens', 'Cnidário', 'Pelagiidae', 'Carnívoro', 'Comum em águas costeiras temperadas, apresenta sino acastanhado e braços orais elaborados.'),
-('Coral cérebro sulcado', 'Pseudodiploria clivosa', 'Cnidário', 'Faviidae', 'Carnívoro', 'Forma colônias resistentes com canais sinuosos que ajudam na estruturação do recife.'),
-('Anêmona solitária da areia', 'Edwardsia sipunculoides', 'Cnidário', 'Edwardsiidae', 'Carnívoro', 'Vive enterrada em sedimentos finos e estende os tentáculos para capturar pequenos invertebrados.'),
-('Água viva sino de cristal', 'Aequorea victoria', 'Cnidário', 'Aequoreidae', 'Carnívoro', 'Hidromedusa transparente conhecida pela presença de fotoproteínas e proteína verde fluorescente.'),
-('Coral leque roxo', 'Gorgonia ventalina', 'Cnidário', 'Gorgoniidae', 'Carnívoro', 'Forma uma rede ramificada e achatada, geralmente em tons de roxo ou lilás, em recifes rasos.'),
-('Anêmona de poça de maré', 'Anthopleura xanthogrammica', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Exibe disco oral largo e tentáculos que adquirem tom verde intenso graças às microalgas simbióticas.'),
-('Água viva de coroa escura', 'Atolla wyvillei', 'Cnidário', 'Atollidae', 'Carnívoro', 'Espécie batipelágica que utiliza flashes luminosos como mecanismo de defesa contra predadores.'),
-('Coral bolha translúcido', 'Plerogyra sinuosa', 'Cnidário', 'Euphylliidae', 'Carnívoro', 'Desenvolve estruturas globosas túrgidas que protegem os pólipos durante o período diurno.'),
-('Anêmona tubo de areia', 'Cerianthus membranaceus', 'Cnidário', 'Cerianthidae', 'Carnívoro', 'Mantém o corpo protegido dentro de um tubo fibroso enterrado no fundo marinho.'),
-('Água viva flor de cera', 'Cassiopea frondosa', 'Cnidário', 'Cassiopeidae', 'Carnívoro', 'Medusa bentônica que repousa invertida no fundo, expondo apêndices ricos em algas simbióticas.'),
-('Coral martelo verde', 'Euphyllia ancora', 'Cnidário', 'Euphylliidae', 'Carnívoro', 'Exibe pólipos com extremidades em forma de âncora que frequentemente apresentam fluorescência verde.'),
-('Anêmona de recife vermelha', 'Condylactis gigantea', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Apresenta coluna robusta e tentáculos longos com pontas contrastantes em recifes tropicais.'),
-('Água viva cometa vermelha', 'Tiburonia granrojo', 'Cnidário', 'Ulmaridae', 'Carnívoro', 'Medusa de águas profundas sem tentáculos filamentosos, com corpo espesso de tom avermelhado.'),
-('Coral dedo de recife', 'Porites porites', 'Cnidário', 'Poritidae', 'Carnívoro', 'Cresce em ramos curtos e arredondados que formam moitas compactas em áreas protegidas.'),
-('Anêmona listrada branca e verde', 'Diadumene lineata', 'Cnidário', 'Haliplanellidae', 'Carnívoro', 'Pequena anêmona de ampla distribuição costeira, reconhecida pelas faixas longitudinais claras e escuras.'),
-('Água viva véu de noiva tropical', 'Olindias sambaquiensis', 'Cnidário', 'Olindiidae', 'Carnívoro', 'Hidromedusa delicada com tentáculos marginados por nematocistos dispostos em anéis.'),
-('Coral cérebro maciço', 'Colpophyllia natans', 'Cnidário', 'Faviidae', 'Carnívoro', 'Forma domos calcários volumosos com vales largos e sinuosos na superfície da colônia.'),
-('Anêmona de rocha pegajosa', 'Bunodosoma caissorum', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Comum em costões do Atlântico Sul, apresenta verrugas que retêm detritos e fragmentos de conchas.'),
-('Água viva balão azul', 'Catostylus mosaicus', 'Cnidário', 'Catostylidae', 'Carnívoro', 'Medusa robusta de águas costeiras e estuarinas com sino firme e tons variáveis.'),
-('Coral couve-flor ramificado', 'Pocillopora damicornis', 'Cnidário', 'Pocilloporidae', 'Carnívoro', 'Forma colônias densas e ramificadas que oferecem refúgio para peixes e crustáceos.'),
-('Anêmona de fogo tropical', 'Actinodendron arboreum', 'Cnidário', 'Actinodendridae', 'Carnívoro', 'Possui tentáculos muito ramificados, semelhantes a pequenas árvores, com potentes células urticantes.'),
-('Água viva cauda de cavalo atlântica', 'Dactylometra quinquecirrha', 'Cnidário', 'Pelagiidae', 'Carnívoro', 'Apresenta sino com manchas radiais e longos tentáculos que causam irritação intensa ao contato.'),
-('Coral folha de alface', 'Undaria tenuifolia', 'Cnidário', 'Agariciidae', 'Carnívoro', 'Desenvolve lâminas delgadas e onduladas que se sobrepõem formando estruturas foliáceas.'),
-('Anêmona de vidro translúcida', 'Exaiptasia diaphana', 'Cnidário', 'Aiptasiidae', 'Carnívoro', 'Corpo semies透明 e alongado, bastante empregado em pesquisas sobre simbiose com zooxantelas.'),
-('Água viva púrpura do mar', 'Chrysaora hysosella', 'Cnidário', 'Pelagiidae', 'Carnívoro', 'Exibe marcas em formato de V no sino e tentáculos longos adaptados à captura de zooplâncton.'),
-('Coral bambu de profundidade', 'Isidis hippuris', 'Cnidário', 'Isididae', 'Carnívoro', 'Possui esqueleto articulado composto por segmentos calcários alternados com material proteico flexível.'),
-('Anêmona plumosa gigante', 'Metridium senile', 'Cnidário', 'Metridiidae', 'Carnívoro', 'Pode atingir grande porte em águas frias, exibindo coroa densa de tentáculos finos como penas.'),
-('Coral prato ondulado', 'Mycedium elephantotus', 'Cnidário', 'Agariciidae', 'Carnívoro', 'Forma grandes lâminas ou pratos calcários com superfície rugosa e bordas recortadas.'),
-('Água viva sino adesivo', 'Gonionemus vertens', 'Cnidário', 'Olindiidae', 'Carnívoro', 'Pequena hidromedusa capaz de aderir a superfícies submersas usando estruturas adesivas nos tentáculos.'),
-('Coral estrela de recife', 'Montastraea annularis', 'Cnidário', 'Faviidae', 'Carnívoro', 'Constrói colônias em forma de colunas ou lóbulos arredondados que compõem a estrutura do recife.'),
-('Anêmona morango de águas frias', 'Corynactis californica', 'Cnidário', 'Corallimorphidae', 'Carnívoro', 'Forma densas colônias coloridas em paredões rochosos, com pontas dos tentáculos esféricas.'),
-('Água viva fantasma abissal', 'Stygiomedusa gigantea', 'Cnidário', 'Ulmaridae', 'Carnívoro', 'Medusa rara de grandes profundidades dotada de braços orais longos e achatados semelhantes a fitas.'),
-('Coral chifre de veado colorido', 'Acropora millepora', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Forma colônias ramificadas compactas com variação cromática expressiva em recifes tropicais.'),
-('Anêmona dourada de recife', 'Condylactis gigantea aurea', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Apresenta tentáculos alongados de coloração amarelada ou dourada em ambientes recifais.'),
-('Água viva flor de lótus manchada', 'Mastigias albipunctatus', 'Cnidário', 'Mastigiidae', 'Carnívoro', 'Caracteriza-se por manchas claras na superfície do sino e relação simbiótica com algas fotossintéticas.'),
-('Coral cérebro estriado', 'Pseudodiploria strigosa', 'Cnidário', 'Faviidae', 'Carnívoro', 'Apresenta cristas e sulcos marcantes que conferem resistência mecânica em recifes tropicais.'),
-('Anêmona de maré estuarina', 'Nematostella vectensis', 'Cnidário', 'Edwardsiidae', 'Carnívoro', 'Habita poças salobras e estuários, sendo um importante modelo experimental em biologia evolutiva.'),
-('Água viva guarda-sol pelágica', 'Rhizostoma luteum', 'Cnidário', 'Rhizostomatidae', 'Carnívoro', 'Medusa oceânica de porte considerável com braços orais ramificados e sem tentáculos na borda do sino.'),
-('Coral couve em placas', 'Montipora capricornis', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Cresce formando placas ou espirais sobrepostas, sendo comum em recifes e sistemas marinhos.'),
-('Anêmona incubadora', 'Epiactis prolifera', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Retém seus filhotes fixos à parede externa do corpo até atingirem estágio mais avançado.'),
-('Água viva bolha translúcida', 'Chrysaora pacifica', 'Cnidário', 'Pelagiidae', 'Carnívoro', 'Possui sino translúcido com padrão radial discreto e tentáculos filamentosos alongados.'),
-('Coral cérebro labirinto profundo', 'Diploria labyrinthiformis', 'Cnidário', 'Faviidae', 'Carnívoro', 'Desenvolve esqueletos calcários densos com sulcos contínuos em recifes tropicais e subtropicais.'),
-('Anêmona joia colorida', 'Corynactis viridis', 'Cnidário', 'Corallimorphidae', 'Carnívoro', 'Espécie colonial pequena de cores vivas que forra rochas submersas em locais de menor incidência de luz.'),
-('Água viva cristalina', 'Aequorea forskalea', 'Cnidário', 'Aequoreidae', 'Carnívoro', 'Apresenta sino transparente em forma de campânula com canais radiais bem nítidos.'),
-('Coral orelha de recife', 'Mycedium elephantotus', 'Cnidário', 'Agariciidae', 'Carnívoro', 'Forma lâminas largas e onduladas com pólipos dispostos de modo a acompanhar o crescimento da borda.'),
-('Anêmona cravo ornamental', 'Phymanthus crucifer', 'Cnidário', 'Phymanthidae', 'Carnívoro', 'Destaca-se pelo disco oral colorido com desenhos geométricos e tentáculos curtos marginais.'),
-('Água viva cometa abissal', 'Tiburonia granrojo', 'Cnidário', 'Ulmaridae', 'Carnívoro', 'Habita grandes profundidades oceânicas, exibindo coloração vermelho-escura intensa e estrutura robusta.'),
-('Coral cérebro comum de recife', 'Pseudodiploria strigosa', 'Cnidário', 'Faviidae', 'Carnívoro', 'Espécie construtora de recifes com sulcos sinuosos bem definidos e alta tolerância ambiental.'),
-('Anêmona do mangue de bojos', 'Bunodeopsis globulifera', 'Cnidário', 'Boloceroididae', 'Carnívoro', 'Pequena anêmona associada a raízes de mangue e áreas costeiras abrigadas com projeções arredondadas.'),
-('Água viva sino de alga', 'Gonionemus vertens', 'Cnidário', 'Olindiidae', 'Carnívoro', 'Pequena medusa costeira que se prende a vegetação submersa por meio de ventosas tentaculares.'),
-('Coral flor de pedra anguloso', 'Mussa angulosa', 'Cnidário', 'Mussidae', 'Carnívoro', 'Apresenta pólipos grandes e carnosos sobre esqueletos angulosos em recifes tropicais.'),
-('Anêmona de poça verde', 'Anthopleura sola', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Habita poças de maré rochosas, exibindo tentáculos grossos e coloração esverdeada.'),
-('Água viva guarda-sol grande', 'Rhizostoma luteum', 'Cnidário', 'Rhizostomatidae', 'Carnívoro', 'Medusa de grande porte em águas abertas, com braços orais ramificados e filtração de pequenas presas.'),
-('Coral pedra-cérebro', 'Colpophyllia natans', 'Cnidário', 'Faviidae', 'Carnívoro', 'Forma grandes massas calcárias arredondadas com sulcos profundos que contribuem para o recife.'),
-('Anêmona estrela de estuário', 'Nematostella vectensis', 'Cnidário', 'Edwardsiidae', 'Carnívoro', 'Tolera amplas variações de salinidade e temperatura em ambientes costeiros rasos.'),
-('Água viva bolha do pacífico', 'Chrysaora pacifica', 'Cnidário', 'Pelagiidae', 'Carnívoro', 'Apresenta sino claro com marcas radiais suaves e tentáculos longos e finos.'),
-('Coral couve verde em lâminas', 'Montipora capricornis', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Forma lâminas ou espirais sobrepostas com superfície porosa característica do gênero.'),
-('Anêmona flamejante de águas frias', 'Epiactis prolifera', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Protege os jovens mantendo-os aderidos à coluna externa do corpo durante o desenvolvimento inicial.'),
-('Água viva véu de noiva costeiro', 'Olindias sambaquiensis', 'Cnidário', 'Olindiidae', 'Carnívoro', 'Hidromedusa translúcida de águas rasas e estuários com tentáculos finos e sensíveis.'),
-('Coral cérebro estrelado grande', 'Montastraea annularis', 'Cnidário', 'Faviidae', 'Carnívoro', 'Forma colônias colunares ou lobadas que ajudam a sustentar a estrutura tridimensional dos recifes.'),
-('Anêmona rosa de costão', 'Actinia equina rosea', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Variedade de tom rosado intenso que retrai os tentáculos quando exposta na maré baixa.'),
-('Água viva fantasma de profundidade', 'Stygiomedusa gigantea', 'Cnidário', 'Ulmaridae', 'Carnívoro', 'Espécie de águas profundas com longos apêndices orais em formato de fita.'),
-('Coral chifre de veado azulado', 'Acropora millepora', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Forma colônias ramificadas densas que podem apresentar tons azulados, verdes ou alaranjados.'),
-('Anêmona dourada de recife tropical', 'Condylactis gigantea aurea', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Exibe tentáculos longos em tons de amarelo ou dourado com extremidades contrastantes.'),
-('Água viva flor de lótus tropical', 'Mastigias albipunctatus', 'Cnidário', 'Mastigiidae', 'Carnívoro', 'Possui manchas brancas no sino e obtém parte de sua energia por meio de algas simbióticas.'),
-('Coral cérebro rugoso de recife', 'Diploria clivosa', 'Cnidário', 'Faviidae', 'Carnívoro', 'Forma colônias maciças ou incrustantes de superfície ondulada em áreas de correnteza.'),
-('Anêmona de tentáculo longo da areia', 'Macrodactyla doreensis', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Vive em fundos arenosos ou lodosos e estende tentáculos compridos de ponta levemente arredondada.'),
-('Água viva lunar do atlântico', 'Aurelia aurita', 'Cnidário', 'Ulmaridae', 'Carnívoro', 'Medusa translúcida com quatro anéis gonadais visíveis e margem bordada por tentáculos curtos.'),
-('Coral cérebro sinuoso', 'Diploria labyrinthiformis', 'Cnidário', 'Faviidae', 'Carnívoro', 'Constrói esqueletos calcários duros com sulcos profundos e contínuos em recifes tropicais.'),
-('Anêmona vermelha de costão', 'Actinia equina', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Fixa-se em rochas costeiras e recolhe os tentáculos quando a maré baixa.'),
-('Água viva juba de leão gigante', 'Cyanea capillata', 'Cnidário', 'Cyaneidae', 'Carnívoro', 'Uma das maiores medusas do mundo, com sino largo e grande quantidade de tentáculos longos.'),
-('Coral cérebro de recife', 'Meandrina meandrites', 'Cnidário', 'Meandrinidae', 'Carnívoro', 'Forma colônias com sulcos sinuosos marcantes que lembram a superfície de um cérebro.'),
-('Vespa-do-mar tropical', 'Chironex fleckeri', 'Cnidário', 'Chirodropidae', 'Carnívoro', 'Cubozoário de águas tropicais do Indo-Pacífico conhecido por sua potente peçonha.'),
-('Hidra verde de água doce', 'Hydra viridissima', 'Cnidário', 'Hydridae', 'Carnívoro', 'Pequeno pólipo de água doce fixo à vegetação aquática, com coloração esverdeada por algas simbióticas.'),
-('Coral chifre de alce', 'Acropora palmata', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Coral ramificado de grande importância ecológica na proteção costeira contra ondas fortes.'),
-('Anêmona gigante de carpete', 'Stichodactyla gigantea', 'Cnidário', 'Stichodactylidae', 'Carnívoro', 'Abriga peixes-palhaço em relação de mutualismo em recifes rasos.'),
-('Água viva comum', 'Aurelia alba', 'Cnidário', 'Ulmaridae', 'Carnívoro', 'Medusa pelágica com sino translúcido, canais radiais visíveis e tentáculos marginais adaptados à captura de presas. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Coral azulada', 'Acropora australis', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Coral construtor de recifes com esqueleto calcário ramificado que abriga diversidade marinha em águas tropicais. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Anêmona noturna', 'Actinia simplex', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Pólipo solitário de costão rochoso que fixa sua base ao substrato e recolhe os tentáculos na maré baixa. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Água viva ondulada', 'Chrysaora profunda', 'Cnidário', 'Pelagiidae', 'Carnívoro', 'Medusa costeira de sino ornamentado e tentáculos longos que atuam na defesa e captura de zooplâncton. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Coral atlântica', 'Montipora viridis', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Coral de crescimento incrustante, laminar ou ramificado com coralitos pequenos em superfície porosa. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Anêmona rara', 'Anthopleura parva', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Anêmona de zonas entremarés que frequentemente mantém simbiose com microalgas fotossintéticas nos tecidos. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Água viva tropical', 'Cyanea striata', 'Cnidário', 'Cyaneidae', 'Carnívoro', 'Medusa de grande porte com sino achatado e densa coroa de tentáculos filamentosos longos. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Coral esmeralda', 'Porites nigra', 'Cnidário', 'Poritidae', 'Carnívoro', 'Coral resistente de esqueleto poroso, comum em formas maciças, colunares ou ramificadas em recifes. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Anêmona colonial', 'Condylactis aurea', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Anêmona recifal de coluna robusta e tentáculos longos que exibem coloração variada e pontas contrastantes. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Coral brilhante', 'Favia tenuis', 'Cnidário', 'Faviidae', 'Carnívoro', 'Coral pétreo de colônias arredondadas ou hemisféricas com coralitos bem demarcados na superfície. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Água viva índica', 'Rhizostoma lineata', 'Cnidário', 'Rhizostomatidae', 'Carnívoro', 'Medusa de sino firme e braços orais ramificados sem tentáculos marginais, filtrando pequenas partículas e presas. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Anêmona silenciosa', 'Stichodactyla argentea', 'Cnidário', 'Stichodactylidae', 'Carnívoro', 'Anêmona de disco largo e tentáculos curtos abundantes, frequentemente associada a peixes-palhaço. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Coral translúcida', 'Pocillopora abyssalis', 'Cnidário', 'Pocilloporidae', 'Carnívoro', 'Coral ramificado compacto com ramos curtos e verrugosos que suporta bem áreas de correnteza. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Água viva recifal', 'Atolla formosa', 'Cnidário', 'Atollidae', 'Carnívoro', 'Medusa de águas profundas com sulco coronal distinto e bioluminescência defensiva em padrão circular. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Anêmona laminar', 'Cerianthus ornata', 'Cnidário', 'Cerianthidae', 'Carnívoro', 'Anêmona tubular que habita fundos moles construindo um tubo fibroso protetor de onde estende os tentáculos. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Coral robusta', 'Agaricia micans', 'Cnidário', 'Agariciidae', 'Carnívoro', 'Coral foliáceo ou laminar de superfície ondulada, adaptado a diferentes níveis de luminosidade no recife. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Água viva setentrional', 'Periphylla occidentalis', 'Cnidário', 'Periphyllidae', 'Carnívoro', 'Medusa de águas profundas com sino cônico ou alto e pigmentação escura protetora. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Anêmona ancorada', 'Edwardsia gracilis', 'Cnidário', 'Edwardsiidae', 'Carnívoro', 'Anêmona alongada que vive enterrada em areia ou lama, deixando apenas a coroa tentacular exposta. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Coral prateada', 'Euphyllia agilis', 'Cnidário', 'Euphylliidae', 'Carnívoro', 'Coral de pólipos carnudos e tentáculos alongados com extremidades expandidas que oscilam na correnteza. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Água viva bentônica', 'Gonionemus alba', 'Cnidário', 'Olindiidae', 'Carnívoro', 'Pequena hidromedusa costeira com tentáculos providos de estruturas adesivas para fixação em algas. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Gorgônia veludosa', 'Gorgonia minor', 'Cnidário', 'Gorgoniidae', 'Carnívoro', 'Colônia ramificada em formato de leque ou arbusto com esqueleto flexível e pólipos distribuídos nos ramos. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Coral mole profunda', 'Alcyonium complexa', 'Cnidário', 'Alcyoniidae', 'Carnívoro', 'Colônia carnuda sem esqueleto calcário maciço, formando lóbulos ou dedos em águas temperadas e frias. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Anêmona nativa', 'Bunodosoma flava', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Anêmona de costão com verrugas na coluna que auxiliam na adesão de areia e fragmentos de conchas. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Água viva costeira', 'Aequorea rubra', 'Cnidário', 'Aequoreidae', 'Carnívoro', 'Hidromedusa transparente em forma de sino com canais radiais definidos e margem repleta de tentáculos. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Coral rubra', 'Madracis parva', 'Cnidário', 'Pocilloporidae', 'Carnívoro', 'Coral colonial de ramos finos ou crostas que ocorre desde águas rasas até zonas mais profundas. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Anêmona solitária', 'Aiptasia maculata', 'Cnidário', 'Aiptasiidae', 'Carnívoro', 'Anêmona delgada e translúcida com alta capacidade de propagação assexuada em ambientes costeiros e aquários. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Água viva cristalina', 'Cassiopea rosea', 'Cnidário', 'Cassiopeidae', 'Carnívoro', 'Medusa bentônica que costuma repousar invertida no fundo raso, expondo apêndices ricos em algas simbióticas. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Coral pacífica', 'Scolymia marina', 'Cnidário', 'Mussidae', 'Carnívoro', 'Coral solitário de pólipo grande e carnoso sobre cálice circular, comum em ambientes recifais. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Hidra vistosa', 'Hydra crassa', 'Cnidário', 'Hydridae', 'Carnívoro', 'Pólipo de água doce de corpo cilíndrico e tentáculos ao redor da boca, fixo a plantas e superfícies submersas. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Coral abissal', 'Tubastraea lineata', 'Cnidário', 'Dendrophylliidae', 'Carnívoro', 'Coral azooxantelado de pólipos vistosos que se estendem para capturar alimento em áreas sombreadas ou noturnas. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Água viva recifal do norte', 'Aurelia hyalina', 'Cnidário', 'Ulmaridae', 'Carnívoro', 'Medusa pelágica com sino translúcido, canais radiais visíveis e tentáculos marginais adaptados à captura de presas. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Coral laminar', 'Acropora littoralis', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Coral construtor de recifes com esqueleto calcário ramificado que abriga diversidade marinha em águas tropicais. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Anêmona robusta', 'Actinia speciosa', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Pólipo solitário de costão rochoso que fixa sua base ao substrato e recolhe os tentáculos na maré baixa. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Água viva setentrional de superfície', 'Chrysaora decora', 'Cnidário', 'Pelagiidae', 'Carnívoro', 'Medusa costeira de sino ornamentado e tentáculos longos que atuam na defesa e captura de zooplâncton. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Coral ancorada', 'Montipora micans', 'Cnidário', 'Acroporidae', 'Carnívoro', 'Coral de crescimento incrustante, laminar ou ramificado com coralitos pequenos em superfície porosa. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Anêmona prateada', 'Anthopleura borealis', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Anêmona de zonas entremarés que frequentemente mantém simbiose com microalgas fotossintéticas nos tecidos. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Água viva bentônica do norte', 'Cyanea robusta', 'Cnidário', 'Cyaneidae', 'Carnívoro', 'Medusa de grande porte com sino achatado e densa coroa de tentáculos filamentosos longos. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Coral veludosa', 'Porites celer', 'Cnidário', 'Poritidae', 'Carnívoro', 'Coral resistente de esqueleto poroso, comum em formas maciças, colunares ou ramificadas em recifes. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Anêmona profunda', 'Condylactis caerulea', 'Cnidário', 'Actiniidae', 'Carnívoro', 'Anêmona recifal de coluna robusta e tentáculos longos que exibem coloração variada e pontas contrastantes. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Coral nativa', 'Favia minor', 'Cnidário', 'Faviidae', 'Carnívoro', 'Coral pétreo de colônias arredondadas ou hemisféricas com coralitos bem demarcados na superfície. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Água viva costeira de recife', 'Rhizostoma undata', 'Cnidário', 'Rhizostomatidae', 'Carnívoro', 'Medusa de sino firme e braços orais ramificados sem tentáculos marginais, filtrando pequenas partículas e presas. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Anêmona rubra', 'Stichodactyla fusca', 'Cnidário', 'Stichodactylidae', 'Carnívoro', 'Anêmona de disco largo e tentáculos curtos abundantes, frequentemente associada a peixes-palhaço. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Coral solitária', 'Pocillopora nivea', 'Cnidário', 'Pocilloporidae', 'Carnívoro', 'Coral ramificado compacto com ramos curtos e verrugosos que suporta bem áreas de correnteza. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
-('Água viva cristalina do sul', 'Atolla magna', 'Cnidário', 'Atollidae', 'Carnívoro', 'Medusa de águas profundas com sulco coronal distinto e bioluminescência defensiva em padrão circular. Contribui para a dinâmica trófica local ao alimentar-se de organismos planctônicos.'),
-('Anêmona pacífica', 'Cerianthus maculata', 'Cnidário', 'Cerianthidae', 'Carnívoro', 'Anêmona tubular que habita fundos moles construindo um tubo fibroso protetor de onde estende os tentáculos. Apresenta nematocistos especializados para imobilizar pequenas presas.'),
-('Coral vistosa', 'Agaricia violacea', 'Cnidário', 'Agariciidae', 'Carnívoro', 'Coral foliáceo ou laminar de superfície ondulada, adaptado a diferentes níveis de luminosidade no recife. Desenvolve-se em águas bem oxigenadas com movimentação constante da água.'),
-('Água viva abissal', 'Periphylla pelagica', 'Cnidário', 'Periphyllidae', 'Carnívoro', 'Medusa de águas profundas com sino cônico ou alto e pigmentação escura protetora. Possui simetria radial característica do filo e respostas rápidas a estímulos.'),
 
 
 
@@ -1097,7 +498,7 @@ INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, di
 ('Ofiúro reticulado', 'Ophionereis reticulata', 'Equinodermo', 'Ophionereididae', 'Detritívoro', 'Possui um padrão de rede geométrica delicada na superfície dorsal do disco central.'),
 ('Lírio do mar plumoso', 'Comaster schlegelii', 'Equinodermo', 'Comasteridae', 'Suspensívoro', 'Possui dezenas de braços plumosos coloridos que capturam plâncton na correnteza.'),
 ('Bolacha da praia gigante', 'Dendraster excentricus', 'Equinodermo', 'Dendrasteridae', 'Detritívoro', 'Forma densos leitos verticais em fundos arenosos expostos às ondas.'),
-('Estrela fragilizada vermelha', 'Ophioderma brevispinum', 'Equinodermo', 'Ophiodermatidae', 'Detritívoro', 'Disco central robusto com braços curtos e grossos que se movem de forma serpentina.'),
+('Estrela fragilizada vermelha', 'Ophioderma brevispinum', 'Equinodermo', 'Ophiodermatidae', 'Detritívoro', 'Disco central robusto com braços curtos e grossos que se movem de forma serpentina.'), 
 ('Pepino do mar amarelo', 'Cucumaria frondosa', 'Equinodermo', 'Cucumariidae', 'Suspensívoro', 'Estende tentáculos orais ramificados em forma de árvore para filtrar alimento da água.'),
 ('Oriço do mar coração', 'Echinocardium cordatum', 'Equinodermo', 'Loveniidae', 'Detritívoro', 'Possui simetria bilateral secundária e vive profundamente enterrado no sedimento arenoso.'),
 ('Estrela das profundidades', 'Bathybiaster vexillifer', 'Equinodermo', 'Benthopectinidae', 'Carnívoro', 'Habita regiões abissais frias alimentando se de detritos e pequenos invertebrados.'),
@@ -1168,157 +569,111 @@ INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, di
 ('Bolacha da praia de cinco furos', 'Mellita quinquiesperforata', 'Equinodermo', 'Mellitidae', 'Detritívoro', 'Apresenta cinco lúnulas (fendas) na carapaça achatada que ajudam na estabilidade contra ondas e na alimentação.'),
 ('Bolacha da praia de seis furos', 'Leodia sexiesperforata', 'Equinodermo', 'Mellitidae', 'Detritívoro', 'Característica de praias arenosas tropicais, com seis aberturas na carapaça para passagem de areia e alimento.'),
 ('Bolacha da praia do pacífico', 'Encope micropora', 'Equinodermo', 'Mellitidae', 'Detritívoro', 'Carapaça achatada com entalhes ou fendas, adaptada à vida semi-enterrada em areia fina.'),
-('Estrela do mar espinhosa', 'Marthasterias glacialis', 'Equinodermo', 'Asteriidae', 'Carnívoro', 'Predadora de moluscos e crustáceos em fundos rochosos e arenosos do Atlântico.'),
-('Estrela do mar vermelha', 'Echinaster sepositus', 'Equinodermo', 'Echinasteridae', 'Carnívoro', 'Comum no Mediterrâneo e Atlântico oriental, apresenta coloração vermelho-alaranjada vibrante.'),
-('Estrela do mar de recife azul', 'Linckia laevigata', 'Equinodermo', 'Ophidiasteridae', 'Carnívoro', 'Espécie tropical de cor azul intensa que habita recifes de coral rasos.'),
-('Estrela do mar de braços curtos', 'Patiria pectinifera', 'Equinodermo', 'Asterinidae', 'Detritívoro', 'Estrela achatada e colorida que se alimenta de algas, detritos e pequenos organismos.'),
-('Estrela do mar gigante', 'Pycnopodia helianthoides', 'Equinodermo', 'Asteriidae', 'Carnívoro', 'Predadora ativa e veloz que se alimenta de ouriços, moluscos e outros equinodermos.'),
-('Estrela do mar de areia', 'Astropecten articulatus', 'Equinodermo', 'Astropectinidae', 'Carnívoro', 'Habita fundos arenosos rasos e captura pequenas presas enterradas no substrato.'),
-('Estrela do mar almofada vermelha', 'Pentaceraster mammillatus', 'Equinodermo', 'Oreasteridae', 'Carnívoro', 'Corpo espesso e firme com nódulos salientes sobre os braços e o disco central.'),
-('Estrela do mar de sol', 'Solaster endeca', 'Equinodermo', 'Solasteridae', 'Carnívoro', 'Possui cerca de sete a treze braços e é conhecida por predar outras estrelas-do-mar.'),
-('Estrela do mar de poça', 'Asterina phylactica', 'Equinodermo', 'Asterinidae', 'Detritívoro', 'Pequena estrela adaptada a poças de maré e áreas costeiras rasas.'),
-('Estrela do mar de fundo', 'Ceramaster granularis', 'Equinodermo', 'Goniasteridae', 'Carnívoro', 'Apresenta contorno pentagonal com placas marginais bem definidas em águas mais profundas.'),
-('Estrela do mar de chifre', 'Protoreaster nodosus', 'Equinodermo', 'Oreasteridae', 'Carnívoro', 'Destaca-se pelos tubérculos cônicos proeminentes e escuros sobre o corpo claro.'),
-('Estrela do mar de coral', 'Culcita novaeguineae', 'Equinodermo', 'Oreasteridae', 'Carnívoro', 'Possui formato quase pentagonal e inflado, assemelhando-se a uma almofada em recifes.'),
-('Estrela do mar de espinhos brancos', 'Coscinasterias tenuispina', 'Equinodermo', 'Asteriidae', 'Carnívoro', 'Frequentemente apresenta número variável de braços devido à fissão e regeneração.'),
-('Estrela do mar de lodo', 'Ctenodiscus crispatus', 'Equinodermo', 'Ctenodiscidae', 'Detritívoro', 'Habita fundos lodosos frios e ingere sedimentos ricos em matéria orgânica.'),
-('Estrela do mar de recife rochoso', 'Leptasterias hexactis', 'Equinodermo', 'Asteriidae', 'Carnívoro', 'Pequena estrela de seis braços comum na zona entremarés rochosa.'),
-('Estrela do mar de bico', 'Porania pulvillus', 'Equinodermo', 'Poraniidae', 'Carnívoro', 'Corpo arredondado e macio com textura lisa e coloração avermelhada ou rosada.'),
-('Estrela do mar de profundidade', 'Hymenaster membranaceus', 'Equinodermo', 'Pterasteridae', 'Carnívoro', 'Adaptação abissal com membrana dorsal que forma uma câmara de incubação.'),
-('Estrela do mar de areia branca', 'Luidia senegalensis', 'Equinodermo', 'Luidiidae', 'Carnívoro', 'Comum em fundos arenosos tropicais, possui braços longos e delgados.'),
-('Estrela do mar de pedra', 'Henricia sanguinolenta', 'Equinodermo', 'Echinasteridae', 'Detritívoro', 'Apresenta tons avermelhados em superfícies rochosas de águas frias.'),
-('Estrela do mar de recife tropical', 'Choriaster granulatus', 'Equinodermo', 'Oreasteridae', 'Carnívoro', 'Estrela grande e robusta associada a recifes de coral do Indo-Pacífico.'),
-('Oriço do mar negro de espinhos longos', 'Diadema setosum', 'Equinodermo', 'Diadematidae', 'Herbívoro', 'Possui espinhos longos, finos e ocos, além de um anel alaranjado na região anal.'),
-('Oriço do mar verde do atlântico', 'Lytechinus variegatus', 'Equinodermo', 'Toxopneustidae', 'Herbívoro', 'Alimenta-se de algas e gramas marinhas em águas costeiras rasas.'),
-('Oriço do mar de espinhos curtos vermelho', 'Strongylocentrotus purpuratus', 'Equinodermo', 'Strongylocentrotidae', 'Herbívoro', 'Escava cavidades em rochas para se proteger das ondas e pastoreia algas.'),
-('Oriço do mar de recife', 'Echinometra mathaei', 'Equinodermo', 'Echinometridae', 'Herbívoro', 'Muito comum em recifes tropicais, onde abriga-se em fendas e cavidades calcárias.'),
-('Oriço do mar de lápis vermelho', 'Heterocentrotus trigonarius', 'Equinodermo', 'Echinometridae', 'Herbívoro', 'Espinhos primários espessos e angulosos adaptados a ambientes de forte hidrodinamismo.'),
-('Oriço do mar de coração comum', 'Echinocardium cordatum', 'Equinodermo', 'Loveniidae', 'Detritívoro', 'Escava galerias na areia usando espinhos especializados e mantém contato com a superfície.'),
-('Oriço do mar de prato achatado', 'Clypeaster subdepressus', 'Equinodermo', 'Clypeasteridae', 'Detritívoro', 'Carapaça larga e achatada que vive em fundos arenosos costeiros.'),
-('Oriço do mar de espinhos finos', 'Arbacia punctulata', 'Equinodermo', 'Arbaciidae', 'Herbívoro', 'Comum no Atlântico ocidental, apresenta coloração escura e alimenta-se de algas e invertebrados.'),
-('Oriço do mar de recife profundo', 'Cidaris cidaris', 'Equinodermo', 'Cidaridae', 'Carnívoro', 'Habita fundos rochosos e arenosos mais profundos, com espinhos robustos e espaçados.'),
-('Oriço do mar de botão branco', 'Tripneustes ventricosus', 'Equinodermo', 'Toxopneustidae', 'Herbívoro', 'Frequentemente cobre a carapaça com fragmentos de algas e conchas em águas tropicais.'),
-('Oriço do mar de fogo tropical', 'Asthenosoma ijimai', 'Equinodermo', 'Echinothuriidae', 'Herbívoro', 'Possui carapaça flexível e espinhos dotados de glândulas de veneno.'),
-('Oriço do mar de pedra azul', 'Paracentrotus lividus', 'Equinodermo', 'Echinidae', 'Herbívoro', 'Espécie chave na manutenção de fundos rochosos livres de excesso de macroalgas.'),
-('Oriço do mar de areia oval', 'Spatangus purpureus', 'Equinodermo', 'Spatangidae', 'Detritívoro', 'Apresenta coloração arroxeada e vive enterrado em sedimentos arenosos e cascalhentos.'),
-('Oriço do mar de espinhos negros', 'Centrostephanus longispinus', 'Equinodermo', 'Diadematidae', 'Herbívoro', 'Habita fundos rochosos e corais de profundidade moderada com espinhos alongados.'),
-('Oriço do mar de recife claro', 'Echinostrephus molaris', 'Equinodermo', 'Echinometridae', 'Herbívoro', 'Perfura rochas calcárias em zonas de ondas intensas para formar abrigos.'),
-('Pepino do mar de areia negra', 'Holothuria atra', 'Equinodermo', 'Holothuriidae', 'Detritívoro', 'Comum em recifes e bancos de areia, auxilia na limpeza e reciclagem de nutrientes.'),
-('Pepino do mar de recife espinhoso', 'Stichopus chloronotus', 'Equinodermo', 'Stichopodidae', 'Detritívoro', 'Corpo alongado e firme com fileiras de papilas na superfície dorsal.'),
-('Pepino do mar de água fria', 'Cucumaria frondosa', 'Equinodermo', 'Cucumariidae', 'Suspensívoro', 'Filtra partículas orgânicas da água com seus tentáculos ramificados em águas frias.'),
-('Pepino do mar de recife vermelho', 'Actinopyga echinites', 'Equinodermo', 'Holothuriidae', 'Detritívoro', 'Corpo marrom-avermelhado robusto encontrado em áreas rasas de recifes e areia.'),
-('Pepino do mar de fundo arenoso', 'Holothuria impatiens', 'Equinodermo', 'Holothuriidae', 'Detritívoro', 'Apresenta corpo afilado e rugoso, vivendo sob pedras ou em sedimentos arenosos.'),
-('Pepino do mar de tentáculos longos', 'Synapta maculata', 'Equinodermo', 'Synaptidae', 'Detritívoro', 'Corpo muito alongado e flexível que se desloca por contrações musculares no substrato.'),
-('Pepino do mar de recife escuro', 'Holothuria edulis', 'Equinodermo', 'Holothuriidae', 'Detritívoro', 'Exibe dorso escuro e ventre rosado ou avermelhado em recifes tropicais.'),
-('Pepino do mar de sedimento', 'Molpadia musculus', 'Equinodermo', 'Molpadiidae', 'Detritívoro', 'Vive enterrado em lamas profundas, contribuindo para a mistura de camadas do sedimento.'),
-('Pepino do mar de recife amarelo', 'Colochirus quadrangularis', 'Equinodermo', 'Cucumariidae', 'Suspensívoro', 'Possui corpo anguloso e coloração viva, filtrando partículas na correnteza.'),
-('Pepino do mar de águas profundas', 'Psychropotes longicauda', 'Equinodermo', 'Psychropotidae', 'Detritívoro', 'Espécie abissal com projeção caudal característica que se alimenta de detritos do fundo.'),
-('Pepino do mar de recife pintado', 'Bohadschia vitiensis', 'Equinodermo', 'Holothuriidae', 'Detritívoro', 'Corpo cilíndrico com manchas discretas, comum em fundos arenosos próximos a recifes.'),
-('Pepino do mar de lodo costeiro', 'Thyonella gemmata', 'Equinodermo', 'Sclerodactylidae', 'Suspensívoro', 'Enterra-se em sedimentos costeiros e estende tentáculos para capturar alimento em suspensão.'),
-('Pepino do mar de espinhos macios', 'Stichopus monotuberculatus', 'Equinodermo', 'Stichopodidae', 'Detritívoro', 'Corpo macio e alongado com papilas dispersas sobre a superfície.'),
-('Pepino do mar de recife claro', 'Holothuria hilla', 'Equinodermo', 'Holothuriidae', 'Detritívoro', 'De coloração castanha clara, é comum sob rochas e detritos de coral em águas rasas.'),
-('Pepino do mar de profundidade abissal', 'Deima validum', 'Equinodermo', 'Deimatidae', 'Detritívoro', 'Pepino abissal de corpo achatado e pés ambulacrários espessos para caminhar no lodo.'),
-('Ofiúro de braços longos e finos', 'Amphiura chiajei', 'Equinodermo', 'Amphiuridae', 'Detritívoro', 'Vive enterrado em fundos lodosos e estende os braços para coletar detritos.'),
-('Ofiúro de recife com anéis', 'Ophiocoma echinata', 'Equinodermo', 'Ophiocomidae', 'Detritívoro', 'Comum em recifes tropicais, abriga-se em fendas e estende os braços à noite.'),
-('Ofiúro de disco ornamentado', 'Ophioderma longicaudum', 'Equinodermo', 'Ophiodermatidae', 'Carnívoro', 'Disco bem definido e braços longos, ativo principalmente durante a noite.'),
-('Ofiúro de águas frias', 'Ophiura sarsii', 'Equinodermo', 'Ophiuridae', 'Carnívoro', 'Habita fundos arenosos e lodosos frios, alimentando-se de pequenos organismos e detritos.'),
-('Ofiúro de recife frágil', 'Ophiothrix angulata', 'Equinodermo', 'Ophiotrichidae', 'Suspensívoro', 'Muito comum em esponjas e recifes rasos, possui espinhos serrilhados nos braços.'),
-('Ofiúro de braços ramificados', 'Astrophyton muricatum', 'Equinodermo', 'Gorgonocephalidae', 'Suspensívoro', 'Forma uma densa rede de braços ramificados à noite para capturar plâncton.'),
-('Ofiúro de fenda rochosa', 'Ophiactis virens', 'Equinodermo', 'Ophiactidae', 'Detritívoro', 'Pequeno ofiúro que ocupa fendas, algas e esponjas em áreas costeiras.'),
-('Ofiúro de fundo arenoso', 'Ophiura ophiura', 'Equinodermo', 'Ophiuridae', 'Carnívoro', 'Comum em fundos arenosos costeiros, desloca-se rapidamente com movimentos serpentiformes.'),
-('Ofiúro de recife tropical', 'Ophiarachna incrassata', 'Equinodermo', 'Ophiomyxidae', 'Carnívoro', 'Ofiúro de grande porte com braços grossos, ativo à noite em recifes de coral.'),
-('Ofiúro de disco liso escuro', 'Ophiura albida', 'Equinodermo', 'Ophiuridae', 'Carnívoro', 'Predador de pequenos invertebrados bentônicos em sedimentos costeiros.'),
-('Ofiúro de espinhos alongados', 'Ophiothrix suensonii', 'Equinodermo', 'Ophiotrichidae', 'Suspensívoro', 'Frequentemente associado a esponjas e gorgônias, onde filtra partículas da água.'),
-('Ofiúro de recife colorido', 'Ophiolepis cincta', 'Equinodermo', 'Ophiolepididae', 'Detritívoro', 'Exibe padrões contrastantes no disco e braços segmentados em recifes rasos.'),
-('Ofiúro de profundidade', 'Ophiacantha bidentata', 'Equinodermo', 'Ophiacanthidae', 'Carnívoro', 'Espécie de águas mais profundas com espinhos proeminentes nos braços.'),
-('Ofiúro de areia fina', 'Amphipholis squamata', 'Equinodermo', 'Amphiuridae', 'Detritívoro', 'Pequeno e amplamente distribuído, atua na reciclagem de matéria orgânica no sedimento.'),
-('Ofiúro de recife sombreado', 'Ophiocoma pumila', 'Equinodermo', 'Ophiocomidae', 'Detritívoro', 'Habita áreas protegidas e sombreadas de recifes, alimentando-se de detritos.'),
-('Lírio do mar de plumas tropicais', 'Comanthina schlegelii', 'Equinodermo', 'Comasteridae', 'Suspensívoro', 'Crinoide colorido que expõe seus braços plumosos às correntes em recifes.'),
-('Lírio do mar de braços numerosos', 'Stephanometra indica', 'Equinodermo', 'Mariametridae', 'Suspensívoro', 'Possui dezenas de braços articulados que capturam partículas em suspensão.'),
-('Lírio do mar de recife raso', 'Lamprometra palmata', 'Equinodermo', 'Mariametridae', 'Suspensívoro', 'Abre seus braços em leque sobre corais e rochas para filtrar plâncton.'),
-('Lírio do mar de correnteza', 'Tropiometra afra', 'Equinodermo', 'Tropometridae', 'Suspensívoro', 'Fixa-se em substratos duros em zonas de corrente moderada a forte.'),
-('Lírio do mar de águas profundas', 'Bathycrinus gracilis', 'Equinodermo', 'Bathycrinidae', 'Suspensívoro', 'Crinoide pedunculado de grandes profundidades adaptado a ambientes calmos.'),
-('Lírio do mar de recife escuro', 'Capillaster multiradiatus', 'Equinodermo', 'Comasteridae', 'Suspensívoro', 'Apresenta coloração escura ou avermelhada e múltiplos braços plumosos.'),
-('Lírio do mar de braços curtos', 'Colobometra perspinosa', 'Equinodermo', 'Colobometridae', 'Suspensívoro', 'Comum em recifes tropicais, filtra partículas suspensas na coluna d’água.'),
-('Lírio do mar de plumas finas', 'Oxycomanthus japonicus', 'Equinodermo', 'Comasteridae', 'Suspensívoro', 'Crinoide de braços delicados que se estendem em busca de alimento na correnteza.'),
-('Lírio do mar de fundo rochoso', 'Antedon petasus', 'Equinodermo', 'Antedonidae', 'Suspensívoro', 'Espécie de águas frias que se prende a rochas e algas em correntes.'),
-('Lírio do mar de recife indo-pacífico', 'Cenometra bella', 'Equinodermo', 'Colobometridae', 'Suspensívoro', 'Frequentemente encontrado em gorgônias, onde estende seus braços filtradores.'),
-('Bolacha da praia de cinco furos', 'Mellita quinquiesperforata', 'Equinodermo', 'Mellitidae', 'Detritívoro', 'Vive semi-enterrada na areia fina e coleta partículas orgânicas entre os espinhos.'),
-('Bolacha da praia de seis furos', 'Leodia sexiesperforata', 'Equinodermo', 'Mellitidae', 'Detritívoro', 'Apresenta seis aberturas características na carapaça achatada em praias tropicais.'),
-('Bolacha da praia de entalhes', 'Encope emarginata', 'Equinodermo', 'Mellitidae', 'Detritívoro', 'Carapaça achatada com recortes marginais que auxiliam na estabilidade e alimentação.'),
-('Bolacha da praia do pacífico', 'Dendraster excentricus', 'Equinodermo', 'Dendrasteridae', 'Detritívoro', 'Pode inclinar-se na areia para capturar partículas transportadas pelas ondas.'),
-('Bolacha da praia de areia rasa', 'Echinarachnius parma', 'Equinodermo', 'Scutellidae', 'Detritívoro', 'Forma aglomerados em fundos arenosos frios a temperados.'),
-('Bolacha da praia de borda lisa', 'Clypeaster ravenelii', 'Equinodermo', 'Clypeasteridae', 'Detritívoro', 'Carapaça espessa e arredondada adaptada à vida em fundos arenosos.'),
-('Bolacha da praia de fendas alongadas', 'Encope grandis', 'Equinodermo', 'Mellitidae', 'Detritívoro', 'Habita fundos arenosos rasos, alimentando-se de detritos microscópicos.'),
-('Bolacha da praia de fundo arenoso', 'Mellita tenuis', 'Equinodermo', 'Mellitidae', 'Detritívoro', 'Comum em praias arenosas, auxilia na movimentação superficial do sedimento.'),
-('Bolacha da praia de água temperada', 'Echinarachnius tenuis', 'Equinodermo', 'Scutellidae', 'Detritívoro', 'Vive enterrada em areia fina, filtrando grãos e matéria orgânica.'),
-('Bolacha da praia de recife arenoso', 'Leodia sexiesperforata', 'Equinodermo', 'Mellitidae', 'Detritívoro', 'Adaptação achatada para resistir à ação das ondas em zonas arenosas rasas.'),
-('Estrela do mar de braços múltiplos', 'Crossaster papposus', 'Equinodermo', 'Solasteridae', 'Carnívoro', 'Estrela vistosa de vários braços que predam outros invertebrados marinhos.'),
-('Estrela do mar de areia profunda', 'Astropecten americanus', 'Equinodermo', 'Astropectinidae', 'Carnívoro', 'Habita fundos arenosos e lodosos, caçando pequenas presas bentônicas.'),
-('Estrela do mar de recife com espinhos', 'Acanthaster brevispinus', 'Equinodermo', 'Acanthasteridae', 'Carnívoro', 'Parente próxima da coroa-de-espinhos, encontrada em fundos mais profundos.'),
-('Estrela do mar de poça rochosa', 'Patiria miniata', 'Equinodermo', 'Asterinidae', 'Detritívoro', 'Espécie resistente de ampla variação de cor em costas rochosas.'),
-('Estrela do mar de fundo arenoso', 'Luidia alternata', 'Equinodermo', 'Luidiidae', 'Carnívoro', 'Estrela de braços alongados com padrão marcante que habita fundos arenosos.'),
-('Oriço do mar de espinhos curtos escuros', 'Arbacia lixula', 'Equinodermo', 'Arbaciidae', 'Herbívoro', 'Comum em costas rochosas, raspa algas calcárias e incrustantes.'),
-('Oriço do mar de recife tropical', 'Echinometra lucunter', 'Equinodermo', 'Echinometridae', 'Herbívoro', 'Adapta-se a zonas batidas por ondas utilizando abrigos escavados na rocha.'),
-('Oriço do mar de areia branca', 'Clypeaster rosaceus', 'Equinodermo', 'Clypeasteridae', 'Detritívoro', 'Carapaça alta e robusta que se cobre com detritos em fundos arenosos.'),
-('Oriço do mar de espinhos finos escuros', 'Diadema antillarum', 'Equinodermo', 'Diadematidae', 'Herbívoro', 'Herbívoro importante que controla o crescimento de algas em recifes tropicais.'),
-('Oriço do mar de pedra', 'Strongylocentrotus droebachiensis', 'Equinodermo', 'Strongylocentrotidae', 'Herbívoro', 'Habita águas frias e pode formar frentes de pastejo sobre florestas de kelp.'),
-('Pepino do mar de areia fina', 'Holothuria grisea', 'Equinodermo', 'Holothuriidae', 'Detritívoro', 'Processa grandes volumes de areia, contribuindo para a saúde do sedimento.'),
-('Pepino do mar de recife liso', 'Bohadschia argus', 'Equinodermo', 'Holothuriidae', 'Detritívoro', 'Espécie robusta de recifes tropicais que ingere sedimentos ricos em matéria orgânica.'),
-('Pepino do mar de água profunda', 'Peniagone diaphana', 'Equinodermo', 'Elpidiidae', 'Detritívoro', 'Corpo translúcido e leve adaptado à vida próxima ao fundo oceânico profundo.'),
-('Pepino do mar de tentáculos curtos', 'Thelenota ananas', 'Equinodermo', 'Stichopodidae', 'Detritívoro', 'Grande pepino do mar com projeções salientes em áreas de recife e areia.'),
-('Pepino do mar de fundo marinho', 'Australostichopus mollis', 'Equinodermo', 'Stichopodidae', 'Detritívoro', 'Recicla matéria orgânica do sedimento em águas costeiras.'),
-('Ofiúro de braços longos e lisos', 'Ophioderma brevispinum', 'Equinodermo', 'Ophiodermatidae', 'Detritívoro', 'Ofiúro de movimentos ágeis que habita fundos arenosos, lodosos e algas.'),
-('Ofiúro de recife com espinhos', 'Ophiothrix fragilis', 'Equinodermo', 'Ophiotrichidae', 'Detritívoro', 'Pode formar grandes aglomerações em fundos rochosos e correntes.'),
-('Ofiúro de fenda coralina', 'Ophiolepis paucispina', 'Equinodermo', 'Ophiolepididae', 'Detritívoro', 'Pequeno e discreto, vive protegido em fendas de recifes de coral.'),
-('Ofiúro de águas profundas', 'Gorgonocephalus eucnemis', 'Equinodermo', 'Gorgonocephalidae', 'Suspensívoro', 'Estende braços ramificados para capturar presas planctônicas na correnteza.'),
-('Ofiúro de fundo lodoso', 'Amphiura filiformis', 'Equinodermo', 'Amphiuridae', 'Suspensívoro', 'Filtra partículas orgânicas da água enquanto mantém o disco enterrado no lodo.'),
-('Estrela do mar espinhosa do norte', 'Asterias amurensis', 'Equinodermo', 'Asteriidae', 'Carnívoro', 'Espécie de grande porte originária do noroeste do Pacífico, predadora de moluscos e crustáceos.'),
-('Estrela do mar do pacífico norte', 'Evasterias troschelii', 'Equinodermo', 'Asteriidae', 'Carnívoro', 'Estrela de braços longos e disco pequeno encontrada em zonas entremarés e subtidais.'),
-('Estrela do mar espinhosa de seis braços', 'Leptasterias aequalis', 'Equinodermo', 'Asteriidae', 'Carnívoro', 'Pequena estrela que incuba ovos e vive em costas rochosas do Pacífico.'),
-('Estrela do mar de sangue do pacífico', 'Henricia tumida', 'Equinodermo', 'Echinasteridae', 'Carnívoro', 'Apresenta coloração avermelhada e habita superfícies rochosas de águas frias.'),
-('Estrela do mar de recife vermelha', 'Echinaster luzonicus', 'Equinodermo', 'Echinasteridae', 'Carnívoro', 'Frequentemente apresenta número irregular de braços devido à divisão assexuada.'),
-('Estrela do mar almofada granulado', 'Choriaster granulatus', 'Equinodermo', 'Oreasteridae', 'Carnívoro', 'Corpo abaulado e firme com superfície granulada em recifes do Indo-Pacífico.'),
-('Estrela do mar de chifres duplos', 'Pentaceraster regulus', 'Equinodermo', 'Oreasteridae', 'Carnívoro', 'Possui nódulos robustos e contorno pentagonal marcado em fundos arenosos e recifes.'),
-('Estrela do mar de recife de coral', 'Fromia milleporella', 'Equinodermo', 'Ophidiasteridae', 'Carnívoro', 'Pequena estrela avermelhada com poros escuros distribuídos pelos braços.'),
-('Estrela do mar de recife laranja', 'Fromia monilis', 'Equinodermo', 'Ophidiasteridae', 'Carnívoro', 'Apresenta placas contrastantes e vive em recifes de coral tropicais.'),
-('Estrela do mar de areia cinza', 'Astropecten polyacanthus', 'Equinodermo', 'Astropectinidae', 'Carnívoro', 'Estrela de fundo arenoso com espinhos marginais evidentes e hábitos noturnos.'),
-('Estrela do mar de areia listrada', 'Astropecten articulatus', 'Equinodermo', 'Astropectinidae', 'Carnívoro', 'Comum em fundos arenosos rasos, caça pequenos moluscos e vermes.'),
-('Estrela do mar pente do atlântico', 'Astropecten cingulatus', 'Equinodermo', 'Astropectinidae', 'Carnívoro', 'Vive em fundos arenosos e lodosos, enterrando-se rapidamente quando perturbada.'),
-('Estrela do mar de braços finos', 'Luidia foliolata', 'Equinodermo', 'Luidiidae', 'Carnívoro', 'Estrela de braços longos e flexíveis que habita fundos arenosos e lodosos.'),
-('Estrela do mar de fundo lodoso', 'Luidia sarsi', 'Equinodermo', 'Luidiidae', 'Carnívoro', 'Habita águas temperadas a frias e alimenta-se de pequenos invertebrados.'),
-('Estrela do mar de disco largo', 'Goniaster tessellatus', 'Equinodermo', 'Goniasteridae', 'Carnívoro', 'Possui placas marginais largas e bem demarcadas em recifes e fundos rochosos.'),
-('Estrela do mar de placas', 'Mediaster aequalis', 'Equinodermo', 'Goniasteridae', 'Carnívoro', 'Estrela vermelha de contorno pentagonal bem definido em águas frias do Pacífico.'),
-('Estrela do mar de profundidade abissal', 'Freyella elegans', 'Equinodermo', 'Freyellidae', 'Suspensívoro', 'Estrela abissal de múltiplos braços delicados adaptada a grandes profundidades.'),
-('Estrela do mar de recife escuro', 'Nardoa novaecaledoniae', 'Equinodermo', 'Ophidiasteridae', 'Carnívoro', 'Apresenta braços cilíndricos com faixas escuras em recifes tropicais.'),
-('Estrela do mar de espinhos curtos', 'Orthasterias koehleri', 'Equinodermo', 'Asteriidae', 'Carnívoro', 'Estrela rosada ou avermelhada com linhas de espinhos ao longo dos braços.'),
-('Estrela do mar de poça fria', 'Leptasterias hexactis', 'Equinodermo', 'Asteriidae', 'Carnívoro', 'Pequena estrela que ocorre em poças de maré e fundos rochosos.'),
-('Estrela do mar de recife de areia', 'Archaster angulatus', 'Equinodermo', 'Archasteridae', 'Detritívoro', 'Vive semi-enterrada em areia rasa e recicla matéria orgânica.'),
-('Estrela do mar de fundo arenoso escuro', 'Astropecten brasiliensis', 'Equinodermo', 'Astropectinidae', 'Carnívoro', 'Comum em fundos arenosos costeiros, caça presas enterradas no substrato.'),
-('Estrela do mar de braços curtos e largos', 'Patiria miniata', 'Equinodermo', 'Asterinidae', 'Detritívoro', 'Estrela compacta de cores variadas que ocorre em costas rochosas.'),
-('Estrela do mar de águas profundas frias', 'Solaster stimpsoni', 'Equinodermo', 'Solasteridae', 'Carnívoro', 'Possui cerca de dez braços e alimenta-se de outras estrelas-do-mar e pepinos-do-mar.'),
-('Estrela do mar de recife de coral azul', 'Linckia columbiae', 'Equinodermo', 'Ophidiasteridae', 'Carnívoro', 'Pequena estrela de tons azulados ou acinzentados em recifes e costas rochosas.'),
-('Oriço do mar de espinhos finos do caribe', 'Eucidaris tribuloides', 'Equinodermo', 'Cidaridae', 'Herbívoro', 'Habita recifes e fundos rochosos com espinhos primários grossos e rombudos.'),
-('Oriço do mar de recife rochoso', 'Arbacia dufresnii', 'Equinodermo', 'Arbaciidae', 'Herbívoro', 'Ocorre em águas frias e temperadas, raspando algas e incrustações.'),
-('Oriço do mar de espinhos longos claros', 'Diadema savignyi', 'Equinodermo', 'Diadematidae', 'Herbívoro', 'Possui espinhos finos e longos que ajudam a manter recifes livres de algas.'),
-('Oriço do mar de recife de coral', 'Echinometra mathaei', 'Equinodermo', 'Echinometridae', 'Herbívoro', 'Escava cavidades em rochas calcárias e pastoreia algas em recifes.'),
-('Oriço do mar de espinhos curtos do norte', 'Strongylocentrotus droebachiensis', 'Equinodermo', 'Strongylocentrotidae', 'Herbívoro', 'Habita águas frias e alimenta-se de algas kelp e detritos.'),
-('Oriço do mar de botão tropical', 'Lytechinus variegatus', 'Equinodermo', 'Toxopneustidae', 'Herbívoro', 'Comum em pradarias marinhas, cobre-se com algas e fragmentos de conchas.'),
-('Oriço do mar de carapaça alta', 'Tripneustes gratilla', 'Equinodermo', 'Toxopneustidae', 'Herbívoro', 'Espécie tropical de grande porte que controla o crescimento de algas.'),
-('Oriço do mar de espinhos venenosos', 'Toxopneustes roseus', 'Equinodermo', 'Toxopneustidae', 'Herbívoro', 'Encontrado no Pacífico tropical, possui pedicelárias ativas e pastoreia algas.'),
-('Oriço do mar de lápis escuros', 'Heterocentrotus mammillatus', 'Equinodermo', 'Echinometridae', 'Herbívoro', 'Espinhos grossos e pesados adaptados a áreas de ondas fortes.'),
-('Oriço do mar de pedra do mediterrâneo', 'Paracentrotus lividus', 'Equinodermo', 'Echinidae', 'Herbívoro', 'Escava abrigos na rocha e alimenta-se de algas bentônicas.'),
-('Oriço do mar de areia profundo', 'Echinocardium flavescens', 'Equinodermo', 'Loveniidae', 'Detritívoro', 'Vive enterrado em sedimentos arenosos e lodosos, abrindo canais respiratórios.'),
-('Oriço do mar de coração do pacífico', 'Brisaster latifrons', 'Equinodermo', 'Brissidae', 'Detritívoro', 'Habita fundos lodosos mais profundos e ingere sedimentos ricos em matéria orgânica.'),
-('Oriço do mar de prato tropical', 'Clypeaster rosaceus', 'Equinodermo', 'Clypeasteridae', 'Detritívoro', 'Carapaça espessa e ovalada adaptada a fundos arenosos tropicais.'),
-('Oriço do mar de prato liso', 'Clypeaster subdepressus', 'Equinodermo', 'Clypeasteridae', 'Detritívoro', 'Carapaça achatada e alongada que vive em fundos arenosos costeiros.'),
-('Oriço do mar de recife profundo escuro', 'Centrostephanus coronatus', 'Equinodermo', 'Diadematidae', 'Herbívoro', 'Habita fendas rochosas e recifes com espinhos longos e escuros.'),
-('Oriço do mar de carapaça flexível', 'Asthenosoma varium', 'Equinodermo', 'Echinothuriidae', 'Herbívoro', 'Possui carapaça maleável e espinhos ocos associados a glândulas de veneno.'),
-('Oriço do mar de águas profundas', 'Sperosoma grimaldii', 'Equinodermo', 'Echinothuriidae', 'Detritívoro', 'Ouriço de carapaça flexível encontrado em maiores profundidades.'),
-('Pepino do mar de abacaxi gigante', 'Thelenota anax', 'Equinodermo', 'Stichopodidae', 'Detritívoro', 'Grande pepino do mar de fundos arenosos profundos e recifes.'),
-('Pepino do mar de recife espinhento', 'Thelenota ananas', 'Equinodermo', 'Stichopodidae', 'Detritívoro', 'Possui projeções salientes que lembram um abacaxi em recifes tropicais.'),
-('Pepino do mar de recife preto', 'Actinopyga mauritiana', 'Equinodermo', 'Holothuriidae', 'Detritívoro', 'Vive em zonas de ondas fortes em recifes, alimentando-se de detritos.'),
-('Pepino do mar de fundo marinho', 'Australostichopus mollis', 'Equinodermo', 'Stichopodidae', 'Detritívoro', 'Recicla matéria orgânica do sedimento em águas costeiras.');
+
+
+
+
+
+('Lagosta-azul-americana', 'Homarus americanus', 'Crustáceo', 'Nephropidae', 'Onívoro / Detritívoro', 'Pode viver mais de 50 anos e apresenta coloração azulada rara devido a mutação genética.'),
+('Lagosta-europeia', 'Homarus gammarus', 'Crustáceo', 'Nephropidae', 'Onívoro / Carnívoro', 'Habita fundos rochosos do Atlântico Norte e do Mediterrâneo, saindo à noite para caçar.'),
+('Lagosta-espinhosa-do-caribe', 'Panulirus argus', 'Crustáceo', 'Palinuridae', 'Onívoro / Carnívoro', 'Realiza migrações sazonais em filas organizadas no outono para águas mais profundas.'),
+('Lagosta-pintada', 'Panulirus versicolor', 'Crustáceo', 'Palinuridae', 'Onívoro / Detritívoro', 'Destaca-se pelas antenas longas esbranquiçadas e faixas escuras na carapaça.'),
+('Lagosta-verde', 'Panulirus laevicauda', 'Crustáceo', 'Palinuridae', 'Onívoro / Carnívoro', 'Comum no litoral brasileiro, prefere recifes rasos e áreas próximas a manguezais.'),
+('Lagosta-sapateira', 'Scyllarides latus', 'Crustáceo', 'Scyllaridae', 'Carnívoro', 'Possui antenas achatadas em forma de pá no lugar das antenas longas tradicionais.'),
+('Lagosta-anã', 'Scyllarus arctus', 'Crustáceo', 'Scyllaridae', 'Onívoro / Detritívoro', 'Espécie pequena do Mediterrâneo e Atlântico oriental que se camufla entre rochas e algas.'),
+('Lagostim-vermelho-do-pantanal', 'Procambarus clarkii', 'Crustáceo', 'Cambaridae', 'Onívoro', 'Conhecido pela alta capacidade de adaptação a ambientes de água doce e escavação de tocas.'),
+('Lagostim-azul-de-água-doce', 'Cherax destructor', 'Crustáceo', 'Parastacidae', 'Onívoro / Detritívoro', 'Originário da Austrália, tolera variações de temperatura e oxigênio em rios e lagoas.'),
+('Lagostim-de-marfim', 'Cherax quadricarinatus', 'Crustáceo', 'Parastacidae', 'Onívoro', 'Machos adultos desenvolvem manchas avermelhadas na margem externa das pinças.'),
+('Camarão-rosa', 'Farfantepenaeus paulensis', 'Crustáceo', 'Penaeidae', 'Onívoro / Detritívoro', 'Utiliza estuários e lagunas costeiras como berçário antes de migrar para o mar aberto.'),
+('Camarão-branco', 'Litopenaeus vannamei', 'Crustáceo', 'Penaeidae', 'Onívoro / Detritívoro', 'Uma das espécies de camarão mais cultivadas no mundo pela rápida adaptação a diferentes salinidades.'),
+('Camarão-sete-barbas', 'Xiphopenaeus kroyeri', 'Crustáceo', 'Penaeidae', 'Onívoro / Detritívoro', 'Recebe esse nome pelos três pares de apêndices longos e um ímpar que lembram barbas.'),
+('Camarão-tigre-gigante', 'Penaeus monodon', 'Crustáceo', 'Penaeidae', 'Onívoro / Carnívoro', 'Pode ultrapassar 30 cm de comprimento e exibe listras transversais escuras e claras.'),
+('Camarão-pistola-vermelho', 'Alpheus heterochaelis', 'Crustáceo', 'Alpheidae', 'Carnívoro', 'Fecha sua pinça maior em alta velocidade para criar uma bolha de cavitação com estalo forte.'),
+('Camarão-palhaço', 'Gnathophyllum americanum', 'Crustáceo', 'Gnathophyllidae', 'Onívoro / Detritívoro', 'Pequeno e colorido, costuma viver associado a equinodermos em recifes tropicais.'),
+('Camarão-limpador-do-pacífico', 'Lysmata amboinensis', 'Crustáceo', 'Lysmatidae', 'Parasitário / Detritívoro', 'Remove ectoparasitas e tecidos mortos de peixes em estações de limpeza nos recifes.'),
+('Camarão-bailarina', 'Rhynchocinetes durbanensis', 'Crustáceo', 'Rhynchocinetidae', 'Onívoro / Detritívoro', 'Possui rostro móvel articulado e listras vermelhas e brancas marcantes.'),
+('Camarão-fantasma-de-água-doce', 'Palaemonetes paludosus', 'Crustáceo', 'Palaemonidae', 'Onívoro / Detritívoro', 'Corpo quase transparente permite observar órgãos internos e o fluxo da hemolinfa.'),
+('Camarão-pitu', 'Macrobrachium carcinus', 'Crustáceo', 'Palaemonidae', 'Onívoro', 'Habita rios de água doce na fase adulta e depende da água salobra para o desenvolvimento larval.'),
+('Caranguejo-uçá', 'Ucides cordatus', 'Crustáceo', 'Ocypodidae', 'Detritívoro / Herbívoro', 'Escava galerias profundas nos manguezais e alimenta-se principalmente de folhas caídas.'),
+('Caranguejo-aratu', 'Goniopsis cruentata', 'Crustáceo', 'Grapsidae', 'Onívoro / Herbívoro', 'Ágil e colorido, sobe em raízes e troncos de mangue para escapar de predadores.'),
+('Caranguejo-violinista-de-areia', 'Uca pugilator', 'Crustáceo', 'Ocypodidae', 'Detritívoro', 'O macho agita sua pinça hipertrofiada para atrair fêmeas e defender seu território.'),
+('Caranguejo-real-do-alasca', 'Paralithodes camtschaticus', 'Crustáceo', 'Lithodidae', 'Onívoro / Carnívoro', 'Apesar do nome, evoluiu de ancestrais semelhantes a ermitões e tem apenas três pares de pernas ambulatórias.'),
+('Caranguejo-aranha-gigante-do-japão', 'Macrocheira kaempferi', 'Crustáceo', 'Inachidae', 'Onívoro / Carnívoro', 'Possui a maior envergadura entre os artrópodes vivos, podendo passar de 3 metros entre as pontas das pernas.'),
+('Caranguejo-das-neves', 'Chionoecetes opilio', 'Crustáceo', 'Oregoniidae', 'Carnívoro / Detritívoro', 'Vive em águas frias e profundas, alimentando-se de vermes, moluscos, equinodermos e outros crustáceos.'),
+('Caranguejo-azul-americano', 'Callinectes sapidus', 'Crustáceo', 'Portunidae', 'Onívoro / Carnívoro', 'O último par de pernas é achatado como remos, permitindo nadar com agilidade lateral.'),
+('Caranguejo-siri-guaia', 'Menippe nodifrons', 'Crustáceo', 'Menippidae', 'Carnívoro / Onívoro', 'Usa suas pinças robustas para quebrar conchas de moluscos e carapaças duras.'),
+('Caranguejo-de-coco', 'Birgus latro', 'Crustáceo', 'Coenobitidae', 'Onívoro / Herbívoro', 'Maior artrópode terrestre do mundo; respira por órgão branquial adaptado ao ar e pode subir em palmeiras.'),
+('Caranguejo-ermitão-terrestre', 'Coenobita clypeatus', 'Crustáceo', 'Coenobitidae', 'Onívoro / Detritívoro', 'Protege o abdômen macio dentro de conchas vazias de gastrópodes e troca de concha conforme cresce.'),
+('Ermitão-de-patas-azuis', 'Clibanarius tricolor', 'Crustáceo', 'Diogenidae', 'Herbívoro / Detritívoro', 'Muito utilizado em aquários marinhos por raspar algas de rochas e substratos.'),
+('Caranguejo-ferradura-do-atlântico', 'Limulus polyphemus', 'Crustáceo', 'Limulidae', 'Carnívoro / Detritívoro', 'Embora pertença à classe Merostomata (quelicerados), é frequentemente buscado em acervos de artrópodes costeiros e tem sangue azul à base de cobre.'),
+('Caranguejo-de-água-doce-europeu', 'Potamon fluviatile', 'Crustáceo', 'Potamidae', 'Onívoro', 'Habita riachos e córregos limpos da região mediterrânea, saindo à noite para forragear.'),
+('Caranguejo-vermelho-da-ilha-christmas', 'Gecarcoidea natalis', 'Crustáceo', 'Gecarcinidae', 'Herbívoro / Detritívoro', 'Famoso pela migração em massa anual da floresta até o oceano para liberar ovos na água.'),
+('Caranguejo-fantasma-do-atlântico', 'Ocypode quadrata', 'Crustáceo', 'Ocypodidae', 'Onívoro / Detritívoro', 'Corre rapidamente pelas praias arenosas e cava tocas inclinadas acima da linha da maré.'),
+('Caranguejo-de-pedra-da-flórida', 'Menippe mercenaria', 'Crustáceo', 'Menippidae', 'Carnívoro', 'Tem pinças extremamente fortes usadas para abrir ostras e caracóis marinhos.'),
+('Caranguejo-boxeador', 'Lybia tessellata', 'Crustáceo', 'Xanthidae', 'Onívoro / Carnívoro', 'Carrega uma pequena anêmona-do-mar em cada pinça para defesa e captura de alimento.'),
+('Caranguejo-decorador', 'Camposcia retusa', 'Crustáceo', 'Inachidae', 'Onívoro / Herbívoro', 'Fixa algas, esponjas e hidrozoários na carapaça para se camuflar perfeitamente no fundo.'),
+('Caranguejo-chines-de-garra-peluda', 'Eriocheir sinensis', 'Crustáceo', 'Varunidae', 'Onívoro', 'Possui tufos densos de cerdas nas pinças e realiza longas migrações entre água doce e salgada.'),
+('Caranguejo-mangue-vermelho', 'Sesarma curacaoense', 'Crustáceo', 'Sesarmidae', 'Onívoro / Detritívoro', 'Comum em áreas de transição de manguezais, suporta oscilações de umidade e salinidade.'),
+('Tamarutaca-pavão', 'Odontodactylus scyllarus', 'Crustáceo', 'Odontodactylidae', 'Carnívoro', 'Estomatópode com visão complexa e apêndices raptores capazes de desferir golpes ultrarrápidos.'),
+('Tamarutaca-lança', 'Lysiosquilla maculata', 'Crustáceo', 'Lysiosquillidae', 'Carnívoro', 'Estomatópode alongado que espreita em tocas e usa apêndices espinhosos para perfurar presas.'),
+('Tamarutaca-comum', 'Squilla mantis', 'Crustáceo', 'Squillidae', 'Carnívoro', 'Comum em fundos arenosos e lodosos, caça pequenos peixes, vermes e crustáceos.'),
+('Craca-gigante', 'Austromegabalanus psittacus', 'Crustáceo', 'Balanidae', 'Filtrador / Suspensívoro', 'Cirripédio séssil que vive fixo a rochas ou outras conchas e filtra plâncton com os cirros.'),
+('Craca-comum-de-costão', 'Balanus glandula', 'Crustáceo', 'Balanidae', 'Filtrador / Suspensívoro', 'Forma densas colônias na zona entremarés de costas rochosas.'),
+('Craca-ganso', 'Lepas anatifera', 'Crustáceo', 'Lepasidae', 'Filtrador / Suspensívoro', 'Fixa-se a troncos flutuantes e destroços no mar aberto por meio de um pedúnculo flexível.'),
+('Craca-parasita-de-caranguejo', 'Sacculina carcini', 'Crustáceo', 'Sacculinidae', 'Parasitário', 'Rizocefálico cuja fase adulta forma estruturas internas no hospedeiro, alterando seu comportamento.'),
+('Pulga-d-água-comum', 'Daphnia pulex', 'Crustáceo', 'Daphniidae', 'Filtrador / Herbívoro', 'Cladócero de água doce importante na cadeia alimentar aquática, capaz de alternar reprodução partenogenética e sexuada.'),
+('Pulga-d-água-gigante', 'Daphnia magna', 'Crustáceo', 'Daphniidae', 'Filtrador / Herbívoro', 'Amplamente utilizada em bioensaios ecotoxicológicos por sua sensibilidade a alterações na água.'),
+('Copépode-calanoide-marinho', 'Calanus finmarchicus', 'Crustáceo', 'Calanidae', 'Herbívoro / Filtrador', 'Componente fundamental do zooplâncton do Atlântico Norte, rico em lipídios e base da dieta de peixes e baleias.'),
+('Copépode-ciclopoide-de-água-doce', 'Cyclops strenuus', 'Crustáceo', 'Cyclopidae', 'Onívoro / Carnívoro', 'Pequeno crustáceo planctônico facilmente reconhecido pelas fêmeas carregando dois sacos de ovos.'),
+('Copépode-harpacticoide', 'Tigriopus californicus', 'Crustáceo', 'Harpacticidae', 'Detritívoro / Herbívoro', 'Habita poças de maré rochosas sujeitas a grandes variações de temperatura e salinidade.'),
+('Copépode-parasita-de-peixe', 'Lepeophtheirus salmonis', 'Crustáceo', 'Caligidae', 'Parasitário', 'Ectoparasita que se alimenta de muco, pele e sangue de salmonídeos marinhos.'),
+('Krill-antártico', 'Euphausia superba', 'Crustáceo', 'Euphausiidae', 'Filtrador / Herbívoro', 'Eufausiáceo bioluminescente que forma imensos cardumes e sustenta baleias, pinguins e focas no Oceano Austral.'),
+('Krill-do-pacífico', 'Euphausia pacifica', 'Crustáceo', 'Euphausiidae', 'Onívoro / Filtrador', 'Realiza migrações verticais diárias entre profundidades maiores e águas superficiais.'),
+('Tatuzinho-de-jardim', 'Armadillidium vulgare', 'Crustáceo', 'Armadillidiidae', 'Detritívoro / Herbívoro', 'Isópode terrestre que enrola o corpo em forma de bola quando ameaçado e ajuda a decompor matéria orgânica.'),
+('Tatuzinho-de-parede', 'Porcellio scaber', 'Crustáceo', 'Porcellionidae', 'Detritívoro', 'Isópode terrestre comum sob troncos, pedras e solo úmido, onde recicla nutrientes.'),
+('Isópode-gigante-das-profundezas', 'Bathynomus giganteus', 'Crustáceo', 'Cirolanidae', 'Carnívoro / Necrófago', 'Vive no fundo marinho profundo e pode passar longos períodos sem alimento até encontrar carcaças que afundam.'),
+('Piolho-de-baleia', 'Cyamus boopis', 'Crustáceo', 'Cyamidae', 'Parasitário / Detritívoro', 'Anfípode ciamídeo achatado dorsoventralmente que vive agarrado à pele e às cracas de baleias.'),
+('Pulga-da-areia', 'Talitrus saltator', 'Crustáceo', 'Talitridae', 'Detritívoro', 'Anfípode costeiro que salta agilmente sobre a areia úmida das praias para escapar da dessecação.'),
+('Anfípode-de-água-doce', 'Gammarus pulex', 'Crustáceo', 'Gammaridae', 'Detritívoro / Onívoro', 'Comum em rios e riachos oxigenados, desempenha papel relevante na fragmentação de folhas caídas.'),
+('Camarão-esqueleto', 'Caprella linearis', 'Crustáceo', 'Caprellidae', 'Onívoro / Carnívoro', 'Anfípode de corpo fino e alongado que se camufla entre hidrozoários e algas imitando gravetos.'),
+('Artêmia-de-salina', 'Artemia salina', 'Crustáceo', 'Artemiidae', 'Filtrador / Herbívoro', 'Branquiópode de ambientes hipersalinos cujos cistos dormentes resistem a condições extremas de seca.'),
+('Camarão-girino', 'Triops cancriformis', 'Crustáceo', 'Triopsidae', 'Onívoro / Detritívoro', 'Notostráceo com carapaça em forma de escudo e cauda bifurcada; aparece em poças temporárias.'),
+('Ostracode-marinho-luminoso', 'Vargula hilgendorfii', 'Crustáceo', 'Cypridinidae', 'Detritívoro / Necrófago', 'Pequeno crustáceo bivalve que emite luz azulada ao secretar luciferina e luciferase na água.'),
+('Ostracode-de-água-doce', 'Cypris pubera', 'Crustáceo', 'Cyprididae', 'Herbívoro / Detritívoro', 'Encerrado em uma carapaça bivalve calcificada, habita lagoas e brejos de água doce.'),
+('Caranguejo-eremita-gigante-do-pacífico', 'Pagurus armatus', 'Crustáceo', 'Paguridae', 'Onívoro / Detritívoro', 'Habita fundos arenosos e rochosos do Pacífico norte, trocando de concha à medida que cresce.'),
+('Caranguejo-aranha-europeu', 'Maja squinado', 'Crustáceo', 'Majidae', 'Onívoro / Herbívoro', 'Forma grandes agregações sazonais em águas rasas antes de migrar para áreas mais fundas.'),
+('Siri-azul', 'Callinectes danae', 'Crustáceo', 'Portunidae', 'Onívoro / Carnívoro', 'Frequente em baías, estuários e costas arenosas do Atlântico ocidental.'),
+('Siri-cabeleira', 'Cronius ruber', 'Crustáceo', 'Portunidae', 'Carnívoro', 'Predador ativo de pequenos crustáceos, moluscos e poliquetas em ambientes costeiros.'),
+('Caranguejo-de-mangue-roxo', 'Aratus pisonii', 'Crustáceo', 'Sesarmidae', 'Herbívoro / Onívoro', 'Sobe com facilidade em galhos e folhas de mangue-vermelho para se alimentar.'),
+('Caranguejo-ferradura-do-pacífico', 'Tachypleus tridentatus', 'Crustáceo', 'Limulidae', 'Carnívoro / Detritívoro', 'Encontrado em costas arenosas e estuários do Indo-Pacífico, com cauda longa e rígida.'),
+('Camarão-de-vidro', 'Palaemonetes argentinus', 'Crustáceo', 'Palaemonidae', 'Onívoro / Detritívoro', 'Comum em ambientes dulcícolas e estuarinos da América do Sul, formando cardumes próximos à vegetação.'),
+('Lagostim-de-riacho', 'Austropotamobius pallipes', 'Crustáceo', 'Astacidae', 'Onívoro / Detritívoro', 'Indicador de boa qualidade de água em riachos europeus, sensível à poluição e a doenças fúngicas.'),
+('Lagosta-de-profundidade', 'Nephrops norvegicus', 'Crustáceo', 'Nephropidae', 'Carnívoro / Detritívoro', 'Escava túneis em fundos lodosos e sai em horários específicos de luminosidade para caçar.'),
+('Camarão-manteiga', 'Metapenaeus monoceros', 'Crustáceo', 'Penaeidae', 'Onívoro / Detritívoro', 'Espécie eurialina que tolera amplas faixas de salinidade em estuários e áreas costeiras.'),
+('Camarão-vermelho-do-atlântico', 'Pleoticus robustus', 'Crustáceo', 'Solenoceridae', 'Onívoro / Carnívoro', 'Vive sobre fundos lodosos em águas mais profundas da plataforma continental e talude.'),
+('Caranguejo-de-areia-do-pacífico', 'Emerita analoga', 'Crustáceo', 'Hippidae', 'Filtrador / Suspensívoro', 'Enterra-se de costas na areia batida pelas ondas e estende antenas plumosas para filtrar alimento.'),
+('Caranguejo-toupeira-do-atlântico', 'Emerita talpoida', 'Crustáceo', 'Hippidae', 'Filtrador / Suspensívoro', 'Cava rapidamente na areia molhada das praias acompanhando o movimento das marés.'),
+('Caranguejo-porcelana-anêmona', 'Neopetrolisthes maculatus', 'Crustáceo', 'Porcellanidae', 'Filtrador / Suspensívoro', 'Vive entre os tentáculos de anêmonas-do-mar sem ser picado e usa maxilípedes plumosos para filtrar.'),
+('Caranguejo-porcelana-de-recife', 'Petrolisthes galathinus', 'Crustáceo', 'Porcellanidae', 'Filtrador / Detritívoro', 'Pequeno e achatado, esconde-se sob rochas, corais e esponjas na zona entremarés.'),
+('Camarão-imperador', 'Zenopontonia rex', 'Crustáceo', 'Palaemonidae', 'Onívoro / Detritívoro', 'Associa-se frequentemente a pepinos-do-mar e nudibrânquios em recifes tropicais.'),
+('Camarão-harlequin', 'Hymenocera picta', 'Crustáceo', 'Hymenoceridae', 'Carnívoro', 'Especializado em caçar estrelas-do-mar, usando pinças largas e foliáceas para virá-las e imobilizá-las.'),
+('Caranguejo-arrozal', 'Austrothelphusa transversa', 'Crustáceo', 'Gecarcinucidae', 'Onívoro / Detritívoro', 'Sobrevive a longas secas em tocas profundas no solo de regiões áridas e semiáridas da Austrália.'),
+('Caranguejo-de-água-doce-do-japão', 'Geothelphusa dehaani', 'Crustáceo', 'Potamidae', 'Onívoro', 'Espécie endêmica do Japão que realiza todo o ciclo de vida em água doce, sem fase marinha.'),
+('Camarão-de-caverna-cego', 'Typhlatya pearsi', 'Crustáceo', 'Atyidae', 'Detritívoro', 'Troglóbia de cenotes e cavernas calcárias, sem pigmentação e sem olhos funcionais.'),
+('Camarão-de-água-doce-caridina', 'Caridina multidentata', 'Crustáceo', 'Atyidae', 'Herbívoro / Detritívoro', 'Muito conhecido pelo consumo constante de algas filamentosas em ambientes de água doce.'),
+('Caranguejo-de-patas-vermelhas', 'Hemigrapsus sanguineus', 'Crustáceo', 'Varunidae', 'Onívoro', 'Onívoro generalista que habita costas rochosas e pode formar populações densas fora de sua área nativa.'),
+('Caranguejo-de-recife-de-manchas-brancas', 'Actaeodes tomentosus', 'Crustáceo', 'Xanthidae', 'Herbívoro / Onívoro', 'Coberto por finas cerdas, habita fendas e cascalho coralino em recifes rasos.'),
+('Caranguejo-de-mangue-de-garra-roxa', 'Perisesarma bidens', 'Crustáceo', 'Sesarmidae', 'Herbívoro / Detritívoro', 'Alimenta-se de folhas de mangue em decomposição e ajuda na ciclagem de nutrientes do sedimento.'),
+('Lagosta-de-barba', 'Linuparus trigonus', 'Crustáceo', 'Palinuridae', 'Carnívoro / Detritívoro', 'Possui cristas longitudinais marcantes na carapaça e vive em fundos arenosos e lodosos.'),
+('Camarão-de-recife-de-bandas', 'Stenopus hispidus', 'Crustáceo', 'Stenopodidae', 'Onívoro / Parasitário', 'Tem corpo esbranquiçado com faixas vermelhas e antenas longas, atuando como limpador de peixes.'),
+('Caranguejo-de-profundidade-de-garra-branca', 'Chaceon quinquedens', 'Crustáceo', 'Geryonidae', 'Carnívoro / Necrófago', 'Habita o talude continental em águas profundas e frias, alimentando-se de invertebrados e carcaças.'),
+('Caranguejo-de-rocha-do-pacífico', 'Romaleon antennarium', 'Crustáceo', 'Cancridae', 'Carnívoro', 'Possui pinças escuras robustas e pernas pilosas adaptadas a costas rochosas e pradarias de algas.'),
+('Caranguejo-de-pedra-do-atlântico', 'Cancer irroratus', 'Crustáceo', 'Cancridae', 'Carnívoro / Onívoro', 'Comum no litoral leste da América do Norte, caça mexilhões, cracas e pequenos peixes.'),
+('Camarão-de-rocha-europeu', 'Palaemon elegans', 'Crustáceo', 'Palaemonidae', 'Onívoro / Detritívoro', 'Habita poças de maré e zonas de algas em costas rochosas, exibindo faixas escuras no corpo.'),
+('Tamarutaca-zebrada', 'Hemisquilla californiensis', 'Crustáceo', 'Hemisquillidae', 'Carnívoro', 'Estomatópode de águas temperadas do Pacífico que usa golpes rápidos contra presas de carapaça dura.'),
+('Craca-de-baleia', 'Coronula diadema', 'Crustáceo', 'Coronulidae', 'Filtrador / Suspensívoro', 'Vive incrustada na pele de baleias-jubarte, aproveitando o deslocamento do hospedeiro para filtrar alimento.'),
+('Isópode-de-profundidade-esférico', 'Sphaeroma terebrans', 'Crustáceo', 'Sphaeromatidae', 'Detritívoro / Herbívoro', 'Escava galerias em raízes de mangue e madeira submersa em águas estuarinas.'),
+('Camarão-de-água-doce-amazônico', 'Macrobrachium amazonicum', 'Crustáceo', 'Palaemonidae', 'Onívoro / Detritívoro', 'Amplamente distribuído em rios e várzeas da bacia amazônica e de outras bacias sul-americanas.');
 
 
 
@@ -1326,7 +681,7 @@ INSERT INTO insetos(nome_insetos, nc_insetos, ordem_insetos, familia_insetos, di
 
 UPDATE insetos 
 SET foto_insetos = CASE id_insetos
-        WHEN 1 THEN 'https://upload.wikimedia.org/wikipedia/commons/d/da/Oryctes_nasicornis.jpg'
+       WHEN 1 THEN 'https://upload.wikimedia.org/wikipedia/commons/d/da/Oryctes_nasicornis.jpg'
         WHEN 2 THEN 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Dynastes_hercules.jpg'
         WHEN 3 THEN 'https://upload.wikimedia.org/wikipedia/commons/f/fe/Scarabaeus_sacer.jpg'
         WHEN 4 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/60/Goliathus_goliatus.jpg'
@@ -1926,656 +1281,7 @@ SET foto_insetos = CASE id_insetos
         WHEN 598 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/85/Arion_vulgaris.jpg'
         WHEN 599 THEN 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Nerita_peloronta.jpg'
         WHEN 600 THEN 'https://upload.wikimedia.org/wikipedia/commons/e/e8/Busycon_carica.jpg'
-        WHEN 601 THEN 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Spisula_solidissima.jpg'
-        WHEN 602 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Octopus_joubini.jpg'
-        WHEN 603 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Mastigoteuthis_flammea.jpg'
-        WHEN 604 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Babylonia_spirata.jpg'
-        WHEN 605 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/88/Pinctada_fucata.jpg'
-        WHEN 606 THEN 'https://upload.wikimedia.org/wikipedia/commons/a/a2/Oxynoe_viridis.jpg'
-        WHEN 607 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/06/Littorina_littorea.jpg'
-        WHEN 608 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Mytilus_trossulus.jpg'
-        WHEN 609 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/84/Chiroteuthis_veranyi.jpg'
-        WHEN 610 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/56/Pagodula_robusta.jpg'
-        WHEN 611 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Kuphus_polythalamia.jpg'
-        WHEN 612 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Macrotritopus_defilippi.jpg'
-        WHEN 613 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Conus_textile.jpg'
-        WHEN 614 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Halgerda_batangas.jpg'
-        WHEN 615 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Meretrix_lyrata.jpg'
-        WHEN 616 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8f/Stramonita_haemastoma.jpg'
-        WHEN 617 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Loligo_vulgaris.jpg'
-        WHEN 618 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Theba_pisana.jpg'
-        WHEN 619 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/55/Margaritifera_margaritifera.jpg'
-        WHEN 620 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/68/Janthina_janthina.jpg'
-        WHEN 621 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Conus_imperialis.jpg'
-        WHEN 622 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Glycymeris_glycymeris.jpg'
-        WHEN 623 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/19/Octopus_cyanea.jpg'
-        WHEN 624 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/54/Alloteuthis_subulata.jpg'
-        WHEN 625 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Polymita_picta.jpg'
-        WHEN 626 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/12/Pinna_nobilis.jpg'
-        WHEN 627 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Hypselodoris_kanga.jpg'
-        WHEN 628 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Cymatium_parthenopeum.jpg'
-        WHEN 629 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Diplodon_delodontus.jpg'
-        WHEN 630 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4f/Histioteuthis_reversa.jpg'
-        WHEN 631 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0d/Polinices_mammilla.jpg'
-        WHEN 632 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/17/Ostrea_edulis.jpg'
-        WHEN 633 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Doto_coronata.jpg'
-        WHEN 634 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Xenophora_conchyliophora.jpg'
-        WHEN 635 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/58/Solen_marginatus.jpg'
-        WHEN 636 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Bathypolypus_arcticus.jpg'
-        WHEN 637 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/87/Rossia_macrosoma.jpg'
-        WHEN 638 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/23/Arianta_arbustorum.jpg'
-        WHEN 639 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Pecten_jacobaeus.jpg'
-        WHEN 640 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Triopha_catalinae.jpg'
-        WHEN 641 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Pomacea_canaliculata.jpg'
-        WHEN 642 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Sepiola_atlantica.jpg'
-        WHEN 643 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Cypraecassis_rufa.jpg'
-        WHEN 644 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/59/Spondylus_gaederopus.jpg'
-        WHEN 645 THEN 'https://upload.wikimedia.org/wikipedia/commons/a/a7/Eledone_cirrhosa.jpg'
-        WHEN 646 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/23/Littoraria_angulifera.jpg'
-        WHEN 647 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Diaulula_sandiegensis.jpg'
-        WHEN 648 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Glossus_humanus.jpg'
-        WHEN 649 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/89/Cornu_aspersum.jpg'
-        WHEN 650 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Abraliopsis_morisii.jpg'
-        WHEN 651 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/83/Turbinella_pyrum.jpg'
-        WHEN 652 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Unio_pictorum.jpg'
-        WHEN 653 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Hexabranchus_sanguineus.jpg'
-        WHEN 654 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Nucella_lapillus.jpg'
-        WHEN 655 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/15/Hapalochlaena_lunulata.jpg'
-        WHEN 656 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Lolliguncula_brevis.jpg'
-        WHEN 657 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/08/Cepaea_hortensis.jpg'
-        WHEN 658 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Chlamys_islandica.jpg'
-        WHEN 659 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Hypselodoris_zebra.jpg'
-        WHEN 660 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/06/Conus_eburneus.jpg'
-        WHEN 661 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Panopea_generosa.jpg'
-        WHEN 662 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/36/Octopus_bimaculoides.jpg'
-        WHEN 663 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/22/Gonatus_fabricii.jpg'
-        WHEN 664 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/63/Orthostylus.jpg'
-        WHEN 665 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Atrina_rigida.jpg'
-        WHEN 666 THEN 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Peltodoris_nobilis.jpg'
-        WHEN 667 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/34/Charonia_tritonis.jpg'
-        WHEN 668 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/92/Mytilopsis_leucophaeata.jpg'
-        WHEN 669 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Sepioloidea_lineolata.jpg'
-        WHEN 670 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Murex_pecten.jpg'
-        WHEN 671 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/76/Ruditapes_decussatus.jpg'
-        WHEN 672 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/57/Octopus_vulgaris.jpg'
-        WHEN 673 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Eobania_vermiculata.jpg'
-        WHEN 674 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/55/Elysia_chlorotica.jpg'
-        WHEN 675 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/76/Placopecten_magellanicus.jpg'
-        WHEN 676 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Conus_leopardus.jpg'
-        WHEN 677 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/88/Sepioteuthis_sepioidea.jpg'
-        WHEN 678 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/35/Zonitoides_arboreus.jpg'
-        WHEN 679 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/86/Cerastoderma_edule.jpg'
-        WHEN 680 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/27/Octopus_maya.jpg'
-        WHEN 681 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Nassarius_vibex.jpg'
-        WHEN 682 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/49/Chromodoris_quadricolor.jpg'
-        WHEN 683 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/63/Crassostrea_gasar.jpg'
-        WHEN 684 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Conus_textile.jpg'
-        WHEN 685 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Vampyroteuthis_infernalis.jpg'
-        WHEN 686 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/14/Helicigona_lapicida.jpg'
-        WHEN 687 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Pecten_jacobaeus.jpg'
-        WHEN 688 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Felimare_tricolor.jpg'
-        WHEN 689 THEN 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Planorbarius_corneus.jpg'
-        WHEN 690 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/33/Mya_arenaria.jpg'
-        WHEN 691 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Abdopus_aculeatus.jpg'
-        WHEN 692 THEN 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Turbo_setosus.jpg'
-        WHEN 693 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/26/Bathothauma_lyromma.jpg'
-        WHEN 694 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Discus_rotundatus.jpg'
-        WHEN 695 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Perna_perna.jpg'
-        WHEN 696 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/62/Flabellinopsis_iodinea.jpg'
-        WHEN 697 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/26/Polinices_tumidus.jpg'
-        WHEN 698 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Amusium_pleuronectes.jpg'
-        WHEN 699 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/87/Grimpoteuthis.jpg'
-        WHEN 700 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Flabellina_affinis.jpg'
-        WHEN 701 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Dendronotus_iris.jpg'
-        WHEN 702 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Felimare_tricolor.jpg'
-        WHEN 703 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Hermissenda_crassicornis.jpg'
-        WHEN 704 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Aeolidia_papillosa.jpg'
-        WHEN 705 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Phyllidia_varicosa.jpg'
-        WHEN 706 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Hypselodoris_kanga.jpg'
-        WHEN 707 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Diaulula_sandiegensis.jpg'
-        WHEN 708 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/36/Archidoris_pseudoargus.jpg'
-        WHEN 709 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Hypselodoris_zebra.jpg'
-        WHEN 710 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/49/Chromodoris_quadricolor.jpg'
-        WHEN 711 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Goniobranchus_kuniei.jpg'
-        WHEN 712 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Goniobranchus_coi.jpg'
-        WHEN 713 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Goniobranchus_kuniei.jpg'
-        WHEN 714 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Doriprismatica_atromarginata.jpg'
-        WHEN 715 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Nudibranch_chromodorididae.jpg'
-        WHEN 716 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Mexichromis_multituberculata.jpg'
-        WHEN 717 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Rostanga_pulchra.jpg'
-        WHEN 718 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Melibe_leonina.jpg'
-        WHEN 719 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Melibe_viridis.jpg'
-        WHEN 720 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Pteraeolidia_ianthina.jpg'
-        WHEN 721 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Doto_coronata.jpg'
-        WHEN 722 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Flabellina_affinis.jpg'
-        WHEN 723 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/43/Hydatina_physis.jpg'
-        WHEN 724 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Micromelo_undatus.jpg'
-        WHEN 725 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/23/Navanax_inermis.jpg'
-        WHEN 726 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Pteraeolidia_ianthina.jpg'
-        WHEN 727 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/62/Flabellinopsis_iodinea.jpg'
-        WHEN 728 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Flabellina_affinis.jpg'
-        WHEN 729 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/23/Navanax_inermis.jpg'
-        WHEN 730 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Conus_striatus.jpg'
-        WHEN 731 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Conus_litteratus.jpg'
-        WHEN 732 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Conus_textile.jpg'
-        WHEN 733 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Conus_imperialis.jpg'
-        WHEN 734 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Conus_leopardus.jpg'
-        WHEN 735 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/06/Conus_eburneus.jpg'
-        WHEN 736 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Conus_leopardus.jpg'
-        WHEN 737 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Conus_imperialis.jpg'
-        WHEN 738 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Conus_marmoreus.jpg'
-        WHEN 739 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Conus_striatus.jpg'
-        WHEN 740 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/78/Cypraea_arabica.jpg'
-        WHEN 741 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/87/Monetaria_moneta.jpg'
-        WHEN 742 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/12/Monetaria_annulus.jpg'
-        WHEN 743 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Cypraea_tigris.jpg'
-        WHEN 744 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/78/Cypraea_arabica.jpg'
-        WHEN 745 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/12/Monetaria_annulus.jpg'
-        WHEN 746 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Cypraea_tigris.jpg'
-        WHEN 747 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Cypraea_tigris.jpg'
-        WHEN 748 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Murex_pecten.jpg'
-        WHEN 749 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Murex_pecten.jpg'
-        WHEN 750 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Aurelia_aurita_-_1.jpg'
-        WHEN 751 THEN 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Physalia_physalis.jpg'
-        WHEN 752 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 753 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Cyanea_capillata.jpg'
-        WHEN 754 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 755 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Chironex_fleckeri.jpg'
-        WHEN 756 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Hydra_viridis.jpg'
-        WHEN 757 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Acropora_palmata.jpg'
-        WHEN 758 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/78/Stichodactyla_gigantea.jpg'
-        WHEN 759 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Rhizostoma_pulmo.jpg'
-        WHEN 760 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Millepora_alcicornis.jpg'
-        WHEN 761 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 762 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/53/Pennatula_phosphorea.jpg'
-        WHEN 763 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/55/Tubastraea_coccinea.jpg'
-        WHEN 764 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 765 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Turritopsis_dohrnii.jpg'
-        WHEN 766 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/48/Alcyonium_digitatum.jpg'
-        WHEN 767 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Velella_velella.jpg'
-        WHEN 768 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 769 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Fungia_fungites.jpg'
-        WHEN 770 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Chironex_fleckeri.jpg'
-        WHEN 771 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/26/Black_coral.jpg'
-        WHEN 772 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Anthopleura_xanthogrammica.jpg'
-        WHEN 773 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Mastigias_papua.jpg'
-        WHEN 774 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Millepora_alcicornis.jpg'
-        WHEN 775 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 776 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Nemopilema_nomurai.jpg'
-        WHEN 777 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 778 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/65/Anthopleura_elegantissima.jpg'
-        WHEN 779 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Haliclystus_auricula.jpg'
-        WHEN 780 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/55/Tubastraea_coccinea.jpg'
-        WHEN 781 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 782 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Periphylla_periphylla.jpg'
-        WHEN 783 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/52/Acropora_cervicornis.jpg'
-        WHEN 784 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Exaiptasia_diaphana.jpg'
-        WHEN 785 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Chironex_fleckeri.jpg'
-        WHEN 786 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 787 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 788 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Atolla_wyvillei.jpg'
-        WHEN 789 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Gorgonia_ventalina.jpg'
-        WHEN 790 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/49/Heteractis_magnifica.jpg'
-        WHEN 791 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Cyanea_capillata.jpg'
-        WHEN 792 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Porites_astreoides.jpg'
-        WHEN 793 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/65/Anthopleura_elegantissima.jpg'
-        WHEN 794 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Rhizostoma_pulmo.jpg'
-        WHEN 795 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Porites_astreoides.jpg'
-        WHEN 796 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 797 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Haliclystus_auricula.jpg'
-        WHEN 798 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 799 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Exaiptasia_diaphana.jpg'
-        WHEN 800 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aequorea_victoria.jpg'
-        WHEN 801 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/48/Alcyonium_digitatum.jpg'
-        WHEN 802 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/78/Stichodactyla_gigantea.jpg'
-        WHEN 803 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 804 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Fungia_fungites.jpg'
-        WHEN 805 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 806 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Aurelia_aurita_-_1.jpg'
-        WHEN 807 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 808 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Exaiptasia_diaphana.jpg'
-        WHEN 809 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 810 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Gorgonia_ventalina.jpg'
-        WHEN 811 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 812 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Acropora_palmata.jpg'
-        WHEN 813 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Anthopleura_xanthogrammica.jpg'
-        WHEN 814 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Rhizostoma_pulmo.jpg'
-        WHEN 815 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 816 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 817 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Chironex_fleckeri.jpg'
-        WHEN 818 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 819 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 820 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Mastigias_papua.jpg'
-        WHEN 821 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 822 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/49/Heteractis_magnifica.jpg'
-        WHEN 823 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Periphylla_periphylla.jpg'
-        WHEN 824 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/52/Acropora_cervicornis.jpg'
-        WHEN 825 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 826 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aequorea_victoria.jpg'
-        WHEN 827 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Fungia_fungites.jpg'
-        WHEN 828 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/65/Anthopleura_elegantissima.jpg'
-        WHEN 829 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Atolla_wyvillei.jpg'
-        WHEN 830 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 831 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Exaiptasia_diaphana.jpg'
-        WHEN 832 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aequorea_victoria.jpg'
-        WHEN 833 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/55/Tubastraea_coccinea.jpg'
-        WHEN 834 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Anthopleura_xanthogrammica.jpg'
-        WHEN 835 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Rhizostoma_pulmo.jpg'
-        WHEN 836 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 837 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 838 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 839 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 840 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 841 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Aurelia_aurita_-_1.jpg'
-        WHEN 842 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 843 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 844 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Cyanea_capillata.jpg'
-        WHEN 845 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Acropora_palmata.jpg'
-        WHEN 846 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 847 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Mastigias_papua.jpg'
-        WHEN 848 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 849 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/49/Heteractis_magnifica.jpg'
-        WHEN 850 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 851 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 852 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 853 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Velella_velella.jpg'
-        WHEN 854 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/52/Acropora_cervicornis.jpg'
-        WHEN 855 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/65/Anthopleura_elegantissima.jpg'
-        WHEN 856 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Aurelia_aurita_-_1.jpg'
-        WHEN 857 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 858 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 859 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aequorea_victoria.jpg'
-        WHEN 860 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 861 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/78/Stichodactyla_gigantea.jpg'
-        WHEN 862 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 863 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/48/Alcyonium_digitatum.jpg'
-        WHEN 864 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Anthopleura_xanthogrammica.jpg'
-        WHEN 865 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Atolla_wyvillei.jpg'
-        WHEN 866 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Fungia_fungites.jpg'
-        WHEN 867 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/49/Heteractis_magnifica.jpg'
-        WHEN 868 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Cyanea_capillata.jpg'
-        WHEN 869 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 870 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Exaiptasia_diaphana.jpg'
-        WHEN 871 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 872 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Acropora_palmata.jpg'
-        WHEN 873 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 874 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Periphylla_periphylla.jpg'
-        WHEN 875 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Acropora_palmata.jpg'
-        WHEN 876 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/78/Stichodactyla_gigantea.jpg'
-        WHEN 877 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 878 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 879 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 880 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aequorea_victoria.jpg'
-        WHEN 881 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Gorgonia_ventalina.jpg'
-        WHEN 882 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Anthopleura_xanthogrammica.jpg'
-        WHEN 883 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Atolla_wyvillei.jpg'
-        WHEN 884 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 885 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 886 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Mastigias_papua.jpg'
-        WHEN 887 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 888 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 889 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Atolla_wyvillei.jpg'
-        WHEN 890 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Porites_astreoides.jpg'
-        WHEN 891 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Exaiptasia_diaphana.jpg'
-        WHEN 892 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Aurelia_aurita_-_1.jpg'
-        WHEN 893 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 894 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 895 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Rhizostoma_pulmo.jpg'
-        WHEN 896 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 897 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 898 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 899 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 900 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Exaiptasia_diaphana.jpg'
-       WHEN 901 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 902 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Gorgonia_ventalina.jpg'
-        WHEN 903 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Anthopleura_xanthogrammica.jpg'
-        WHEN 904 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Fungia_fungites.jpg'
-        WHEN 905 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aequorea_victoria.jpg'
-        WHEN 906 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 907 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 908 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Cyanea_capillata.jpg'
-        WHEN 909 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Acropora_palmata.jpg'
-        WHEN 910 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 911 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Mastigias_papua.jpg'
-        WHEN 912 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 913 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 914 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Rhizostoma_pulmo.jpg'
-        WHEN 915 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 916 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 917 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 918 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 919 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/49/Heteractis_magnifica.jpg'
-        WHEN 920 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aequorea_victoria.jpg'
-        WHEN 921 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Fungia_fungites.jpg'
-        WHEN 922 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/65/Anthopleura_elegantissima.jpg'
-        WHEN 923 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Atolla_wyvillei.jpg'
-        WHEN 924 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 925 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Exaiptasia_diaphana.jpg'
-        WHEN 926 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aequorea_victoria.jpg'
-        WHEN 927 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/55/Tubastraea_coccinea.jpg'
-        WHEN 928 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Anthopleura_xanthogrammica.jpg'
-        WHEN 929 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Rhizostoma_pulmo.jpg'
-        WHEN 930 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 931 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 932 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 933 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 934 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 935 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Aurelia_aurita_-_1.jpg'
-        WHEN 936 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 937 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 938 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Cyanea_capillata.jpg'
-        WHEN 939 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Acropora_palmata.jpg'
-        WHEN 940 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 941 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Mastigias_papua.jpg'
-        WHEN 942 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 943 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/49/Heteractis_magnifica.jpg'
-        WHEN 944 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Aurelia_aurita_-_1.jpg'
-        WHEN 945 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 946 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 947 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Cyanea_capillata.jpg'
-        WHEN 948 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Brain_coral.jpg'
-        WHEN 949 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Chironex_fleckeri.jpg'
-        WHEN 950 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Hydra_viridis.jpg'
-        WHEN 951 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Acropora_palmata.jpg'
-        WHEN 952 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/78/Stichodactyla_gigantea.jpg'
-        WHEN 953 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Aurelia_aurita_-_1.jpg'
-        WHEN 954 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Acropora_palmata.jpg'
-        WHEN 955 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 956 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 957 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 958 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Anthopleura_xanthogrammica.jpg'
-        WHEN 959 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Cyanea_capillata.jpg'
-        WHEN 960 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Porites_astreoides.jpg'
-        WHEN 961 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 962 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 963 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Rhizostoma_pulmo.jpg'
-        WHEN 964 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/78/Stichodactyla_gigantea.jpg'
-        WHEN 965 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 966 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Atolla_wyvillei.jpg'
-        WHEN 967 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 968 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Fungia_fungites.jpg'
-        WHEN 969 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Periphylla_periphylla.jpg'
-        WHEN 970 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 971 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 972 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aequorea_victoria.jpg'
-        WHEN 973 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Gorgonia_ventalina.jpg'
-        WHEN 974 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/48/Alcyonium_digitatum.jpg'
-        WHEN 975 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 976 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Aequorea_victoria.jpg'
-        WHEN 977 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 978 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Exaiptasia_diaphana.jpg'
-        WHEN 979 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Mastigias_papua.jpg'
-        WHEN 980 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Fungia_fungites.jpg'
-        WHEN 981 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Hydra_viridis.jpg'
-        WHEN 982 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/55/Tubastraea_coccinea.jpg'
-        WHEN 983 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Aurelia_aurita_-_1.jpg'
-        WHEN 984 THEN 'https://upload.wikimedia.org/wikipedia/commons/8/82/Acropora_palmata.jpg'
-        WHEN 985 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/24/Actinia_equina.jpg'
-        WHEN 986 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Pelagia_noctiluca.jpg'
-        WHEN 987 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 988 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/96/Anthopleura_xanthogrammica.jpg'
-        WHEN 989 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Cyanea_capillata.jpg'
-        WHEN 990 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Porites_astreoides.jpg'
-        WHEN 991 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Condylactis_gigantea.jpg'
-        WHEN 992 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Montastraea_cavernosa.jpg'
-        WHEN 993 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Rhizostoma_pulmo.jpg'
-        WHEN 994 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/78/Stichodactyla_gigantea.jpg'
-        WHEN 995 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Pocillopora_damicornis.jpg'
-        WHEN 996 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Atolla_wyvillei.jpg'
-        WHEN 997 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Cerianthus_membranaceus.jpg'
-        WHEN 998 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/21/Fungia_fungites.jpg'
-        WHEN 999 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Periphylla_periphylla.jpg'
-        WHEN 1000 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1001 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/59/Strongylocentrotus_purpuratus.jpg'
-        WHEN 1002 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1003 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Acanthaster_planci.jpg'
-        WHEN 1004 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Diadema_antillarum.jpg'
-        WHEN 1005 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Linckia_laevigata.jpg'
-        WHEN 1006 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1007 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1008 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1009 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Pycnopodia_helianthoides.jpg'
-        WHEN 1010 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/19/Bohadschia_argus.jpg'
-        WHEN 1011 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Heterocentrotus_mammillatus.jpg'
-        WHEN 1012 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Oreaster_reticulatus.jpg'
-        WHEN 1013 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/41/Gorgonocephalus_eucnemis.jpg'
-        WHEN 1014 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Thelenota_ananas.jpg'
-        WHEN 1015 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Strongylocentrotus_droebachiensis.jpg'
-        WHEN 1016 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/15/Henricia_leviuscula.jpg'
-        WHEN 1017 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Toxopneustes_pileolus.jpg'
-        WHEN 1018 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Patiria_miniata.jpg'
-        WHEN 1019 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Apostichopus_californicus.jpg'
-        WHEN 1020 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1021 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Tripneustes_gratilla.jpg'
-        WHEN 1022 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1023 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1024 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Paracentrotus_lividus.jpg'
-        WHEN 1025 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Linckia_laevigata.jpg'
-        WHEN 1026 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1027 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1028 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1029 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1030 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1031 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1032 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1033 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Apostichopus_californicus.jpg'
-        WHEN 1034 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1035 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Diadema_antillarum.jpg'
-        WHEN 1036 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Oreaster_reticulatus.jpg'
-        WHEN 1037 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1038 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1039 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Toxopneustes_pileolus.jpg'
-        WHEN 1040 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1041 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/19/Bohadschia_argus.jpg'
-        WHEN 1042 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Strongylocentrotus_droebachiensis.jpg'
-        WHEN 1043 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Linckia_laevigata.jpg'
-        WHEN 1044 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1045 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1046 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Paracentrotus_lividus.jpg'
-        WHEN 1047 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1048 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1049 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1050 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/59/Strongylocentrotus_purpuratus.jpg'
-        WHEN 1051 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/15/Henricia_leviuscula.jpg'
-        WHEN 1052 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1053 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1054 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Tripneustes_gratilla.jpg'
-        WHEN 1055 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Pycnopodia_helianthoides.jpg'
-        WHEN 1056 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1057 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Paracentrotus_lividus.jpg'
-        WHEN 1058 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1059 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1060 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1061 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1062 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Pycnopodia_helianthoides.jpg'
-        WHEN 1063 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1064 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Linckia_laevigata.jpg'
-        WHEN 1065 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Patiria_miniata.jpg'
-        WHEN 1066 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/15/Henricia_leviuscula.jpg'
-        WHEN 1067 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1068 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1069 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Linckia_laevigata.jpg'
-        WHEN 1070 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Oreaster_reticulatus.jpg'
-        WHEN 1071 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/59/Strongylocentrotus_purpuratus.jpg'
-        WHEN 1072 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Diadema_antillarum.jpg'
-        WHEN 1073 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Strongylocentrotus_droebachiensis.jpg'
-        WHEN 1074 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Tripneustes_gratilla.jpg'
-        WHEN 1075 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Strongylocentrotus_droebachiensis.jpg'
-        WHEN 1076 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1077 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1078 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Heterocentrotus_mammillatus.jpg'
-        WHEN 1079 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1080 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1081 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/19/Bohadschia_argus.jpg'
-        WHEN 1082 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Thelenota_ananas.jpg'
-        WHEN 1083 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1084 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Apostichopus_californicus.jpg'
-        WHEN 1085 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Thelenota_ananas.jpg'
-        WHEN 1086 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Apostichopus_californicus.jpg'
-        WHEN 1087 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1088 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/41/Gorgonocephalus_eucnemis.jpg'
-        WHEN 1089 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1090 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1091 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/41/Gorgonocephalus_eucnemis.jpg'
-        WHEN 1092 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/41/Gorgonocephalus_eucnemis.jpg'
-        WHEN 1093 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1094 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1095 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1096 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1097 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1098 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1099 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1100 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1101 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/15/Henricia_leviuscula.jpg'
-        WHEN 1102 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Linckia_laevigata.jpg'
-        WHEN 1103 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Patiria_miniata.jpg'
-        WHEN 1104 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Pycnopodia_helianthoides.jpg'
-        WHEN 1105 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1106 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Oreaster_reticulatus.jpg'
-        WHEN 1107 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Pycnopodia_helianthoides.jpg'
-        WHEN 1108 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Patiria_miniata.jpg'
-        WHEN 1109 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Oreaster_reticulatus.jpg'
-        WHEN 1110 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Oreaster_reticulatus.jpg'
-        WHEN 1111 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Acanthaster_planci.jpg'
-        WHEN 1112 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1113 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1114 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1115 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Patiria_miniata.jpg'
-        WHEN 1116 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/15/Henricia_leviuscula.jpg'
-        WHEN 1117 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1118 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/15/Henricia_leviuscula.jpg'
-        WHEN 1119 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Oreaster_reticulatus.jpg'
-        WHEN 1120 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Diadema_antillarum.jpg'
-        WHEN 1121 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Tripneustes_gratilla.jpg'
-        WHEN 1122 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/59/Strongylocentrotus_purpuratus.jpg'
-        WHEN 1123 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Paracentrotus_lividus.jpg'
-        WHEN 1124 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Heterocentrotus_mammillatus.jpg'
-        WHEN 1125 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1126 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1127 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/59/Strongylocentrotus_purpuratus.jpg'
-        WHEN 1128 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Heterocentrotus_mammillatus.jpg'
-        WHEN 1129 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Tripneustes_gratilla.jpg'
-        WHEN 1130 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Toxopneustes_pileolus.jpg'
-        WHEN 1131 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Paracentrotus_lividus.jpg'
-        WHEN 1132 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1133 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Diadema_antillarum.jpg'
-        WHEN 1134 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Strongylocentrotus_droebachiensis.jpg'
-        WHEN 1135 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1136 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Thelenota_ananas.jpg'
-        WHEN 1137 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1138 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Apostichopus_californicus.jpg'
-        WHEN 1139 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1140 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/19/Bohadschia_argus.jpg'
-        WHEN 1141 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1142 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1143 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/19/Bohadschia_argus.jpg'
-        WHEN 1144 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1145 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/19/Bohadschia_argus.jpg'
-        WHEN 1146 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1147 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Thelenota_ananas.jpg'
-        WHEN 1148 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1149 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1150 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1151 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1152 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/41/Gorgonocephalus_eucnemis.jpg'
-        WHEN 1153 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1154 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1155 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/41/Gorgonocephalus_eucnemis.jpg'
-        WHEN 1156 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1157 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1158 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/41/Gorgonocephalus_eucnemis.jpg'
-        WHEN 1159 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1160 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1161 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/41/Gorgonocephalus_eucnemis.jpg'
-        WHEN 1162 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1163 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1164 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1165 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1166 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1167 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1168 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1169 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1170 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1171 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1172 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1173 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1174 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Antedon_bifida.jpg'
-        WHEN 1175 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1176 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1177 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1178 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1179 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1180 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1181 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1182 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1183 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1184 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1185 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Pycnopodia_helianthoides.jpg'
-        WHEN 1186 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1187 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Acanthaster_planci.jpg'
-        WHEN 1188 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Patiria_miniata.jpg'
-        WHEN 1189 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1190 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/59/Strongylocentrotus_purpuratus.jpg'
-        WHEN 1191 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Strongylocentrotus_droebachiensis.jpg'
-        WHEN 1192 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1193 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Diadema_antillarum.jpg'
-        WHEN 1194 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Strongylocentrotus_droebachiensis.jpg'
-        WHEN 1195 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/64/Holothuria_tubulosa.jpg'
-        WHEN 1196 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/19/Bohadschia_argus.jpg'
-        WHEN 1197 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1198 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Thelenota_ananas.jpg'
-        WHEN 1199 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Apostichopus_californicus.jpg'
-        WHEN 1200 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1201 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1202 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1203 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/41/Gorgonocephalus_eucnemis.jpg'
-        WHEN 1204 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/29/Ophiothrix_fragilis.jpg'
-        WHEN 1205 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1206 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1207 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Patiria_miniata.jpg'
-        WHEN 1208 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/15/Henricia_leviuscula.jpg'
-        WHEN 1209 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/15/Henricia_leviuscula.jpg'
-        WHEN 1210 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Oreaster_reticulatus.jpg'
-        WHEN 1211 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Oreaster_reticulatus.jpg'
-        WHEN 1212 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Linckia_laevigata.jpg'
-        WHEN 1213 THEN 'https://upload.wikimedia.org/wikipedia/commons/1/15/Henricia_leviuscula.jpg'
-        WHEN 1214 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1215 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1216 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1217 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1218 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1219 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Oreaster_reticulatus.jpg'
-        WHEN 1220 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Patiria_miniata.jpg'
-        WHEN 1221 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Pycnopodia_helianthoides.jpg'
-        WHEN 1222 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Linckia_laevigata.jpg'
-        WHEN 1223 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/73/Asterias_rubens.jpg'
-        WHEN 1224 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Patiria_miniata.jpg'
-        WHEN 1225 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1226 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/25/Archaster_typicus.jpg'
-        WHEN 1227 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Patiria_miniata.jpg'
-        WHEN 1228 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/45/Pycnopodia_helianthoides.jpg'
-        WHEN 1229 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Linckia_laevigata.jpg'
-        WHEN 1230 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Heterocentrotus_mammillatus.jpg'
-        WHEN 1231 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Paracentrotus_lividus.jpg'
-        WHEN 1232 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Diadema_antillarum.jpg'
-        WHEN 1233 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Paracentrotus_lividus.jpg'
-        WHEN 1234 THEN 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Strongylocentrotus_droebachiensis.jpg'
-        WHEN 1235 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Tripneustes_gratilla.jpg'
-        WHEN 1236 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Tripneustes_gratilla.jpg'
-        WHEN 1237 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Toxopneustes_pileolus.jpg'
-        WHEN 1238 THEN 'https://upload.wikimedia.org/wikipedia/commons/9/93/Heterocentrotus_mammillatus.jpg'
-        WHEN 1239 THEN 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Paracentrotus_lividus.jpg'
-        WHEN 1240 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1241 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1242 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1243 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/28/Echinarachnius_parma.jpg'
-        WHEN 1244 THEN 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Diadema_antillarum.jpg'
-        WHEN 1245 THEN 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Toxopneustes_pileolus.jpg'
-        WHEN 1246 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/59/Strongylocentrotus_purpuratus.jpg'
-        WHEN 1247 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Thelenota_ananas.jpg'
-        WHEN 1248 THEN 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Thelenota_ananas.jpg'
-        WHEN 1249 THEN 'https://upload.wikimedia.org/wikipedia/commons/5/51/Holothuria_atra.jpg'
-        WHEN 1250 THEN 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Apostichopus_californicus.jpg'
+    ELSE foto_insetos
         ELSE foto_insetos
     END
-WHERE id_insetos BETWEEN 1 AND 1250;
+WHERE id_insetos BETWEEN 1 AND 600;
